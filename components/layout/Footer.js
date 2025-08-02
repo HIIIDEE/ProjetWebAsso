@@ -12,9 +12,9 @@ const Footer = () => {
                 <Network className="w-6 h-6 text-white" />
               </div>
               <div>
-                <span className="text-lg font-bold">ANDSI</span>
+                <span className="text-lg font-bold">ANAPNA</span>
                 <p className="text-sm text-gray-400">
-                  Association Nationale des DSI
+                  Association Nationale de la Promotion du Numérique en Algérie
                 </p>
               </div>
             </div>
@@ -70,8 +70,8 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p>
-            © 2024 Association Nationale des Directeurs des Systèmes
-            d'Information (ANDSI). Tous droits réservés.
+            © 2024 Association Nationale de la Promotion du Numérique en Algérie
+            (ANAPNA). Tous droits réservés.
           </p>
         </div>
       </div>

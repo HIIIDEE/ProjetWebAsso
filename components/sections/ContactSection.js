@@ -35,8 +35,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">contact@andsi.dz</p>
-                  <p className="text-gray-600">secretariat@andsi.dz</p>
+                  <p className="text-gray-600">contact@anapna.dz</p>
+                  <p className="text-gray-600">secretariat@anapna.dz</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
