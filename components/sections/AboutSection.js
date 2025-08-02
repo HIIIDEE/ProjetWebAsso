@@ -8,11 +8,11 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-8">
-              À Propos de l'ANDSI
+              À Propos de l'ANAPNA
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              L'Association Nationale des Directeurs des Systèmes d'Information
-              (ANDSI) a été créée en 2008 pour répondre aux besoins croissants
+              L'Association Nationale de la Promotion du Numérique en Algérie
+              (ANAPNA) a été créée en 2008 pour répondre aux besoins croissants
               de professionnalisation et de structuration de la fonction DSI en
               Algérie.
             </p>
