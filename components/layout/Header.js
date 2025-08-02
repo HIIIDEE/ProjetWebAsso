@@ -20,9 +20,9 @@ const Header = ({ scrollY, activeSection, scrollToSection }) => {
               <Network className="w-7 h-7 text-white" />
             </div>
             <div>
-              <span className="text-xl font-bold text-gray-900">ANDSI</span>
+              <span className="text-xl font-bold text-gray-900">ANAPNA</span>
               <p className="text-sm text-gray-600 font-medium">
-                Association Nationale des DSI
+                Association Nationale de la Promotion du Numérique en Algérie
               </p>
             </div>
           </div>
