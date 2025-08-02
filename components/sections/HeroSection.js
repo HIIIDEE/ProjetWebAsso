@@ -31,10 +31,10 @@ const HeroSection = ({ scrollToSection }) => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Association Nationale des
+              Association Nationale De la
               <span className="text-blue-600">
                 {" "}
-                Directeurs des Systèmes d'Information
+                Promotion du Numérique en Algérie
               </span>
             </h1>
 
