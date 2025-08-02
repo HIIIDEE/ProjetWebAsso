@@ -100,7 +100,7 @@ const EventsSection = () => {
           <div className="mt-12 bg-blue-50 rounded-xl p-8 border border-blue-200">
             <div className="text-center">
               <h3 className="text-xl font-bold text-blue-900 mb-4">
-                📅 Pourquoi participer aux événements ANDSI ?
+                📅 Pourquoi participer aux événements ANAPNA ?
               </h3>
               <div className="grid md:grid-cols-3 gap-6 text-sm text-blue-800">
                 <div className="flex flex-col items-center">

@@ -66,7 +66,7 @@ const FoundingMembersSection = () => {
             <Star className="w-8 h-8 text-yellow-500 ml-3" />
           </div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Découvrez les visionnaires qui ont créé l'ANDSI et qui continuent à
+            Découvrez les visionnaires qui ont créé l'ANAPNA et qui continuent à
             façonner l'avenir du numérique en Algérie
           </p>
           <div className="mt-4 flex items-center justify-center text-sm text-gray-500">
