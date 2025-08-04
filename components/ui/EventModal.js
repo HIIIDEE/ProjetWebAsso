@@ -234,7 +234,7 @@ const EventModal = ({ event, isOpen, onClose }) => {
           </div>
 
           {/* Ressources */}
-          <div className="border-t border-gray-200 pt-6 mt-6">
+          {/* <div className="border-t border-gray-200 pt-6 mt-6">
             <h3 className="text-xl font-bold text-gray-900 mb-4">
               📎 Ressources et Documents
             </h3>
@@ -261,7 +261,7 @@ const EventModal = ({ event, isOpen, onClose }) => {
                 <span>Enregistrement de la conférence</span>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Footer */}

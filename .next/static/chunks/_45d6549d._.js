@@ -1,14 +1,14 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_45d6549d._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([typeof document === "object" ? document.currentScript : undefined, {
 
 "[project]/utils/constants.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "COMPANY_INFO": (()=>COMPANY_INFO),
-    "EXPERTISE_AREAS": (()=>EXPERTISE_AREAS),
-    "NAVIGATION_ITEMS": (()=>NAVIGATION_ITEMS)
+    "COMPANY_INFO": ()=>COMPANY_INFO,
+    "EXPERTISE_AREAS": ()=>EXPERTISE_AREAS,
+    "NAVIGATION_ITEMS": ()=>NAVIGATION_ITEMS
 });
 const NAVIGATION_ITEMS = [
     {
@@ -66,10 +66,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/components/layout/Header.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -80,9 +80,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$constants$2e$js__$5
 ;
 ;
 ;
-const Header = ({ scrollY, activeSection, scrollToSection })=>{
+const Header = (param)=>{
+    let { scrollY, activeSection, scrollToSection } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-        className: `fixed top-0 w-full z-50 transition-all duration-300 ${scrollY > 50 ? "bg-white shadow-lg border-b border-gray-200" : "bg-white/95 backdrop-blur-sm"}`,
+        className: "fixed top-0 w-full z-50 transition-all duration-300 ".concat(scrollY > 50 ? "bg-white shadow-lg border-b border-gray-200" : "bg-white/95 backdrop-blur-sm"),
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container mx-auto px-6 py-4",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -99,12 +100,12 @@ const Header = ({ scrollY, activeSection, scrollToSection })=>{
                                     fileName: "[project]/components/layout/Header.js",
                                     lineNumber: 20,
                                     columnNumber: 15
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/components/layout/Header.js",
                                 lineNumber: 19,
                                 columnNumber: 13
-                            }, this),
+                            }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -114,7 +115,7 @@ const Header = ({ scrollY, activeSection, scrollToSection })=>{
                                         fileName: "[project]/components/layout/Header.js",
                                         lineNumber: 23,
                                         columnNumber: 15
-                                    }, this),
+                                    }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-sm text-gray-600 font-medium",
                                         children: "Association Nationale de la Promotion du Numérique en Algérie"
@@ -122,60 +123,60 @@ const Header = ({ scrollY, activeSection, scrollToSection })=>{
                                         fileName: "[project]/components/layout/Header.js",
                                         lineNumber: 24,
                                         columnNumber: 15
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/layout/Header.js",
                                 lineNumber: 22,
                                 columnNumber: 13
-                            }, this)
+                            }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/layout/Header.js",
                         lineNumber: 18,
                         columnNumber: 11
-                    }, this),
+                    }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "hidden md:flex space-x-8",
                         children: __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NAVIGATION_ITEMS"].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: `text-gray-700 hover:text-blue-600 transition-colors duration-200 relative font-medium ${activeSection === item.id ? "text-blue-600" : ""}`,
+                                className: "text-gray-700 hover:text-blue-600 transition-colors duration-200 relative font-medium ".concat(activeSection === item.id ? "text-blue-600" : ""),
                                 onClick: ()=>scrollToSection(item.id),
                                 children: [
                                     item.name,
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: `absolute -bottom-1 left-0 h-0.5 bg-blue-600 transition-all ${activeSection === item.id ? "w-full" : "w-0 hover:w-full"}`
+                                        className: "absolute -bottom-1 left-0 h-0.5 bg-blue-600 transition-all ".concat(activeSection === item.id ? "w-full" : "w-0 hover:w-full")
                                     }, void 0, false, {
                                         fileName: "[project]/components/layout/Header.js",
                                         lineNumber: 40,
                                         columnNumber: 17
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, item.id, true, {
                                 fileName: "[project]/components/layout/Header.js",
                                 lineNumber: 32,
                                 columnNumber: 15
-                            }, this))
+                            }, ("TURBOPACK compile-time value", void 0)))
                     }, void 0, false, {
                         fileName: "[project]/components/layout/Header.js",
                         lineNumber: 30,
                         columnNumber: 11
-                    }, this)
+                    }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/layout/Header.js",
                 lineNumber: 17,
                 columnNumber: 9
-            }, this)
+            }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/components/layout/Header.js",
             lineNumber: 16,
             columnNumber: 7
-        }, this)
+        }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/layout/Header.js",
         lineNumber: 9,
         columnNumber: 5
-    }, this);
+    }, ("TURBOPACK compile-time value", void 0));
 };
 _c = Header;
 const __TURBOPACK__default__export__ = Header;
@@ -188,10 +189,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/components/layout/Footer.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -222,12 +223,12 @@ const Footer = ()=>{
                                                 fileName: "[project]/components/layout/Footer.js",
                                                 lineNumber: 12,
                                                 columnNumber: 17
-                                            }, this)
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/components/layout/Footer.js",
                                             lineNumber: 11,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -237,7 +238,7 @@ const Footer = ()=>{
                                                     fileName: "[project]/components/layout/Footer.js",
                                                     lineNumber: 15,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-sm text-gray-400",
                                                     children: "Association Nationale de la Promotion du Numérique en Algérie"
@@ -245,19 +246,19 @@ const Footer = ()=>{
                                                     fileName: "[project]/components/layout/Footer.js",
                                                     lineNumber: 16,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/layout/Footer.js",
                                             lineNumber: 14,
                                             columnNumber: 15
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/layout/Footer.js",
                                     lineNumber: 10,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-gray-400 leading-relaxed",
                                     children: "Fédérer et accompagner les DSI algériens dans leurs missions stratégiques de transformation digitale et de gouvernance IT."
@@ -265,13 +266,13 @@ const Footer = ()=>{
                                     fileName: "[project]/components/layout/Footer.js",
                                     lineNumber: 21,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/layout/Footer.js",
                             lineNumber: 9,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -281,7 +282,7 @@ const Footer = ()=>{
                                     fileName: "[project]/components/layout/Footer.js",
                                     lineNumber: 28,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                     className: "space-y-2 text-gray-400",
                                     children: [
@@ -294,12 +295,12 @@ const Footer = ()=>{
                                                 fileName: "[project]/components/layout/Footer.js",
                                                 lineNumber: 31,
                                                 columnNumber: 17
-                                            }, this)
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/components/layout/Footer.js",
                                             lineNumber: 30,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                 href: "#",
@@ -309,12 +310,12 @@ const Footer = ()=>{
                                                 fileName: "[project]/components/layout/Footer.js",
                                                 lineNumber: 36,
                                                 columnNumber: 17
-                                            }, this)
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/components/layout/Footer.js",
                                             lineNumber: 35,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                 href: "#",
@@ -324,12 +325,12 @@ const Footer = ()=>{
                                                 fileName: "[project]/components/layout/Footer.js",
                                                 lineNumber: 41,
                                                 columnNumber: 17
-                                            }, this)
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/components/layout/Footer.js",
                                             lineNumber: 40,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                 href: "#",
@@ -339,24 +340,24 @@ const Footer = ()=>{
                                                 fileName: "[project]/components/layout/Footer.js",
                                                 lineNumber: 46,
                                                 columnNumber: 17
-                                            }, this)
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/components/layout/Footer.js",
                                             lineNumber: 45,
                                             columnNumber: 15
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/layout/Footer.js",
                                     lineNumber: 29,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/layout/Footer.js",
                             lineNumber: 27,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -366,7 +367,7 @@ const Footer = ()=>{
                                     fileName: "[project]/components/layout/Footer.js",
                                     lineNumber: 54,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-gray-400 mb-4",
                                     children: "Recevez nos actualités et événements"
@@ -374,7 +375,7 @@ const Footer = ()=>{
                                     fileName: "[project]/components/layout/Footer.js",
                                     lineNumber: 55,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex",
                                     children: [
@@ -386,7 +387,7 @@ const Footer = ()=>{
                                             fileName: "[project]/components/layout/Footer.js",
                                             lineNumber: 59,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             className: "bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition-colors",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
@@ -395,30 +396,30 @@ const Footer = ()=>{
                                                 fileName: "[project]/components/layout/Footer.js",
                                                 lineNumber: 65,
                                                 columnNumber: 17
-                                            }, this)
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/components/layout/Footer.js",
                                             lineNumber: 64,
                                             columnNumber: 15
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/layout/Footer.js",
                                     lineNumber: 58,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/layout/Footer.js",
                             lineNumber: 53,
                             columnNumber: 11
-                        }, this)
+                        }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/layout/Footer.js",
                     lineNumber: 8,
                     columnNumber: 9
-                }, this),
+                }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "border-t border-gray-800 mt-8 pt-8 text-center text-gray-400",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -427,23 +428,23 @@ const Footer = ()=>{
                         fileName: "[project]/components/layout/Footer.js",
                         lineNumber: 72,
                         columnNumber: 11
-                    }, this)
+                    }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/components/layout/Footer.js",
                     lineNumber: 71,
                     columnNumber: 9
-                }, this)
+                }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/layout/Footer.js",
             lineNumber: 7,
             columnNumber: 7
-        }, this)
+        }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/layout/Footer.js",
         lineNumber: 6,
         columnNumber: 5
-    }, this);
+    }, ("TURBOPACK compile-time value", void 0));
 };
 _c = Footer;
 const __TURBOPACK__default__export__ = Footer;
@@ -456,10 +457,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/components/sections/HeroSection.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -471,7 +472,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-const HeroSection = ({ scrollToSection })=>{
+const HeroSection = (param)=>{
+    let { scrollToSection } = param;
     const getIconComponent = (iconName)=>{
         const icons = {
             Shield: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"],
@@ -527,13 +529,13 @@ const HeroSection = ({ scrollToSection })=>{
                                         fileName: "[project]/components/sections/HeroSection.js",
                                         lineNumber: 35,
                                         columnNumber: 15
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sections/HeroSection.js",
                                 lineNumber: 33,
                                 columnNumber: 13
-                            }, this),
+                            }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-xl text-gray-700 mb-8 leading-relaxed",
                                 children: "Fédérer, représenter et accompagner les DSI algériens dans leurs missions stratégiques de transformation digitale et de gouvernance IT."
@@ -541,7 +543,7 @@ const HeroSection = ({ scrollToSection })=>{
                                 fileName: "[project]/components/sections/HeroSection.js",
                                 lineNumber: 41,
                                 columnNumber: 13
-                            }, this),
+                            }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex flex-col sm:flex-row gap-4",
                                 children: [
@@ -556,13 +558,13 @@ const HeroSection = ({ scrollToSection })=>{
                                                 fileName: "[project]/components/sections/HeroSection.js",
                                                 lineNumber: 53,
                                                 columnNumber: 17
-                                            }, this)
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sections/HeroSection.js",
                                         lineNumber: 48,
                                         columnNumber: 15
-                                    }, this),
+                                    }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         className: "border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300",
                                         onClick: ()=>scrollToSection("services"),
@@ -571,19 +573,19 @@ const HeroSection = ({ scrollToSection })=>{
                                         fileName: "[project]/components/sections/HeroSection.js",
                                         lineNumber: 55,
                                         columnNumber: 15
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sections/HeroSection.js",
                                 lineNumber: 47,
                                 columnNumber: 13
-                            }, this)
+                            }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/HeroSection.js",
                         lineNumber: 32,
                         columnNumber: 11
-                    }, this),
+                    }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "relative",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -599,7 +601,7 @@ const HeroSection = ({ scrollToSection })=>{
                                             fileName: "[project]/components/sections/HeroSection.js",
                                             lineNumber: 67,
                                             columnNumber: 17
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-2xl",
                                             children: "💼"
@@ -607,13 +609,13 @@ const HeroSection = ({ scrollToSection })=>{
                                             fileName: "[project]/components/sections/HeroSection.js",
                                             lineNumber: 70,
                                             columnNumber: 17
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/sections/HeroSection.js",
                                     lineNumber: 66,
                                     columnNumber: 15
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-4",
                                     children: expertiseAreas.map((item, index)=>{
@@ -630,7 +632,7 @@ const HeroSection = ({ scrollToSection })=>{
                                                             fileName: "[project]/components/sections/HeroSection.js",
                                                             lineNumber: 82,
                                                             columnNumber: 25
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "text-gray-700 font-medium",
                                                             children: item.title
@@ -638,13 +640,13 @@ const HeroSection = ({ scrollToSection })=>{
                                                             fileName: "[project]/components/sections/HeroSection.js",
                                                             lineNumber: 83,
                                                             columnNumber: 25
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/sections/HeroSection.js",
                                                     lineNumber: 81,
                                                     columnNumber: 23
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-lg",
                                                     children: item.icon
@@ -652,46 +654,46 @@ const HeroSection = ({ scrollToSection })=>{
                                                     fileName: "[project]/components/sections/HeroSection.js",
                                                     lineNumber: 87,
                                                     columnNumber: 23
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, index, true, {
                                             fileName: "[project]/components/sections/HeroSection.js",
                                             lineNumber: 77,
                                             columnNumber: 21
-                                        }, this);
+                                        }, ("TURBOPACK compile-time value", void 0));
                                     })
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/HeroSection.js",
                                     lineNumber: 73,
                                     columnNumber: 15
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/HeroSection.js",
                             lineNumber: 65,
                             columnNumber: 13
-                        }, this)
+                        }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/components/sections/HeroSection.js",
                         lineNumber: 64,
                         columnNumber: 11
-                    }, this)
+                    }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/sections/HeroSection.js",
                 lineNumber: 31,
                 columnNumber: 9
-            }, this)
+            }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/components/sections/HeroSection.js",
             lineNumber: 30,
             columnNumber: 7
-        }, this)
+        }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/sections/HeroSection.js",
         lineNumber: 26,
         columnNumber: 5
-    }, this);
+    }, ("TURBOPACK compile-time value", void 0));
 };
 _c = HeroSection;
 const __TURBOPACK__default__export__ = HeroSection;
@@ -704,10 +706,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/data/stats.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "stats": (()=>stats)
+    "stats": ()=>stats
 });
 const stats = [
     {
@@ -734,10 +736,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/components/sections/StatsSection.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -761,7 +763,7 @@ const StatsSection = ()=>{
                             fileName: "[project]/components/sections/StatsSection.js",
                             lineNumber: 9,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-blue-100",
                             children: "Accompagner l'excellence IT en Algérie"
@@ -769,13 +771,13 @@ const StatsSection = ()=>{
                             fileName: "[project]/components/sections/StatsSection.js",
                             lineNumber: 12,
                             columnNumber: 11
-                        }, this)
+                        }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/StatsSection.js",
                     lineNumber: 8,
                     columnNumber: 9
-                }, this),
+                }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid grid-cols-2 md:grid-cols-4 gap-8",
                     children: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$stats$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["stats"].map((stat, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -788,7 +790,7 @@ const StatsSection = ()=>{
                                     fileName: "[project]/components/sections/StatsSection.js",
                                     lineNumber: 19,
                                     columnNumber: 15
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-blue-100 text-lg font-medium",
                                     children: stat.label
@@ -796,29 +798,29 @@ const StatsSection = ()=>{
                                     fileName: "[project]/components/sections/StatsSection.js",
                                     lineNumber: 22,
                                     columnNumber: 15
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, index, true, {
                             fileName: "[project]/components/sections/StatsSection.js",
                             lineNumber: 18,
                             columnNumber: 13
-                        }, this))
+                        }, ("TURBOPACK compile-time value", void 0)))
                 }, void 0, false, {
                     fileName: "[project]/components/sections/StatsSection.js",
                     lineNumber: 16,
                     columnNumber: 9
-                }, this)
+                }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/sections/StatsSection.js",
             lineNumber: 7,
             columnNumber: 7
-        }, this)
+        }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/sections/StatsSection.js",
         lineNumber: 6,
         columnNumber: 5
-    }, this);
+    }, ("TURBOPACK compile-time value", void 0));
 };
 _c = StatsSection;
 const __TURBOPACK__default__export__ = StatsSection;
@@ -831,10 +833,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/data/services.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "services": (()=>services)
+    "services": ()=>services
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$network$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Network$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/network.js [app-client] (ecmascript) <export default as Network>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield.js [app-client] (ecmascript) <export default as Shield>");
@@ -870,10 +872,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/components/sections/ServicesSection.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -898,7 +900,7 @@ const ServicesSection = ()=>{
                             fileName: "[project]/components/sections/ServicesSection.js",
                             lineNumber: 9,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-xl text-gray-600 max-w-3xl mx-auto",
                             children: "Nous accompagnons les DSI et leurs équipes dans tous les aspects de la gouvernance et de la transformation digitale"
@@ -906,13 +908,13 @@ const ServicesSection = ()=>{
                             fileName: "[project]/components/sections/ServicesSection.js",
                             lineNumber: 12,
                             columnNumber: 11
-                        }, this)
+                        }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/ServicesSection.js",
                     lineNumber: 8,
                     columnNumber: 9
-                }, this),
+                }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid md:grid-cols-2 lg:grid-cols-4 gap-8",
                     children: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$services$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["services"].map((service, index)=>{
@@ -928,12 +930,12 @@ const ServicesSection = ()=>{
                                         fileName: "[project]/components/sections/ServicesSection.js",
                                         lineNumber: 27,
                                         columnNumber: 19
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/ServicesSection.js",
                                     lineNumber: 26,
                                     columnNumber: 17
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                     className: "text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-700 transition-colors",
                                     children: service.title
@@ -941,7 +943,7 @@ const ServicesSection = ()=>{
                                     fileName: "[project]/components/sections/ServicesSection.js",
                                     lineNumber: 29,
                                     columnNumber: 17
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-gray-600 leading-relaxed",
                                     children: service.description
@@ -949,7 +951,7 @@ const ServicesSection = ()=>{
                                     fileName: "[project]/components/sections/ServicesSection.js",
                                     lineNumber: 32,
                                     columnNumber: 17
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mt-4 pt-4 border-t border-gray-100",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -959,35 +961,35 @@ const ServicesSection = ()=>{
                                         fileName: "[project]/components/sections/ServicesSection.js",
                                         lineNumber: 36,
                                         columnNumber: 19
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/ServicesSection.js",
                                     lineNumber: 35,
                                     columnNumber: 17
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, index, true, {
                             fileName: "[project]/components/sections/ServicesSection.js",
                             lineNumber: 22,
                             columnNumber: 15
-                        }, this);
+                        }, ("TURBOPACK compile-time value", void 0));
                     })
                 }, void 0, false, {
                     fileName: "[project]/components/sections/ServicesSection.js",
                     lineNumber: 18,
                     columnNumber: 9
-                }, this)
+                }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/sections/ServicesSection.js",
             lineNumber: 7,
             columnNumber: 7
-        }, this)
+        }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/sections/ServicesSection.js",
         lineNumber: 6,
         columnNumber: 5
-    }, this);
+    }, ("TURBOPACK compile-time value", void 0));
 };
 _c = ServicesSection;
 const __TURBOPACK__default__export__ = ServicesSection;
@@ -1000,11 +1002,11 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/data/events.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "pastEvents": (()=>pastEvents),
-    "upcomingEvents": (()=>upcomingEvents)
+    "pastEvents": ()=>pastEvents,
+    "upcomingEvents": ()=>upcomingEvents
 });
 const upcomingEvents = [
     {
@@ -1089,11 +1091,11 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/components/ui/EventModal.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 // 📁 src/components/ui/EventModal.js
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -1107,7 +1109,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-const EventModal = ({ event, isOpen, onClose })=>{
+const EventModal = (param)=>{
+    let { event, isOpen, onClose } = param;
     if (!isOpen || !event) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4",
@@ -1126,12 +1129,12 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                 fileName: "[project]/components/ui/EventModal.js",
                                 lineNumber: 19,
                                 columnNumber: 13
-                            }, this)
+                            }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/components/ui/EventModal.js",
                             lineNumber: 15,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-start space-x-4",
                             children: [
@@ -1142,7 +1145,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                     fileName: "[project]/components/ui/EventModal.js",
                                     lineNumber: 23,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex-1",
                                     children: [
@@ -1156,7 +1159,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 26,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "text-gray-500 font-medium",
                                                     children: event.date
@@ -1164,13 +1167,13 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 29,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 25,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "text-3xl font-bold text-gray-900 mb-2",
                                             children: event.title
@@ -1178,7 +1181,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 31,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-gray-600 text-lg",
                                             children: event.description
@@ -1186,25 +1189,25 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 34,
                                             columnNumber: 15
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ui/EventModal.js",
                                     lineNumber: 24,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ui/EventModal.js",
                             lineNumber: 22,
                             columnNumber: 11
-                        }, this)
+                        }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ui/EventModal.js",
                     lineNumber: 14,
                     columnNumber: 9
-                }, this),
+                }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "p-6",
                     children: [
@@ -1221,7 +1224,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 44,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-start space-x-3",
                                             children: [
@@ -1231,7 +1234,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 49,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1241,7 +1244,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 51,
                                                             columnNumber: 19
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-gray-600",
                                                             children: event.location
@@ -1249,19 +1252,19 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 52,
                                                             columnNumber: 19
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 50,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 48,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-start space-x-3",
                                             children: [
@@ -1271,7 +1274,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 57,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1281,7 +1284,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 59,
                                                             columnNumber: 19
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-gray-600",
                                                             children: event.participants
@@ -1289,19 +1292,19 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 60,
                                                             columnNumber: 19
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 58,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 56,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-start space-x-3",
                                             children: [
@@ -1311,7 +1314,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 65,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1321,7 +1324,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 67,
                                                             columnNumber: 19
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-gray-600",
                                                             children: event.date
@@ -1329,19 +1332,19 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 68,
                                                             columnNumber: 19
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 66,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 64,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-start space-x-3",
                                             children: [
@@ -1351,7 +1354,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 73,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1361,7 +1364,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 75,
                                                             columnNumber: 19
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-gray-600",
                                                             children: "Journée complète (9h-17h)"
@@ -1369,25 +1372,25 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 76,
                                                             columnNumber: 19
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 74,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 72,
                                             columnNumber: 15
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ui/EventModal.js",
                                     lineNumber: 43,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "md:col-span-2",
                                     children: [
@@ -1398,7 +1401,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 83,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         event.title.includes("Forum") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-4",
                                             children: [
@@ -1411,7 +1414,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 91,
                                                             columnNumber: 21
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-gray-600 mb-4",
                                                             children: "Ce forum annuel réunit les DSI pour échanger sur les défis majeurs de la transformation digitale dans le contexte post-COVID. L'accent a été mis sur la résilience des SI et l'adaptation aux nouveaux modes de travail."
@@ -1419,13 +1422,13 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 94,
                                                             columnNumber: 21
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 90,
                                                     columnNumber: 19
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1435,7 +1438,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 103,
                                                             columnNumber: 21
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                                             className: "space-y-2 text-gray-600",
                                                             children: [
@@ -1448,14 +1451,14 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                                             fileName: "[project]/components/ui/EventModal.js",
                                                                             lineNumber: 108,
                                                                             columnNumber: 27
-                                                                        }, this),
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                                         " Conférence d'ouverture - \"L'IT post-pandémie\""
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 107,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: [
                                                                         "• ",
@@ -1465,14 +1468,14 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                                             fileName: "[project]/components/ui/EventModal.js",
                                                                             lineNumber: 112,
                                                                             columnNumber: 27
-                                                                        }, this),
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                                         ' Table ronde - "Télétravail et sécurité"'
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 111,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: [
                                                                         "• ",
@@ -1482,14 +1485,14 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                                             fileName: "[project]/components/ui/EventModal.js",
                                                                             lineNumber: 116,
                                                                             columnNumber: 27
-                                                                        }, this),
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                                         " Ateliers techniques - Cloud et cybersécurité"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 115,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: [
                                                                         "• ",
@@ -1499,26 +1502,26 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                                             fileName: "[project]/components/ui/EventModal.js",
                                                                             lineNumber: 120,
                                                                             columnNumber: 27
-                                                                        }, this),
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                                         " Session networking et conclusions"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 119,
                                                                     columnNumber: 23
-                                                                }, this)
+                                                                }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 106,
                                                             columnNumber: 21
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 102,
                                                     columnNumber: 19
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1528,7 +1531,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 127,
                                                             columnNumber: 21
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                                             className: "space-y-1 text-gray-600",
                                                             children: [
@@ -1538,53 +1541,53 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 131,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "• Adoption massive du télétravail"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 132,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "• Renforcement de la cybersécurité"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 133,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "• Migration vers le cloud"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 134,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "• Management d'équipes distribuées"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 135,
                                                                     columnNumber: 23
-                                                                }, this)
+                                                                }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 130,
                                                             columnNumber: 21
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 126,
                                                     columnNumber: 19
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 89,
                                             columnNumber: 17
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         event.title.includes("Cybersécurité") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-4",
                                             children: [
@@ -1597,7 +1600,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 144,
                                                             columnNumber: 21
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-gray-600 mb-4",
                                                             children: "Formation intensive sur les nouvelles réglementations RGPD et les meilleures pratiques de protection des données. L'atelier a couvert les aspects juridiques, techniques et organisationnels."
@@ -1605,13 +1608,13 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 147,
                                                             columnNumber: 21
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 143,
                                                     columnNumber: 19
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1621,7 +1624,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 156,
                                                             columnNumber: 21
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                                             className: "space-y-2 text-gray-600",
                                                             children: [
@@ -1634,14 +1637,14 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                                             fileName: "[project]/components/ui/EventModal.js",
                                                                             lineNumber: 161,
                                                                             columnNumber: 27
-                                                                        }, this),
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                                         " Cadre réglementaire RGPD"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 160,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: [
                                                                         "• ",
@@ -1651,14 +1654,14 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                                             fileName: "[project]/components/ui/EventModal.js",
                                                                             lineNumber: 164,
                                                                             columnNumber: 27
-                                                                        }, this),
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                                         " Analyse d'impact sur la vie privée"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 163,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: [
                                                                         "• ",
@@ -1668,14 +1671,14 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                                             fileName: "[project]/components/ui/EventModal.js",
                                                                             lineNumber: 168,
                                                                             columnNumber: 27
-                                                                        }, this),
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                                         " Mesures techniques de protection"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 167,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: [
                                                                         "• ",
@@ -1685,32 +1688,32 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                                             fileName: "[project]/components/ui/EventModal.js",
                                                                             lineNumber: 172,
                                                                             columnNumber: 27
-                                                                        }, this),
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                                         " Gestion des incidents de sécurité"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 171,
                                                                     columnNumber: 23
-                                                                }, this)
+                                                                }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 159,
                                                             columnNumber: 21
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 155,
                                                     columnNumber: 19
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 142,
                                             columnNumber: 17
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         event.title.includes("Cloud") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-4",
                                             children: [
@@ -1723,7 +1726,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 183,
                                                             columnNumber: 21
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-gray-600 mb-4",
                                                             children: "Table ronde sur les stratégies de migration vers le cloud pour les administrations publiques. Discussion sur les défis de souveraineté, sécurité et performance."
@@ -1731,13 +1734,13 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 186,
                                                             columnNumber: 21
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 182,
                                                     columnNumber: 19
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -1747,7 +1750,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 194,
                                                             columnNumber: 21
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                                             className: "space-y-1 text-gray-600",
                                                             children: [
@@ -1757,58 +1760,58 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 198,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "• Audit de sécurité obligatoire"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 199,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "• Formation des équipes IT"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 200,
                                                                     columnNumber: 23
-                                                                }, this),
+                                                                }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "• Plan de continuité adapté"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/ui/EventModal.js",
                                                                     lineNumber: 201,
                                                                     columnNumber: 23
-                                                                }, this)
+                                                                }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 197,
                                                             columnNumber: 21
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 193,
                                                     columnNumber: 19
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 181,
                                             columnNumber: 17
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ui/EventModal.js",
                                     lineNumber: 82,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ui/EventModal.js",
                             lineNumber: 41,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "border-t border-gray-200 pt-6",
                             children: [
@@ -1819,7 +1822,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                     fileName: "[project]/components/ui/EventModal.js",
                                     lineNumber: 211,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "grid md:grid-cols-2 gap-4",
                                     children: [
@@ -1832,7 +1835,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 216,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1842,7 +1845,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 218,
                                                             columnNumber: 19
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-sm text-gray-600",
                                                             children: "Expert en Cybersécurité - CERIST"
@@ -1850,19 +1853,19 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 219,
                                                             columnNumber: 19
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 217,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 215,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center space-x-3 p-4 bg-gray-50 rounded-lg",
                                             children: [
@@ -1872,7 +1875,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 225,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1882,7 +1885,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 227,
                                                             columnNumber: 19
-                                                        }, this),
+                                                        }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-sm text-gray-600",
                                                             children: "DSI Ministère de l'Intérieur"
@@ -1890,135 +1893,37 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                                             fileName: "[project]/components/ui/EventModal.js",
                                                             lineNumber: 228,
                                                             columnNumber: 19
-                                                        }, this)
+                                                        }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ui/EventModal.js",
                                                     lineNumber: 226,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ui/EventModal.js",
                                             lineNumber: 224,
                                             columnNumber: 15
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ui/EventModal.js",
                                     lineNumber: 214,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ui/EventModal.js",
                             lineNumber: 210,
                             columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "border-t border-gray-200 pt-6 mt-6",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-xl font-bold text-gray-900 mb-4",
-                                    children: "📎 Ressources et Documents"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/ui/EventModal.js",
-                                    lineNumber: 238,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "space-y-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "#",
-                                            className: "flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "📄"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ui/EventModal.js",
-                                                    lineNumber: 246,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "Présentation principale (PDF)"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ui/EventModal.js",
-                                                    lineNumber: 247,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/ui/EventModal.js",
-                                            lineNumber: 242,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "#",
-                                            className: "flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "📊"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ui/EventModal.js",
-                                                    lineNumber: 253,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "Résultats du sondage participants"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ui/EventModal.js",
-                                                    lineNumber: 254,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/ui/EventModal.js",
-                                            lineNumber: 249,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "#",
-                                            className: "flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "🎥"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ui/EventModal.js",
-                                                    lineNumber: 260,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    children: "Enregistrement de la conférence"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ui/EventModal.js",
-                                                    lineNumber: 261,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/ui/EventModal.js",
-                                            lineNumber: 256,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/ui/EventModal.js",
-                                    lineNumber: 241,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/ui/EventModal.js",
-                            lineNumber: 237,
-                            columnNumber: 11
-                        }, this)
+                        }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ui/EventModal.js",
                     lineNumber: 40,
                     columnNumber: 9
-                }, this),
+                }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "bg-gray-50 px-6 py-4 rounded-b-2xl",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2031,7 +1936,7 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                 fileName: "[project]/components/ui/EventModal.js",
                                 lineNumber: 270,
                                 columnNumber: 13
-                            }, this),
+                            }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: onClose,
                                 className: "bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors",
@@ -2040,29 +1945,29 @@ const EventModal = ({ event, isOpen, onClose })=>{
                                 fileName: "[project]/components/ui/EventModal.js",
                                 lineNumber: 273,
                                 columnNumber: 13
-                            }, this)
+                            }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ui/EventModal.js",
                         lineNumber: 269,
                         columnNumber: 11
-                    }, this)
+                    }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/components/ui/EventModal.js",
                     lineNumber: 268,
                     columnNumber: 9
-                }, this)
+                }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/ui/EventModal.js",
             lineNumber: 12,
             columnNumber: 7
-        }, this)
+        }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/ui/EventModal.js",
         lineNumber: 11,
         columnNumber: 5
-    }, this);
+    }, ("TURBOPACK compile-time value", void 0));
 };
 _c = EventModal;
 const __TURBOPACK__default__export__ = EventModal;
@@ -2075,11 +1980,11 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/components/sections/PastEventsCarousel.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 // 📁 src/components/sections/PastEventsCarousel.js - AVEC MODAL
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -2158,7 +2063,7 @@ const PastEventsCarousel = ()=>{
                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                     lineNumber: 55,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-xl text-gray-600",
                                     children: "Retour sur nos dernières conférences, formations et rencontres"
@@ -2166,13 +2071,13 @@ const PastEventsCarousel = ()=>{
                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                     lineNumber: 58,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/PastEventsCarousel.js",
                             lineNumber: 54,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "relative",
                             children: [
@@ -2181,7 +2086,7 @@ const PastEventsCarousel = ()=>{
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex transition-transform duration-500 ease-in-out",
                                         style: {
-                                            transform: `translateX(-${currentSlide * 100}%)`
+                                            transform: "translateX(-".concat(currentSlide * 100, "%)")
                                         },
                                         children: Array.from({
                                             length: totalSlides
@@ -2204,7 +2109,7 @@ const PastEventsCarousel = ()=>{
                                                                                 fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                                 lineNumber: 82,
                                                                                 columnNumber: 33
-                                                                            }, this),
+                                                                            }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                 className: "text-gray-500 font-medium",
                                                                                 children: event.date
@@ -2212,13 +2117,13 @@ const PastEventsCarousel = ()=>{
                                                                                 fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                                 lineNumber: 85,
                                                                                 columnNumber: 33
-                                                                            }, this)
+                                                                            }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                         lineNumber: 81,
                                                                         columnNumber: 31
-                                                                    }, this),
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "text-center mb-4",
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2228,12 +2133,12 @@ const PastEventsCarousel = ()=>{
                                                                             fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                             lineNumber: 91,
                                                                             columnNumber: 33
-                                                                        }, this)
+                                                                        }, ("TURBOPACK compile-time value", void 0))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                         lineNumber: 90,
                                                                         columnNumber: 31
-                                                                    }, this),
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                                         className: "text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors",
                                                                         children: event.title
@@ -2241,7 +2146,7 @@ const PastEventsCarousel = ()=>{
                                                                         fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                         lineNumber: 96,
                                                                         columnNumber: 31
-                                                                    }, this),
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                         className: "text-gray-600 text-sm mb-4 leading-relaxed",
                                                                         children: event.description
@@ -2249,7 +2154,7 @@ const PastEventsCarousel = ()=>{
                                                                         fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                         lineNumber: 100,
                                                                         columnNumber: 31
-                                                                    }, this),
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "space-y-2 text-sm text-gray-500 mb-4",
                                                                         children: [
@@ -2262,14 +2167,14 @@ const PastEventsCarousel = ()=>{
                                                                                         fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                                         lineNumber: 106,
                                                                                         columnNumber: 35
-                                                                                    }, this),
+                                                                                    }, ("TURBOPACK compile-time value", void 0)),
                                                                                     event.location
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                                 lineNumber: 105,
                                                                                 columnNumber: 33
-                                                                            }, this),
+                                                                            }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 className: "flex items-center",
                                                                                 children: [
@@ -2279,20 +2184,20 @@ const PastEventsCarousel = ()=>{
                                                                                         fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                                         lineNumber: 110,
                                                                                         columnNumber: 35
-                                                                                    }, this),
+                                                                                    }, ("TURBOPACK compile-time value", void 0)),
                                                                                     event.participants
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                                 lineNumber: 109,
                                                                                 columnNumber: 33
-                                                                            }, this)
+                                                                            }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                         lineNumber: 104,
                                                                         columnNumber: 31
-                                                                    }, this),
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "pt-4 border-t border-gray-100",
                                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2303,43 +2208,43 @@ const PastEventsCarousel = ()=>{
                                                                             fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                             lineNumber: 116,
                                                                             columnNumber: 33
-                                                                        }, this)
+                                                                        }, ("TURBOPACK compile-time value", void 0))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                         lineNumber: 115,
                                                                         columnNumber: 31
-                                                                    }, this)
+                                                                    }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                                 lineNumber: 80,
                                                                 columnNumber: 29
-                                                            }, this)
+                                                            }, ("TURBOPACK compile-time value", void 0))
                                                         }, index, false, {
                                                             fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                             lineNumber: 76,
                                                             columnNumber: 27
-                                                        }, this))
+                                                        }, ("TURBOPACK compile-time value", void 0)))
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                     lineNumber: 72,
                                                     columnNumber: 21
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             }, slideIndex, false, {
                                                 fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                 lineNumber: 71,
                                                 columnNumber: 19
-                                            }, this))
+                                            }, ("TURBOPACK compile-time value", void 0)))
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/PastEventsCarousel.js",
                                         lineNumber: 66,
                                         columnNumber: 15
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                     lineNumber: 65,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: prevSlide,
                                     className: "absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white shadow-lg rounded-full p-3 hover:bg-gray-50 transition-all duration-300 border group",
@@ -2349,12 +2254,12 @@ const PastEventsCarousel = ()=>{
                                         fileName: "[project]/components/sections/PastEventsCarousel.js",
                                         lineNumber: 137,
                                         columnNumber: 15
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                     lineNumber: 133,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: nextSlide,
                                     className: "absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white shadow-lg rounded-full p-3 hover:bg-gray-50 transition-all duration-300 border group",
@@ -2364,35 +2269,35 @@ const PastEventsCarousel = ()=>{
                                         fileName: "[project]/components/sections/PastEventsCarousel.js",
                                         lineNumber: 144,
                                         columnNumber: 15
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                     lineNumber: 140,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex justify-center mt-8 space-x-2",
                                     children: Array.from({
                                         length: totalSlides
                                     }).map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setCurrentSlide(index),
-                                            className: `w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index ? "bg-blue-600 scale-110" : "bg-gray-300 hover:bg-gray-400"}`
+                                            className: "w-3 h-3 rounded-full transition-all duration-300 ".concat(currentSlide === index ? "bg-blue-600 scale-110" : "bg-gray-300 hover:bg-gray-400")
                                         }, index, false, {
                                             fileName: "[project]/components/sections/PastEventsCarousel.js",
                                             lineNumber: 150,
                                             columnNumber: 17
-                                        }, this))
+                                        }, ("TURBOPACK compile-time value", void 0)))
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                     lineNumber: 148,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/PastEventsCarousel.js",
                             lineNumber: 63,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "mt-16 bg-white rounded-xl shadow-lg p-8 border",
                             children: [
@@ -2403,7 +2308,7 @@ const PastEventsCarousel = ()=>{
                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                     lineNumber: 165,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "grid grid-cols-2 md:grid-cols-4 gap-8",
                                     children: [
@@ -2417,7 +2322,7 @@ const PastEventsCarousel = ()=>{
                                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                     lineNumber: 170,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "text-gray-600",
                                                     children: "Événements organisés"
@@ -2425,13 +2330,13 @@ const PastEventsCarousel = ()=>{
                                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                     lineNumber: 171,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/sections/PastEventsCarousel.js",
                                             lineNumber: 169,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-center",
                                             children: [
@@ -2442,7 +2347,7 @@ const PastEventsCarousel = ()=>{
                                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                     lineNumber: 174,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "text-gray-600",
                                                     children: "Participants"
@@ -2450,13 +2355,13 @@ const PastEventsCarousel = ()=>{
                                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                     lineNumber: 177,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/sections/PastEventsCarousel.js",
                                             lineNumber: 173,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-center",
                                             children: [
@@ -2467,7 +2372,7 @@ const PastEventsCarousel = ()=>{
                                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                     lineNumber: 180,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "text-gray-600",
                                                     children: "Satisfaction"
@@ -2475,13 +2380,13 @@ const PastEventsCarousel = ()=>{
                                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                     lineNumber: 181,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/sections/PastEventsCarousel.js",
                                             lineNumber: 179,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-center",
                                             children: [
@@ -2492,7 +2397,7 @@ const PastEventsCarousel = ()=>{
                                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                     lineNumber: 184,
                                                     columnNumber: 17
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "text-gray-600",
                                                     children: "Experts intervenants"
@@ -2500,36 +2405,36 @@ const PastEventsCarousel = ()=>{
                                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                                     lineNumber: 185,
                                                     columnNumber: 17
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/sections/PastEventsCarousel.js",
                                             lineNumber: 183,
                                             columnNumber: 15
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                                     lineNumber: 168,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/PastEventsCarousel.js",
                             lineNumber: 164,
                             columnNumber: 11
-                        }, this)
+                        }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/PastEventsCarousel.js",
                     lineNumber: 53,
                     columnNumber: 9
-                }, this)
+                }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/components/sections/PastEventsCarousel.js",
                 lineNumber: 52,
                 columnNumber: 7
-            }, this),
+            }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$EventModal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 event: selectedEvent,
                 isOpen: isModalOpen,
@@ -2538,7 +2443,7 @@ const PastEventsCarousel = ()=>{
                 fileName: "[project]/components/sections/PastEventsCarousel.js",
                 lineNumber: 193,
                 columnNumber: 7
-            }, this)
+            }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true);
 };
@@ -2554,10 +2459,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/components/sections/AboutSection.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -2586,7 +2491,7 @@ const AboutSection = ()=>{
                                 fileName: "[project]/components/sections/AboutSection.js",
                                 lineNumber: 10,
                                 columnNumber: 13
-                            }, this),
+                            }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-lg text-gray-700 mb-6 leading-relaxed",
                                 children: "L'Association Nationale de la Promotion du Numérique en Algérie (ANAPNA) a été créée en 2008 pour répondre aux besoins croissants de professionnalisation et de structuration de la fonction DSI en Algérie."
@@ -2594,7 +2499,7 @@ const AboutSection = ()=>{
                                 fileName: "[project]/components/sections/AboutSection.js",
                                 lineNumber: 13,
                                 columnNumber: 13
-                            }, this),
+                            }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-lg text-gray-700 mb-8 leading-relaxed",
                                 children: "Nous réunissons les DSI des secteurs public et privé autour d'objectifs communs : partage d'expériences, veille technologique, formation continue et représentation auprès des instances décisionnelles."
@@ -2602,7 +2507,7 @@ const AboutSection = ()=>{
                                 fileName: "[project]/components/sections/AboutSection.js",
                                 lineNumber: 19,
                                 columnNumber: 13
-                            }, this),
+                            }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grid grid-cols-2 gap-6",
                                 children: [
@@ -2615,7 +2520,7 @@ const AboutSection = ()=>{
                                                 fileName: "[project]/components/sections/AboutSection.js",
                                                 lineNumber: 27,
                                                 columnNumber: 17
-                                            }, this),
+                                            }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "font-medium text-gray-900",
                                                 children: "Mission claire"
@@ -2623,13 +2528,13 @@ const AboutSection = ()=>{
                                                 fileName: "[project]/components/sections/AboutSection.js",
                                                 lineNumber: 28,
                                                 columnNumber: 17
-                                            }, this)
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sections/AboutSection.js",
                                         lineNumber: 26,
                                         columnNumber: 15
-                                    }, this),
+                                    }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center space-x-3",
                                         children: [
@@ -2639,7 +2544,7 @@ const AboutSection = ()=>{
                                                 fileName: "[project]/components/sections/AboutSection.js",
                                                 lineNumber: 33,
                                                 columnNumber: 17
-                                            }, this),
+                                            }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "font-medium text-gray-900",
                                                 children: "Réseau fort"
@@ -2647,13 +2552,13 @@ const AboutSection = ()=>{
                                                 fileName: "[project]/components/sections/AboutSection.js",
                                                 lineNumber: 34,
                                                 columnNumber: 17
-                                            }, this)
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sections/AboutSection.js",
                                         lineNumber: 32,
                                         columnNumber: 15
-                                    }, this),
+                                    }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center space-x-3",
                                         children: [
@@ -2663,7 +2568,7 @@ const AboutSection = ()=>{
                                                 fileName: "[project]/components/sections/AboutSection.js",
                                                 lineNumber: 37,
                                                 columnNumber: 17
-                                            }, this),
+                                            }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "font-medium text-gray-900",
                                                 children: "Expertise reconnue"
@@ -2671,13 +2576,13 @@ const AboutSection = ()=>{
                                                 fileName: "[project]/components/sections/AboutSection.js",
                                                 lineNumber: 38,
                                                 columnNumber: 17
-                                            }, this)
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sections/AboutSection.js",
                                         lineNumber: 36,
                                         columnNumber: 15
-                                    }, this),
+                                    }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center space-x-3",
                                         children: [
@@ -2687,7 +2592,7 @@ const AboutSection = ()=>{
                                                 fileName: "[project]/components/sections/AboutSection.js",
                                                 lineNumber: 43,
                                                 columnNumber: 17
-                                            }, this),
+                                            }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "font-medium text-gray-900",
                                                 children: "Confiance"
@@ -2695,25 +2600,25 @@ const AboutSection = ()=>{
                                                 fileName: "[project]/components/sections/AboutSection.js",
                                                 lineNumber: 44,
                                                 columnNumber: 17
-                                            }, this)
+                                            }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sections/AboutSection.js",
                                         lineNumber: 42,
                                         columnNumber: 15
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sections/AboutSection.js",
                                 lineNumber: 25,
                                 columnNumber: 13
-                            }, this)
+                            }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/AboutSection.js",
                         lineNumber: 9,
                         columnNumber: 11
-                    }, this),
+                    }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "relative",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2729,7 +2634,7 @@ const AboutSection = ()=>{
                                             fileName: "[project]/components/sections/AboutSection.js",
                                             lineNumber: 51,
                                             columnNumber: 17
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-3xl",
                                             children: "💼"
@@ -2737,13 +2642,13 @@ const AboutSection = ()=>{
                                             fileName: "[project]/components/sections/AboutSection.js",
                                             lineNumber: 54,
                                             columnNumber: 17
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/sections/AboutSection.js",
                                     lineNumber: 50,
                                     columnNumber: 15
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-6",
                                     children: [
@@ -2757,7 +2662,7 @@ const AboutSection = ()=>{
                                                     fileName: "[project]/components/sections/AboutSection.js",
                                                     lineNumber: 58,
                                                     columnNumber: 19
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-gray-600",
                                                     children: "Excellence et rigueur dans nos services et accompagnements"
@@ -2765,13 +2670,13 @@ const AboutSection = ()=>{
                                                     fileName: "[project]/components/sections/AboutSection.js",
                                                     lineNumber: 61,
                                                     columnNumber: 19
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/sections/AboutSection.js",
                                             lineNumber: 57,
                                             columnNumber: 17
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "p-4 rounded-lg bg-gray-50 border-l-4 border-gray-400",
                                             children: [
@@ -2782,7 +2687,7 @@ const AboutSection = ()=>{
                                                     fileName: "[project]/components/sections/AboutSection.js",
                                                     lineNumber: 66,
                                                     columnNumber: 19
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-gray-600",
                                                     children: "Échange d'expériences et mutualisation des bonnes pratiques"
@@ -2790,13 +2695,13 @@ const AboutSection = ()=>{
                                                     fileName: "[project]/components/sections/AboutSection.js",
                                                     lineNumber: 67,
                                                     columnNumber: 19
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/sections/AboutSection.js",
                                             lineNumber: 65,
                                             columnNumber: 17
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "p-4 rounded-lg bg-blue-50 border-l-4 border-blue-600",
                                             children: [
@@ -2807,7 +2712,7 @@ const AboutSection = ()=>{
                                                     fileName: "[project]/components/sections/AboutSection.js",
                                                     lineNumber: 72,
                                                     columnNumber: 19
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-gray-600",
                                                     children: "Veille technologique et anticipation des évolutions"
@@ -2815,13 +2720,13 @@ const AboutSection = ()=>{
                                                     fileName: "[project]/components/sections/AboutSection.js",
                                                     lineNumber: 73,
                                                     columnNumber: 19
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/sections/AboutSection.js",
                                             lineNumber: 71,
                                             columnNumber: 17
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "p-4 rounded-lg bg-gray-50 border-l-4 border-gray-400",
                                             children: [
@@ -2832,7 +2737,7 @@ const AboutSection = ()=>{
                                                     fileName: "[project]/components/sections/AboutSection.js",
                                                     lineNumber: 78,
                                                     columnNumber: 19
-                                                }, this),
+                                                }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-gray-600",
                                                     children: "Respect des normes et déontologie professionnelle"
@@ -2840,46 +2745,46 @@ const AboutSection = ()=>{
                                                     fileName: "[project]/components/sections/AboutSection.js",
                                                     lineNumber: 79,
                                                     columnNumber: 19
-                                                }, this)
+                                                }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/sections/AboutSection.js",
                                             lineNumber: 77,
                                             columnNumber: 17
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/sections/AboutSection.js",
                                     lineNumber: 56,
                                     columnNumber: 15
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/AboutSection.js",
                             lineNumber: 49,
                             columnNumber: 13
-                        }, this)
+                        }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/components/sections/AboutSection.js",
                         lineNumber: 48,
                         columnNumber: 11
-                    }, this)
+                    }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/sections/AboutSection.js",
                 lineNumber: 8,
                 columnNumber: 9
-            }, this)
+            }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/components/sections/AboutSection.js",
             lineNumber: 7,
             columnNumber: 7
-        }, this)
+        }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/sections/AboutSection.js",
         lineNumber: 6,
         columnNumber: 5
-    }, this);
+    }, ("TURBOPACK compile-time value", void 0));
 };
 _c = AboutSection;
 const __TURBOPACK__default__export__ = AboutSection;
@@ -2892,418 +2797,754 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/components/sections/ContactSection.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/styled-jsx/style.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/phone.js [app-client] (ecmascript) <export default as Phone>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-client] (ecmascript) <export default as CheckCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
+;
+var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
 const ContactSection = ()=>{
-    const handleSubmit = ()=>{
-        alert("Merci pour votre demande d'adhésion ! Nous vous recontacterons prochainement.");
+    _s();
+    const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        nom: "",
+        prenom: "",
+        email: "",
+        entreprise: "",
+        fonction: "",
+        motivations: ""
+    });
+    const [isSubmitting, setIsSubmitting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [showSuccess, setShowSuccess] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const handleInputChange = (e)=>{
+        const { name, value } = e.target;
+        setFormData((prev)=>({
+                ...prev,
+                [name]: value
+            }));
+    };
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        setIsSubmitting(true);
+        try {
+            const response = await fetch("/api/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+            const result = await response.json();
+            if (response.ok) {
+                setShowSuccess(true);
+                // Reset form
+                setFormData({
+                    nom: "",
+                    prenom: "",
+                    email: "",
+                    entreprise: "",
+                    fonction: "",
+                    motivations: ""
+                });
+                // Auto-hide après 8 secondes
+                setTimeout(()=>{
+                    setShowSuccess(false);
+                }, 8000);
+            } else {
+                throw new Error("Erreur ".concat(response.status, ": ").concat(result.message || "Erreur inconnue"));
+            }
+        } catch (error) {
+            console.error("Erreur complète:", error);
+            alert("Une erreur est survenue: ".concat(error.message));
+        } finally{
+            setIsSubmitting(false);
+        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "contact",
-        className: "py-20",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container mx-auto px-6",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-center mb-16",
+        className: "jsx-387b33cb2988464c" + " " + "py-20 relative",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "jsx-387b33cb2988464c" + " " + "container mx-auto px-6",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-387b33cb2988464c" + " " + "text-center mb-16",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "jsx-387b33cb2988464c" + " " + "text-4xl font-bold text-gray-900 mb-4",
+                                children: "Nous Contacter"
+                            }, void 0, false, {
+                                fileName: "[project]/components/sections/ContactSection.js",
+                                lineNumber: 73,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "jsx-387b33cb2988464c" + " " + "text-xl text-gray-600",
+                                children: "Rejoignez notre communauté de DSI et bénéficiez de notre réseau d'expertise"
+                            }, void 0, false, {
+                                fileName: "[project]/components/sections/ContactSection.js",
+                                lineNumber: 76,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/sections/ContactSection.js",
+                        lineNumber: 72,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-387b33cb2988464c" + " " + "grid lg:grid-cols-2 gap-16",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-387b33cb2988464c",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "jsx-387b33cb2988464c" + " " + "text-2xl font-bold text-gray-900 mb-8",
+                                        children: "Informations de Contact"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 84,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-387b33cb2988464c" + " " + "space-y-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "jsx-387b33cb2988464c" + " " + "flex items-start space-x-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "jsx-387b33cb2988464c" + " " + "w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                                            className: "w-6 h-6 text-blue-600"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/sections/ContactSection.js",
+                                                            lineNumber: 90,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 89,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "jsx-387b33cb2988464c",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                className: "jsx-387b33cb2988464c" + " " + "font-semibold text-gray-900",
+                                                                children: "Email"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                                lineNumber: 93,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "jsx-387b33cb2988464c" + " " + "text-gray-600",
+                                                                children: "contact@anapna.dz"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                                lineNumber: 94,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "jsx-387b33cb2988464c" + " " + "text-gray-600",
+                                                                children: "secretariat@anapna.dz"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                                lineNumber: 95,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 92,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 88,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "jsx-387b33cb2988464c" + " " + "flex items-start space-x-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "jsx-387b33cb2988464c" + " " + "w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                                            className: "w-6 h-6 text-blue-600"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/sections/ContactSection.js",
+                                                            lineNumber: 100,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 99,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "jsx-387b33cb2988464c",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                className: "jsx-387b33cb2988464c" + " " + "font-semibold text-gray-900",
+                                                                children: "Téléphone"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                                lineNumber: 103,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "jsx-387b33cb2988464c" + " " + "text-gray-600",
+                                                                children: "+213 21 XX XX XX"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                                lineNumber: 104,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "jsx-387b33cb2988464c" + " " + "text-gray-600",
+                                                                children: "+213 XXX XX XX XX"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                                lineNumber: 105,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 102,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 98,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "jsx-387b33cb2988464c" + " " + "flex items-start space-x-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "jsx-387b33cb2988464c" + " " + "w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
+                                                            className: "w-6 h-6 text-blue-600"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/sections/ContactSection.js",
+                                                            lineNumber: 110,
+                                                            columnNumber: 19
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 109,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "jsx-387b33cb2988464c",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                className: "jsx-387b33cb2988464c" + " " + "font-semibold text-gray-900",
+                                                                children: "Adresse"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                                lineNumber: 113,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "jsx-387b33cb2988464c" + " " + "text-gray-600",
+                                                                children: "Centre d'Affaires"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                                lineNumber: 114,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "jsx-387b33cb2988464c" + " " + "text-gray-600",
+                                                                children: "Alger Centre, Algérie"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                                lineNumber: 115,
+                                                                columnNumber: 19
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 112,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 108,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 87,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-387b33cb2988464c" + " " + "mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                className: "jsx-387b33cb2988464c" + " " + "font-bold text-gray-900 mb-3",
+                                                children: "Conditions d'adhésion"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 121,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                className: "jsx-387b33cb2988464c" + " " + "text-gray-700 space-y-2 text-sm",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "jsx-387b33cb2988464c",
+                                                        children: "• Fonction de DSI ou équivalent"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 125,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "jsx-387b33cb2988464c",
+                                                        children: "• Justificatif d'activité professionnelle"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 126,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "jsx-387b33cb2988464c",
+                                                        children: "• Recommandation de deux membres"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 127,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "jsx-387b33cb2988464c",
+                                                        children: "• Cotisation annuelle"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 128,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 124,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 120,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/sections/ContactSection.js",
+                                lineNumber: 83,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-387b33cb2988464c" + " " + "bg-white rounded-xl shadow-lg p-8 border",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "jsx-387b33cb2988464c" + " " + "text-2xl font-bold text-gray-900 mb-6",
+                                        children: "Demande d'adhésion"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 134,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                                        onSubmit: handleSubmit,
+                                        className: "jsx-387b33cb2988464c" + " " + "space-y-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "jsx-387b33cb2988464c" + " " + "grid grid-cols-2 gap-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                        type: "text",
+                                                        name: "nom",
+                                                        value: formData.nom,
+                                                        onChange: handleInputChange,
+                                                        placeholder: "Nom",
+                                                        required: true,
+                                                        className: "jsx-387b33cb2988464c" + " " + "border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 139,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                        type: "text",
+                                                        name: "prenom",
+                                                        value: formData.prenom,
+                                                        onChange: handleInputChange,
+                                                        placeholder: "Prénom",
+                                                        required: true,
+                                                        className: "jsx-387b33cb2988464c" + " " + "border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/ContactSection.js",
+                                                        lineNumber: 148,
+                                                        columnNumber: 17
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 138,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                type: "email",
+                                                name: "email",
+                                                value: formData.email,
+                                                onChange: handleInputChange,
+                                                placeholder: "Email professionnel",
+                                                required: true,
+                                                className: "jsx-387b33cb2988464c" + " " + "w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 158,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                type: "text",
+                                                name: "entreprise",
+                                                value: formData.entreprise,
+                                                onChange: handleInputChange,
+                                                placeholder: "Entreprise / Organisation",
+                                                required: true,
+                                                className: "jsx-387b33cb2988464c" + " " + "w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 167,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                type: "text",
+                                                name: "fonction",
+                                                value: formData.fonction,
+                                                onChange: handleInputChange,
+                                                placeholder: "Fonction actuelle",
+                                                required: true,
+                                                className: "jsx-387b33cb2988464c" + " " + "w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 176,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                                                rows: 4,
+                                                name: "motivations",
+                                                value: formData.motivations,
+                                                onChange: handleInputChange,
+                                                placeholder: "Motivations et expérience",
+                                                required: true,
+                                                className: "jsx-387b33cb2988464c" + " " + "w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors resize-none"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 185,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                type: "submit",
+                                                disabled: isSubmitting,
+                                                className: "jsx-387b33cb2988464c" + " " + "w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white py-3 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center space-x-2",
+                                                children: isSubmitting ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "jsx-387b33cb2988464c" + " " + "animate-spin rounded-full h-5 w-5 border-b-2 border-white"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/sections/ContactSection.js",
+                                                            lineNumber: 201,
+                                                            columnNumber: 21
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "jsx-387b33cb2988464c",
+                                                            children: "Envoi en cours..."
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/sections/ContactSection.js",
+                                                            lineNumber: 202,
+                                                            columnNumber: 21
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "jsx-387b33cb2988464c",
+                                                    children: "Envoyer la demande"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/sections/ContactSection.js",
+                                                    lineNumber: 205,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 194,
+                                                columnNumber: 15
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 137,
+                                        columnNumber: 13
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/sections/ContactSection.js",
+                                lineNumber: 133,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/sections/ContactSection.js",
+                        lineNumber: 82,
+                        columnNumber: 9
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/sections/ContactSection.js",
+                lineNumber: 71,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+            showSuccess && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "jsx-387b33cb2988464c" + " " + "fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50 backdrop-blur-sm",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "jsx-387b33cb2988464c" + " " + "bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 overflow-hidden transform animate-in slide-in-from-bottom-4 duration-300",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-4xl font-bold text-gray-900 mb-4",
-                            children: "Nous Contacter"
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "jsx-387b33cb2988464c" + " " + "bg-gradient-to-r from-green-500 to-emerald-600 px-6 py-4",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-387b33cb2988464c" + " " + "flex items-center justify-between",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-387b33cb2988464c" + " " + "flex items-center space-x-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "jsx-387b33cb2988464c" + " " + "bg-white bg-opacity-20 rounded-full p-1",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
+                                                    className: "w-8 h-8 text-white"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/sections/ContactSection.js",
+                                                    lineNumber: 222,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 221,
+                                                columnNumber: 19
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "jsx-387b33cb2988464c" + " " + "text-white font-bold text-lg",
+                                                children: "Demande envoyée !"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 224,
+                                                columnNumber: 19
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 220,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: ()=>setShowSuccess(false),
+                                        className: "jsx-387b33cb2988464c" + " " + "text-white hover:text-gray-200 transition-colors",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                            className: "w-6 h-6"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/sections/ContactSection.js",
+                                            lineNumber: 232,
+                                            columnNumber: 19
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 228,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/sections/ContactSection.js",
+                                lineNumber: 219,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/components/sections/ContactSection.js",
-                            lineNumber: 17,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-xl text-gray-600",
-                            children: "Rejoignez notre communauté de DSI et bénéficiez de notre réseau d'expertise"
+                            lineNumber: 218,
+                            columnNumber: 13
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "jsx-387b33cb2988464c" + " " + "p-6",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-387b33cb2988464c" + " " + "text-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-387b33cb2988464c" + " " + "mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                            className: "w-8 h-8 text-green-600"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/sections/ContactSection.js",
+                                            lineNumber: 241,
+                                            columnNumber: 19
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 240,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        className: "jsx-387b33cb2988464c" + " " + "text-xl font-semibold text-gray-900 mb-3",
+                                        children: [
+                                            "Merci ",
+                                            formData.nom ? "".concat(formData.nom) : "",
+                                            " !"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 244,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "jsx-387b33cb2988464c" + " " + "text-gray-600 mb-4 leading-relaxed",
+                                        children: [
+                                            "Votre demande d'adhésion à l'",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                className: "jsx-387b33cb2988464c",
+                                                children: "ANAPNA"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sections/ContactSection.js",
+                                                lineNumber: 249,
+                                                columnNumber: 48
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            " a été envoyée avec succès. Notre équipe va examiner votre candidature et vous recontactera prochainement."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 248,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-387b33cb2988464c" + " " + "bg-blue-50 rounded-lg p-4 mb-4",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "jsx-387b33cb2988464c" + " " + "text-sm text-blue-800",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                    className: "jsx-387b33cb2988464c",
+                                                    children: "Prochaines étapes :"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/sections/ContactSection.js",
+                                                    lineNumber: 256,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
+                                                    className: "jsx-387b33cb2988464c"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/sections/ContactSection.js",
+                                                    lineNumber: 257,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                "• Vérification de votre profil",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
+                                                    className: "jsx-387b33cb2988464c"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/sections/ContactSection.js",
+                                                    lineNumber: 259,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                "• Contact dans les 48h ouvrées",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
+                                                    className: "jsx-387b33cb2988464c"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/sections/ContactSection.js",
+                                                    lineNumber: 261,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                "• Procédure d'adhésion si éligible"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/sections/ContactSection.js",
+                                            lineNumber: 255,
+                                            columnNumber: 19
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 254,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: ()=>setShowSuccess(false),
+                                        className: "jsx-387b33cb2988464c" + " " + "w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105",
+                                        children: "Parfait !"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/sections/ContactSection.js",
+                                        lineNumber: 265,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/sections/ContactSection.js",
+                                lineNumber: 239,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/components/sections/ContactSection.js",
-                            lineNumber: 20,
-                            columnNumber: 11
-                        }, this)
+                            lineNumber: 238,
+                            columnNumber: 13
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "jsx-387b33cb2988464c" + " " + "h-1 bg-gray-200",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    animation: "shrink 8s linear forwards"
+                                },
+                                className: "jsx-387b33cb2988464c" + " " + "h-full bg-gradient-to-r from-green-500 to-emerald-600 animate-pulse"
+                            }, void 0, false, {
+                                fileName: "[project]/components/sections/ContactSection.js",
+                                lineNumber: 276,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
+                            fileName: "[project]/components/sections/ContactSection.js",
+                            lineNumber: 275,
+                            columnNumber: 13
+                        }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/ContactSection.js",
-                    lineNumber: 16,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid lg:grid-cols-2 gap-16",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-2xl font-bold text-gray-900 mb-8",
-                                    children: "Informations de Contact"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/sections/ContactSection.js",
-                                    lineNumber: 28,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "space-y-6",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-start space-x-4",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
-                                                        className: "w-6 h-6 text-blue-600"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/sections/ContactSection.js",
-                                                        lineNumber: 34,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 33,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                            className: "font-semibold text-gray-900",
-                                                            children: "Email"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/sections/ContactSection.js",
-                                                            lineNumber: 37,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-gray-600",
-                                                            children: "contact@anapna.dz"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/sections/ContactSection.js",
-                                                            lineNumber: 38,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-gray-600",
-                                                            children: "secretariat@anapna.dz"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/sections/ContactSection.js",
-                                                            lineNumber: 39,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 36,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/sections/ContactSection.js",
-                                            lineNumber: 32,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-start space-x-4",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                                        className: "w-6 h-6 text-blue-600"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/sections/ContactSection.js",
-                                                        lineNumber: 44,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 43,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                            className: "font-semibold text-gray-900",
-                                                            children: "Téléphone"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/sections/ContactSection.js",
-                                                            lineNumber: 47,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-gray-600",
-                                                            children: "+213 21 XX XX XX"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/sections/ContactSection.js",
-                                                            lineNumber: 48,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-gray-600",
-                                                            children: "+213 XXX XX XX XX"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/sections/ContactSection.js",
-                                                            lineNumber: 49,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 46,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/sections/ContactSection.js",
-                                            lineNumber: 42,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-start space-x-4",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                        className: "w-6 h-6 text-blue-600"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/sections/ContactSection.js",
-                                                        lineNumber: 54,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 53,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                            className: "font-semibold text-gray-900",
-                                                            children: "Adresse"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/sections/ContactSection.js",
-                                                            lineNumber: 57,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-gray-600",
-                                                            children: "Centre d'Affaires"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/sections/ContactSection.js",
-                                                            lineNumber: 58,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-gray-600",
-                                                            children: "Alger Centre, Algérie"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/sections/ContactSection.js",
-                                                            lineNumber: 59,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 56,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/sections/ContactSection.js",
-                                            lineNumber: 52,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/sections/ContactSection.js",
-                                    lineNumber: 31,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: "font-bold text-gray-900 mb-3",
-                                            children: "Conditions d'adhésion"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/sections/ContactSection.js",
-                                            lineNumber: 65,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                            className: "text-gray-700 space-y-2 text-sm",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• Fonction de DSI ou équivalent"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 69,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• Justificatif d'activité professionnelle"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 70,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• Recommandation de deux membres"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 71,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    children: "• Cotisation annuelle"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 72,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/sections/ContactSection.js",
-                                            lineNumber: 68,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/sections/ContactSection.js",
-                                    lineNumber: 64,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/sections/ContactSection.js",
-                            lineNumber: 27,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-white rounded-xl shadow-lg p-8 border",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-2xl font-bold text-gray-900 mb-6",
-                                    children: "Demande d'adhésion"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/sections/ContactSection.js",
-                                    lineNumber: 78,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "space-y-6",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "grid grid-cols-2 gap-4",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                    type: "text",
-                                                    placeholder: "Nom",
-                                                    className: "border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 83,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                    type: "text",
-                                                    placeholder: "Prénom",
-                                                    className: "border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/ContactSection.js",
-                                                    lineNumber: 88,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/sections/ContactSection.js",
-                                            lineNumber: 82,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: "email",
-                                            placeholder: "Email professionnel",
-                                            className: "w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/sections/ContactSection.js",
-                                            lineNumber: 94,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: "text",
-                                            placeholder: "Entreprise / Organisation",
-                                            className: "w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/sections/ContactSection.js",
-                                            lineNumber: 99,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: "text",
-                                            placeholder: "Fonction actuelle",
-                                            className: "w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/sections/ContactSection.js",
-                                            lineNumber: 104,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
-                                            rows: 4,
-                                            placeholder: "Motivations et expérience",
-                                            className: "w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors resize-none"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/sections/ContactSection.js",
-                                            lineNumber: 109,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            className: "w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300",
-                                            onClick: handleSubmit,
-                                            children: "Envoyer la demande"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/sections/ContactSection.js",
-                                            lineNumber: 114,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/sections/ContactSection.js",
-                                    lineNumber: 81,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/sections/ContactSection.js",
-                            lineNumber: 77,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/components/sections/ContactSection.js",
-                    lineNumber: 26,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/components/sections/ContactSection.js",
-            lineNumber: 15,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+                    lineNumber: 216,
+                    columnNumber: 11
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
+                fileName: "[project]/components/sections/ContactSection.js",
+                lineNumber: 215,
+                columnNumber: 9
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                id: "387b33cb2988464c",
+                children: "@keyframes shrink{0%{width:100%}to{width:0%}}.animate-in.jsx-387b33cb2988464c{animation:.3s ease-out slideIn}.slide-in-from-bottom-4.jsx-387b33cb2988464c{transform:translateY(1rem)}@keyframes slideIn{0%{opacity:0;transform:translateY(1rem)scale(.95)}to{opacity:1;transform:translateY(0)scale(1)}}"
+            }, void 0, false, void 0, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
         fileName: "[project]/components/sections/ContactSection.js",
-        lineNumber: 14,
+        lineNumber: 70,
         columnNumber: 5
-    }, this);
+    }, ("TURBOPACK compile-time value", void 0));
 };
+_s(ContactSection, "JLiItZwG6vSDq+b3GXKI2IEP6EQ=");
 _c = ContactSection;
 const __TURBOPACK__default__export__ = ContactSection;
 var _c;
@@ -3315,10 +3556,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/data/foundingMembers.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "foundingMembers": (()=>foundingMembers)
+    "foundingMembers": ()=>foundingMembers
 });
 const foundingMembers = [
     {
@@ -3419,10 +3660,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/components/sections/FoundingMembersSection.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -3431,7 +3672,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/linkedin.js [app-client] (ecmascript) <export default as Linkedin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/award.js [app-client] (ecmascript) <export default as Award>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.js [app-client] (ecmascript) <export default as Users>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$foundingMembers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/data/foundingMembers.js [app-client] (ecmascript)");
 ;
@@ -3501,7 +3741,7 @@ const FoundingMembersSection = ()=>{
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 62,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-4xl font-bold text-gray-900",
                                     children: "Membres Fondateurs"
@@ -3509,20 +3749,20 @@ const FoundingMembersSection = ()=>{
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 63,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
                                     className: "w-8 h-8 text-yellow-500 ml-3"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 66,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                             lineNumber: 61,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-xl text-gray-600 max-w-3xl mx-auto",
                             children: "Découvrez les visionnaires qui ont créé l'ANAPNA et qui continuent à façonner l'avenir du numérique en Algérie"
@@ -3530,7 +3770,7 @@ const FoundingMembersSection = ()=>{
                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                             lineNumber: 68,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "mt-4 flex items-center justify-center text-sm text-gray-500",
                             children: [
@@ -3540,7 +3780,7 @@ const FoundingMembersSection = ()=>{
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 73,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     children: [
                                         "Fondée en 2008 • ",
@@ -3551,19 +3791,19 @@ const FoundingMembersSection = ()=>{
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 74,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                             lineNumber: 72,
                             columnNumber: 11
-                        }, this)
+                        }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                     lineNumber: 60,
                     columnNumber: 9
-                }, this),
+                }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "relative",
                     children: [
@@ -3572,7 +3812,7 @@ const FoundingMembersSection = ()=>{
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex transition-transform duration-500 ease-in-out",
                                 style: {
-                                    transform: `translateX(-${currentSlide * 100}%)`
+                                    transform: "translateX(-".concat(currentSlide * 100, "%)")
                                 },
                                 children: Array.from({
                                     length: totalSlides
@@ -3597,12 +3837,12 @@ const FoundingMembersSection = ()=>{
                                                                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                             lineNumber: 102,
                                                                             columnNumber: 33
-                                                                        }, this)
+                                                                        }, ("TURBOPACK compile-time value", void 0))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                         lineNumber: 101,
                                                                         columnNumber: 31
-                                                                    }, this),
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center",
                                                                         children: [
@@ -3612,20 +3852,20 @@ const FoundingMembersSection = ()=>{
                                                                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                 lineNumber: 108,
                                                                                 columnNumber: 33
-                                                                            }, this),
+                                                                            }, ("TURBOPACK compile-time value", void 0)),
                                                                             "Fondateur"
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                         lineNumber: 107,
                                                                         columnNumber: 31
-                                                                    }, this)
+                                                                    }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                 lineNumber: 99,
                                                                 columnNumber: 29
-                                                            }, this),
+                                                            }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "p-6",
                                                                 children: [
@@ -3639,7 +3879,7 @@ const FoundingMembersSection = ()=>{
                                                                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                 lineNumber: 117,
                                                                                 columnNumber: 33
-                                                                            }, this),
+                                                                            }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                                 className: "text-blue-600 font-semibold text-sm mb-1",
                                                                                 children: member.position
@@ -3647,7 +3887,7 @@ const FoundingMembersSection = ()=>{
                                                                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                 lineNumber: 120,
                                                                                 columnNumber: 33
-                                                                            }, this),
+                                                                            }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                                 className: "text-gray-600 text-sm font-medium",
                                                                                 children: member.company
@@ -3655,13 +3895,13 @@ const FoundingMembersSection = ()=>{
                                                                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                 lineNumber: 123,
                                                                                 columnNumber: 33
-                                                                            }, this)
+                                                                            }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                         lineNumber: 116,
                                                                         columnNumber: 31
-                                                                    }, this),
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                         className: "text-gray-600 text-sm leading-relaxed mb-4",
                                                                         children: member.bio
@@ -3669,7 +3909,7 @@ const FoundingMembersSection = ()=>{
                                                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                         lineNumber: 129,
                                                                         columnNumber: 31
-                                                                    }, this),
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "mb-4",
                                                                         children: [
@@ -3680,7 +3920,7 @@ const FoundingMembersSection = ()=>{
                                                                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                 lineNumber: 135,
                                                                                 columnNumber: 33
-                                                                            }, this),
+                                                                            }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 className: "flex flex-wrap gap-1",
                                                                                 children: member.specialties.map((specialty, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3690,18 +3930,18 @@ const FoundingMembersSection = ()=>{
                                                                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                         lineNumber: 141,
                                                                                         columnNumber: 39
-                                                                                    }, this))
+                                                                                    }, ("TURBOPACK compile-time value", void 0)))
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                 lineNumber: 138,
                                                                                 columnNumber: 33
-                                                                            }, this)
+                                                                            }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                         lineNumber: 134,
                                                                         columnNumber: 31
-                                                                    }, this),
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "flex items-center space-x-3 pt-4 border-t border-gray-100",
                                                                         children: [
@@ -3716,14 +3956,14 @@ const FoundingMembersSection = ()=>{
                                                                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                     lineNumber: 160,
                                                                                     columnNumber: 35
-                                                                                }, this)
+                                                                                }, ("TURBOPACK compile-time value", void 0))
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                 lineNumber: 154,
                                                                                 columnNumber: 33
-                                                                            }, this),
+                                                                            }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                                href: `mailto:${member.email}`,
+                                                                                href: "mailto:".concat(member.email),
                                                                                 className: "flex items-center justify-center w-10 h-10 bg-gray-600 hover:bg-gray-700 text-white rounded-full transition-colors group/btn",
                                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
                                                                                     className: "w-4 h-4 group-hover/btn:scale-110 transition-transform"
@@ -3731,12 +3971,12 @@ const FoundingMembersSection = ()=>{
                                                                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                     lineNumber: 166,
                                                                                     columnNumber: 35
-                                                                                }, this)
+                                                                                }, ("TURBOPACK compile-time value", void 0))
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                 lineNumber: 162,
                                                                                 columnNumber: 33
-                                                                            }, this),
+                                                                            }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 className: "flex-1 text-right",
                                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3749,55 +3989,55 @@ const FoundingMembersSection = ()=>{
                                                                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                     lineNumber: 169,
                                                                                     columnNumber: 35
-                                                                                }, this)
+                                                                                }, ("TURBOPACK compile-time value", void 0))
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                                 lineNumber: 168,
                                                                                 columnNumber: 33
-                                                                            }, this)
+                                                                            }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                         lineNumber: 153,
                                                                         columnNumber: 31
-                                                                    }, this)
+                                                                    }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                                 lineNumber: 114,
                                                                 columnNumber: 29
-                                                            }, this)
+                                                            }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                         lineNumber: 97,
                                                         columnNumber: 27
-                                                    }, this)
+                                                    }, ("TURBOPACK compile-time value", void 0))
                                                 }, member.id, false, {
                                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                                     lineNumber: 96,
                                                     columnNumber: 25
-                                                }, this))
+                                                }, ("TURBOPACK compile-time value", void 0)))
                                         }, void 0, false, {
                                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                                             lineNumber: 89,
                                             columnNumber: 19
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     }, slideIndex, false, {
                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
                                         lineNumber: 88,
                                         columnNumber: 17
-                                    }, this))
+                                    }, ("TURBOPACK compile-time value", void 0)))
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/FoundingMembersSection.js",
                                 lineNumber: 83,
                                 columnNumber: 13
-                            }, this)
+                            }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                             lineNumber: 82,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         totalSlides > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3809,12 +4049,12 @@ const FoundingMembersSection = ()=>{
                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
                                         lineNumber: 191,
                                         columnNumber: 17
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 187,
                                     columnNumber: 15
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: nextSlide,
                                     className: "absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white shadow-xl rounded-full p-4 hover:bg-gray-50 transition-all duration-300 border group z-10",
@@ -3824,12 +4064,12 @@ const FoundingMembersSection = ()=>{
                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
                                         lineNumber: 198,
                                         columnNumber: 17
-                                    }, this)
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 194,
                                     columnNumber: 15
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true),
                         totalSlides > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3838,23 +4078,23 @@ const FoundingMembersSection = ()=>{
                                 length: totalSlides
                             }).map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>goToSlide(index),
-                                    className: `transition-all duration-300 ${currentSlide === index ? "w-8 h-3 bg-blue-600 rounded-full" : "w-3 h-3 bg-gray-300 hover:bg-gray-400 rounded-full"}`
+                                    className: "transition-all duration-300 ".concat(currentSlide === index ? "w-8 h-3 bg-blue-600 rounded-full" : "w-3 h-3 bg-gray-300 hover:bg-gray-400 rounded-full")
                                 }, index, false, {
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 207,
                                     columnNumber: 17
-                                }, this))
+                                }, ("TURBOPACK compile-time value", void 0)))
                         }, void 0, false, {
                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                             lineNumber: 205,
                             columnNumber: 13
-                        }, this)
+                        }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                     lineNumber: 81,
                     columnNumber: 9
-                }, this),
+                }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100",
                     children: [
@@ -3868,7 +4108,7 @@ const FoundingMembersSection = ()=>{
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 224,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-gray-600",
                                     children: "Leur vision continue d'inspirer notre communauté"
@@ -3876,13 +4116,13 @@ const FoundingMembersSection = ()=>{
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 227,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                             lineNumber: 223,
                             columnNumber: 11
-                        }, this),
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "grid grid-cols-2 md:grid-cols-4 gap-8",
                             children: [
@@ -3896,7 +4136,7 @@ const FoundingMembersSection = ()=>{
                                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                                             lineNumber: 234,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-gray-600 text-sm",
                                             children: "Année de fondation"
@@ -3904,13 +4144,13 @@ const FoundingMembersSection = ()=>{
                                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                                             lineNumber: 235,
                                             columnNumber: 15
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 233,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-center",
                                     children: [
@@ -3921,7 +4161,7 @@ const FoundingMembersSection = ()=>{
                                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                                             lineNumber: 238,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-gray-600 text-sm",
                                             children: "Membres fondateurs"
@@ -3929,13 +4169,13 @@ const FoundingMembersSection = ()=>{
                                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                                             lineNumber: 239,
                                             columnNumber: 15
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 237,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-center",
                                     children: [
@@ -3946,7 +4186,7 @@ const FoundingMembersSection = ()=>{
                                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                                             lineNumber: 242,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-gray-600 text-sm",
                                             children: "Ans d'expérience cumulée"
@@ -3954,13 +4194,13 @@ const FoundingMembersSection = ()=>{
                                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                                             lineNumber: 243,
                                             columnNumber: 15
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 241,
                                     columnNumber: 13
-                                }, this),
+                                }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "text-center",
                                     children: [
@@ -3971,7 +4211,7 @@ const FoundingMembersSection = ()=>{
                                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                                             lineNumber: 248,
                                             columnNumber: 15
-                                        }, this),
+                                        }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-gray-600 text-sm",
                                             children: "Toujours actifs"
@@ -3979,98 +4219,36 @@ const FoundingMembersSection = ()=>{
                                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                                             lineNumber: 249,
                                             columnNumber: 15
-                                        }, this)
+                                        }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                                     lineNumber: 247,
                                     columnNumber: 13
-                                }, this)
+                                }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/FoundingMembersSection.js",
                             lineNumber: 232,
                             columnNumber: 11
-                        }, this)
+                        }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/FoundingMembersSection.js",
                     lineNumber: 222,
                     columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mt-12 text-center",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white rounded-xl shadow-lg p-8 border border-gray-100",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
-                                className: "w-12 h-12 text-blue-600 mx-auto mb-4"
-                            }, void 0, false, {
-                                fileName: "[project]/components/sections/FoundingMembersSection.js",
-                                lineNumber: 257,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-xl font-bold text-gray-900 mb-2",
-                                children: "Rejoignez cette communauté d'excellence"
-                            }, void 0, false, {
-                                fileName: "[project]/components/sections/FoundingMembersSection.js",
-                                lineNumber: 258,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-gray-600 mb-6",
-                                children: "Suivez les traces de nos membres fondateurs et participez à l'évolution du numérique en Algérie"
-                            }, void 0, false, {
-                                fileName: "[project]/components/sections/FoundingMembersSection.js",
-                                lineNumber: 261,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: "bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: "Devenir membre"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/sections/FoundingMembersSection.js",
-                                        lineNumber: 266,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                                        className: "w-4 h-4 ml-2"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/sections/FoundingMembersSection.js",
-                                        lineNumber: 267,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/sections/FoundingMembersSection.js",
-                                lineNumber: 265,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/sections/FoundingMembersSection.js",
-                        lineNumber: 256,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/components/sections/FoundingMembersSection.js",
-                    lineNumber: 255,
-                    columnNumber: 9
-                }, this)
+                }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/sections/FoundingMembersSection.js",
             lineNumber: 58,
             columnNumber: 7
-        }, this)
+        }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/sections/FoundingMembersSection.js",
         lineNumber: 57,
         columnNumber: 5
-    }, this);
+    }, ("TURBOPACK compile-time value", void 0));
 };
 _s(FoundingMembersSection, "1KoUwhAZ1Z0A6H+qyhHeIg4H0hY=");
 _c = FoundingMembersSection;
@@ -4084,10 +4262,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/hooks/useScrollSpy.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$constants$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/utils/constants.js [app-client] (ecmascript)");
@@ -4146,10 +4324,10 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/app/page.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>Home)
+    "default": ()=>Home
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");

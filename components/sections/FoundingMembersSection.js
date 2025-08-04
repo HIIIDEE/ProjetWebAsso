@@ -252,7 +252,7 @@ const FoundingMembersSection = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
             <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -267,7 +267,7 @@ const FoundingMembersSection = () => {
               <ChevronRight className="w-4 h-4 ml-2" />
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
