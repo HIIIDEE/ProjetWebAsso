@@ -11,6 +11,8 @@ import {
   Star,
 } from "lucide-react";
 import { foundingMembers } from "@/data/foundingMembers";
+import { AnimatedCounter } from '@/components/ui/AnimatedCounter';
+
 
 const FoundingMembersSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -220,36 +222,51 @@ const FoundingMembersSection = () => {
 
         {/* Statistics Section */}
         <div className="mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">
-              L'Héritage des Fondateurs
-            </h3>
-            <p className="text-gray-600">
-              Leur vision continue d'inspirer notre communauté
-            </p>
-          </div>
+  <div className="text-center mb-8">
+    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+      L'Héritage des Fondateurs
+    </h3>
+    <p className="text-gray-600">
+      Leur vision continue d'inspirer notre communauté
+    </p>
+  </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">2008</div>
-              <div className="text-gray-600 text-sm">Année de fondation</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">6</div>
-              <div className="text-gray-600 text-sm">Membres fondateurs</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">150+</div>
-              <div className="text-gray-600 text-sm">
-                Ans d'expérience cumulée
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">100%</div>
-              <div className="text-gray-600 text-sm">Toujours actifs</div>
-            </div>
-          </div>
-        </div>
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div className="text-center group">
+      <div className="text-3xl font-bold text-blue-600 mb-2 transition-transform group-hover:scale-110 duration-300">
+        <AnimatedCounter end={2008} duration={2000} />
+      </div>
+      <div className="text-gray-600 text-sm">Année de fondation</div>
+      <div className="w-12 h-1 bg-blue-200 mx-auto mt-2 rounded-full group-hover:bg-blue-400 transition-colors duration-300"></div>
+    </div>
+    
+    <div className="text-center group">
+      <div className="text-3xl font-bold text-blue-600 mb-2 transition-transform group-hover:scale-110 duration-300">
+        <AnimatedCounter end={6} duration={1500} />
+      </div>
+      <div className="text-gray-600 text-sm">Membres fondateurs</div>
+      <div className="w-12 h-1 bg-blue-200 mx-auto mt-2 rounded-full group-hover:bg-blue-400 transition-colors duration-300"></div>
+    </div>
+    
+    <div className="text-center group">
+      <div className="text-3xl font-bold text-blue-600 mb-2 transition-transform group-hover:scale-110 duration-300">
+        <AnimatedCounter end={150} suffix="+" duration={2500} />
+      </div>
+      <div className="text-gray-600 text-sm">
+        Ans d'expérience cumulée
+      </div>
+      <div className="w-12 h-1 bg-blue-200 mx-auto mt-2 rounded-full group-hover:bg-blue-400 transition-colors duration-300"></div>
+    </div>
+    
+    <div className="text-center group">
+      <div className="text-3xl font-bold text-blue-600 mb-2 transition-transform group-hover:scale-110 duration-300">
+        <AnimatedCounter end={100} suffix="%" duration={2000} />
+      </div>
+      <div className="text-gray-600 text-sm">Toujours actifs</div>
+      <div className="w-12 h-1 bg-blue-200 mx-auto mt-2 rounded-full group-hover:bg-blue-400 transition-colors duration-300"></div>
+    </div>
+  </div>
+</div>
 
         {/* Call to Action */}
         {/* <div className="mt-12 text-center">
