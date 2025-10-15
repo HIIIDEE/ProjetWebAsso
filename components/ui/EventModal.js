@@ -46,7 +46,7 @@ const EventModal = ({ event, isOpen, onClose }) => {
               </h3>
 
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-blue-600 mt-1" />
+                <MapPin className="w-5 h-5 text-primary mt-1" />
                 <div>
                   <p className="font-medium text-gray-900">Lieu</p>
                   <p className="text-gray-600">{event.location}</p>
@@ -54,7 +54,7 @@ const EventModal = ({ event, isOpen, onClose }) => {
               </div>
 
               <div className="flex items-start space-x-3">
-                <Users className="w-5 h-5 text-blue-600 mt-1" />
+                <Users className="w-5 h-5 text-primary mt-1" />
                 <div>
                   <p className="font-medium text-gray-900">Participants</p>
                   <p className="text-gray-600">{event.participants}</p>
@@ -62,7 +62,7 @@ const EventModal = ({ event, isOpen, onClose }) => {
               </div>
 
               <div className="flex items-start space-x-3">
-                <Calendar className="w-5 h-5 text-blue-600 mt-1" />
+                <Calendar className="w-5 h-5 text-primary mt-1" />
                 <div>
                   <p className="font-medium text-gray-900">Date</p>
                   <p className="text-gray-600">{event.date}</p>
@@ -70,7 +70,7 @@ const EventModal = ({ event, isOpen, onClose }) => {
               </div>
 
               <div className="flex items-start space-x-3">
-                <Clock className="w-5 h-5 text-blue-600 mt-1" />
+                <Clock className="w-5 h-5 text-primary mt-1" />
                 <div>
                   <p className="font-medium text-gray-900">Durée</p>
                   <p className="text-gray-600">Journée complète (9h-17h)</p>
@@ -213,7 +213,7 @@ const EventModal = ({ event, isOpen, onClose }) => {
             </h3>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
-                <User className="w-10 h-10 text-blue-600" />
+                <User className="w-10 h-10 text-primary" />
                 <div>
                   <p className="font-medium text-gray-900">Dr. Ahmed Benali</p>
                   <p className="text-sm text-gray-600">
@@ -222,7 +222,7 @@ const EventModal = ({ event, isOpen, onClose }) => {
                 </div>
               </div>
               <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
-                <User className="w-10 h-10 text-blue-600" />
+                <User className="w-10 h-10 text-primary" />
                 <div>
                   <p className="font-medium text-gray-900">Sarah Khadra</p>
                   <p className="text-sm text-gray-600">
@@ -241,21 +241,21 @@ const EventModal = ({ event, isOpen, onClose }) => {
             <div className="space-y-2">
               <a
                 href="#"
-                className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors"
+                className="flex items-center space-x-2 text-primary hover:text-primary-dark transition-colors"
               >
                 <span>📄</span>
                 <span>Présentation principale (PDF)</span>
               </a>
               <a
                 href="#"
-                className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors"
+                className="flex items-center space-x-2 text-primary hover:text-primary-dark transition-colors"
               >
                 <span>📊</span>
                 <span>Résultats du sondage participants</span>
               </a>
               <a
                 href="#"
-                className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors"
+                className="flex items-center space-x-2 text-primary hover:text-primary-dark transition-colors"
               >
                 <span>🎥</span>
                 <span>Enregistrement de la conférence</span>
@@ -272,7 +272,7 @@ const EventModal = ({ event, isOpen, onClose }) => {
             </p>
             <button
               onClick={onClose}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors"
+              className="bg-primary hover:bg-primary text-white px-6 py-2 rounded-lg transition-colors"
             >
               Fermer
             </button>

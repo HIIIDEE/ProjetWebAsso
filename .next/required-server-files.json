@@ -10,6 +10,7 @@
       "ignoreBuildErrors": false,
       "tsconfigPath": "tsconfig.json"
     },
+    "typedRoutes": false,
     "distDir": ".next",
     "cleanDistDir": true,
     "assetPrefix": "",
@@ -46,7 +47,7 @@
         256,
         384
       ],
-      "path": "/_next/image",
+      "path": "/_next/image/",
       "loader": "default",
       "loaderFile": "",
       "domains": [],
@@ -59,7 +60,7 @@
       "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;",
       "contentDispositionType": "attachment",
       "remotePatterns": [],
-      "unoptimized": false
+      "unoptimized": true
     },
     "devIndicators": {
       "position": "bottom-left"
@@ -73,7 +74,7 @@
     },
     "basePath": "",
     "sassOptions": {},
-    "trailingSlash": false,
+    "trailingSlash": true,
     "i18n": null,
     "productionBrowserSourceMaps": false,
     "excludeDefaultMomentLocales": true,
@@ -86,8 +87,10 @@
       "keepAlive": true
     },
     "logging": {},
+    "compiler": {},
     "expireTime": 31536000,
     "staticPageGenerationTimeout": 60,
+    "output": "export",
     "modularizeImports": {
       "@mui/icons-material": {
         "transform": "@mui/icons-material/{{member}}"
@@ -96,9 +99,9 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\TogsO\\OneDrive\\Desktop\\ProjetWeb",
+    "outputFileTracingRoot": "C:\\Users\\IT\\Desktop\\Association\\ProjetWebAsso",
     "experimental": {
-      "nodeMiddleware": false,
+      "useSkewCookie": false,
       "cacheLife": {
         "default": {
           "stale": 300,
@@ -106,7 +109,7 @@
           "expire": 4294967294
         },
         "seconds": {
-          "stale": 0,
+          "stale": 30,
           "revalidate": 1,
           "expire": 60
         },
@@ -146,6 +149,8 @@
       "linkNoTouchStart": false,
       "caseSensitiveRoutes": false,
       "clientSegmentCache": false,
+      "clientParamParsing": false,
+      "dynamicOnHover": false,
       "preloadEntriesOnStart": true,
       "clientRouterFilter": true,
       "clientRouterFilterRedirects": false,
@@ -153,12 +158,13 @@
       "middlewarePrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 15,
+      "cpus": 7,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
       "imgOptMaxInputPixels": 268402689,
       "imgOptSequentialRead": null,
+      "imgOptSkipMetadata": null,
       "isrFlushToDisk": true,
       "workerThreads": false,
       "optimizeCss": false,
@@ -173,10 +179,6 @@
       "swcTraceProfiling": false,
       "forceSwcTransforms": false,
       "largePageDataBytes": 128000,
-      "turbo": {
-        "root": "C:\\Users\\TogsO\\OneDrive\\Desktop\\ProjetWeb"
-      },
-      "typedRoutes": false,
       "typedEnv": false,
       "parallelServerCompiles": false,
       "parallelServerBuildTraces": false,
@@ -184,8 +186,10 @@
       "authInterrupts": false,
       "webpackMemoryOptimizations": false,
       "optimizeServerReact": true,
-      "useEarlyImport": false,
       "viewTransition": false,
+      "routerBFCache": false,
+      "removeUncaughtErrorAndRejectionListeners": false,
+      "validateRSCRequestHeaders": false,
       "staleTimes": {
         "dynamic": 0,
         "static": 300
@@ -193,9 +197,14 @@
       "serverComponentsHmrCache": true,
       "staticGenerationMaxConcurrency": 8,
       "staticGenerationMinPagesPerWorker": 25,
-      "dynamicIO": false,
+      "cacheComponents": false,
       "inlineCss": false,
       "useCache": false,
+      "globalNotFound": false,
+      "devtoolSegmentExplorer": true,
+      "browserDebugInfoInTerminal": false,
+      "optimizeRouterScrolling": false,
+      "middlewareClientMaxBodySize": 10485760,
       "optimizePackageImports": [
         "lucide-react",
         "date-fns",
@@ -227,10 +236,10 @@
         "@effect/sql-mssql",
         "@effect/sql-mysql2",
         "@effect/sql-pg",
-        "@effect/sql-squlite-node",
-        "@effect/sql-squlite-bun",
-        "@effect/sql-squlite-wasm",
-        "@effect/sql-squlite-react-native",
+        "@effect/sql-sqlite-node",
+        "@effect/sql-sqlite-bun",
+        "@effect/sql-sqlite-wasm",
+        "@effect/sql-sqlite-react-native",
         "@effect/rpc",
         "@effect/rpc-http",
         "@effect/typeclass",
@@ -276,11 +285,14 @@
       "trustHostHeader": false,
       "isExperimentalCompile": false
     },
-    "htmlLimitedBots": "Mediapartners-Google|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview",
+    "htmlLimitedBots": "[\\w-]+-Google|Google-[\\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight",
     "bundlePagesRouterDependencies": false,
-    "configFileName": "next.config.ts"
+    "configFileName": "next.config.ts",
+    "turbopack": {
+      "root": "C:\\Users\\IT\\Desktop\\Association\\ProjetWebAsso"
+    }
   },
-  "appDir": "C:\\Users\\TogsO\\OneDrive\\Desktop\\ProjetWeb",
+  "appDir": "C:\\Users\\IT\\Desktop\\Association\\ProjetWebAsso",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",
@@ -299,7 +311,8 @@
     ".next\\server\\server-reference-manifest.json",
     ".next\\BUILD_ID",
     ".next\\server\\next-font-manifest.js",
-    ".next\\server\\next-font-manifest.json"
+    ".next\\server\\next-font-manifest.json",
+    ".next\\required-server-files.json"
   ],
   "ignore": [
     "node_modules\\next\\dist\\compiled\\@ampproject\\toolbox-optimizer\\**\\*"

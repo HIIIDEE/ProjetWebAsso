@@ -7,7 +7,6 @@ import {
   MapPin,
   Users,
   Mail,
-  Phone,
   Building,
   User,
   Check,
@@ -95,7 +94,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         {/* Header */}
-        <div className="relative p-6 border-b border-gray-200 bg-blue-50">
+        <div className="relative p-6 border-b border-gray-200 bg-primary-light/10">
           <button
             onClick={onClose}
             className="absolute top-4 right-4 p-2 hover:bg-white hover:bg-opacity-50 rounded-full transition-colors"
@@ -109,21 +108,21 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
               <h2 className="text-2xl font-bold text-gray-900 mb-2">
                 Inscription par Email
               </h2>
-              <h3 className="text-xl font-semibold text-blue-600 mb-3">
+              <h3 className="text-xl font-semibold text-primary mb-3">
                 {event.title}
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                 <div className="flex items-center space-x-2">
-                  <Calendar className="w-4 h-4 text-blue-600" />
+                  <Calendar className="w-4 h-4 text-primary" />
                   <span className="text-gray-600">{event.date}</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <MapPin className="w-4 h-4 text-blue-600" />
+                  <MapPin className="w-4 h-4 text-primary" />
                   <span className="text-gray-600">{event.location}</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Users className="w-4 h-4 text-blue-600" />
+                  <Users className="w-4 h-4 text-primary" />
                   <span className="text-gray-600">{event.type}</span>
                 </div>
               </div>
@@ -134,14 +133,14 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
         {/* Form Content */}
         <div className="p-6">
           {/* Information box */}
-          <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+          <div className="mb-6 p-4 bg-primary-light/10 border border-primary-light rounded-lg">
             <div className="flex items-start space-x-3">
-              <Mail className="w-5 h-5 text-blue-600 mt-0.5" />
+              <Mail className="w-5 h-5 text-primary mt-0.5" />
               <div>
-                <h4 className="font-semibold text-blue-900 mb-1">
+                <h4 className="font-semibold text-gray-dark mb-1">
                   💡 Comment ça fonctionne
                 </h4>
-                <p className="text-blue-800 text-sm">
+                <p className="text-primary-dark text-sm">
                   Remplissez le formulaire ci-dessous et cliquez sur "Envoyer
                   l'inscription". Votre client email s'ouvrira automatiquement
                   avec toutes vos informations pré-remplies. Il vous suffira de
@@ -192,7 +191,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
             {/* Informations personnelles */}
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                <User className="w-5 h-5 mr-2 text-blue-600" />
+                <User className="w-5 h-5 mr-2 text-primary" />
                 Informations personnelles
               </h4>
 
@@ -207,7 +206,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
                     value={formData.firstName}
                     onChange={handleInputChange}
                     required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-primary focus:outline-none transition-colors"
                     placeholder="Votre prénom"
                   />
                 </div>
@@ -222,7 +221,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
                     value={formData.lastName}
                     onChange={handleInputChange}
                     required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-primary focus:outline-none transition-colors"
                     placeholder="Votre nom"
                   />
                 </div>
@@ -239,7 +238,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-primary focus:outline-none transition-colors"
                     placeholder="votre.email@entreprise.com"
                   />
                 </div>
@@ -254,7 +253,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-primary focus:outline-none transition-colors"
                     placeholder="+213 XX XX XX XX"
                   />
                 </div>
@@ -264,7 +263,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
             {/* Informations professionnelles */}
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                <Building className="w-5 h-5 mr-2 text-blue-600" />
+                <Building className="w-5 h-5 mr-2 text-primary" />
                 Informations professionnelles
               </h4>
 
@@ -279,7 +278,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
                     value={formData.company}
                     onChange={handleInputChange}
                     required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-primary focus:outline-none transition-colors"
                     placeholder="Nom de votre organisation"
                   />
                 </div>
@@ -294,7 +293,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
                     value={formData.position}
                     onChange={handleInputChange}
                     required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-primary focus:outline-none transition-colors"
                     placeholder="DSI, Responsable IT, etc."
                   />
                 </div>
@@ -308,7 +307,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
                   name="experience"
                   value={formData.experience}
                   onChange={handleInputChange}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-primary focus:outline-none transition-colors"
                 >
                   <option value="">Sélectionnez votre expérience</option>
                   <option value="0-2 ans">0-2 ans</option>
@@ -337,7 +336,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
                     name="dietaryRestrictions"
                     value={formData.dietaryRestrictions}
                     onChange={handleInputChange}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-primary focus:outline-none transition-colors"
                     placeholder="Végétarien, sans gluten, allergies..."
                   />
                 </div>
@@ -351,7 +350,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
                     value={formData.motivation}
                     onChange={handleInputChange}
                     rows={3}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors resize-none"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-primary focus:outline-none transition-colors resize-none"
                     placeholder="Qu'espérez-vous retirer de cet événement ?"
                   />
                 </div>
@@ -367,7 +366,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
                 Vous pouvez aussi nous contacter directement à :
                 <a
                   href="mailto:contact@andsi.dz"
-                  className="text-blue-600 hover:text-blue-800 font-medium ml-1"
+                  className="text-primary hover:text-primary-dark font-medium ml-1"
                 >
                   contact@andsi.dz
                 </a>
@@ -387,7 +386,7 @@ const EventRegistrationModal = ({ event, isOpen, onClose }) => {
               <button
                 type="submit"
                 disabled={isSubmitting || submitStatus === "success"}
-                className="flex-1 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white py-3 px-6 rounded-lg transition-colors font-medium flex items-center justify-center"
+                className="flex-1 bg-primary hover:bg-primary disabled:bg-primary-light/50 text-white py-3 px-6 rounded-lg transition-colors font-medium flex items-center justify-center"
               >
                 {isSubmitting ? (
                   <>

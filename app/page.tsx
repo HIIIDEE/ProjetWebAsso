@@ -8,7 +8,6 @@ import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 import StatsSection from "@/components/sections/StatsSection";
 import ServicesSection from "@/components/sections/ServicesSection";
-import EventsSection from "@/components/sections/EventsSection";
 import PastEventsCarousel from "@/components/sections/PastEventsCarousel";
 import AboutSection from "@/components/sections/AboutSection";
 import ContactSection from "@/components/sections/ContactSection";

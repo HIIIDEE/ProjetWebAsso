@@ -21,19 +21,19 @@ const ServicesSection = () => {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border group hover:border-blue-300"
+                className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border group hover:border-primary-light"
               >
-                <div className="text-blue-600 mb-6 group-hover:scale-110 transition-transform">
+                <div className="text-primary mb-6 group-hover:scale-110 transition-transform">
                   <IconComponent className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-700 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
                   {service.description}
                 </p>
                 <div className="mt-4 pt-4 border-t border-gray-100">
-                  <span className="text-sm text-blue-600 font-medium">
+                  <span className="text-sm text-primary font-medium">
                     Service professionnel
                   </span>
                 </div>

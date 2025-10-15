@@ -24,23 +24,23 @@ const AboutSection = () => {
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="flex items-center space-x-3">
-                <Target className="w-6 h-6 text-blue-600" />
+                <Target className="w-6 h-6 text-primary" />
                 <span className="font-medium text-gray-900">
                   Mission claire
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Users className="w-6 h-6 text-blue-600" />
+                <Users className="w-6 h-6 text-primary" />
                 <span className="font-medium text-gray-900">Réseau fort</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Award className="w-6 h-6 text-blue-600" />
+                <Award className="w-6 h-6 text-primary" />
                 <span className="font-medium text-gray-900">
                   Expertise reconnue
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Shield className="w-6 h-6 text-blue-600" />
+                <Shield className="w-6 h-6 text-primary" />
                 <span className="font-medium text-gray-900">Confiance</span>
               </div>
             </div>
@@ -54,7 +54,7 @@ const AboutSection = () => {
                 <div className="text-3xl">💼</div>
               </div>
               <div className="space-y-6">
-                <div className="p-4 rounded-lg bg-blue-50 border-l-4 border-blue-600">
+                <div className="p-4 rounded-lg bg-primary-light/10 border-l-4 border-primary">
                   <h4 className="font-bold text-gray-900 mb-2">
                     Professionnalisme
                   </h4>
@@ -68,7 +68,7 @@ const AboutSection = () => {
                     Échange d'expériences et mutualisation des bonnes pratiques
                   </p>
                 </div>
-                <div className="p-4 rounded-lg bg-blue-50 border-l-4 border-blue-600">
+                <div className="p-4 rounded-lg bg-primary-light/10 border-l-4 border-primary">
                   <h4 className="font-bold text-gray-900 mb-2">Innovation</h4>
                   <p className="text-gray-600">
                     Veille technologique et anticipation des évolutions

@@ -15,7 +15,7 @@ const Input = ({
     "border rounded-lg px-4 py-3 focus:outline-none transition-colors w-full";
   const patrioticClasses = patriotic
     ? "border-green-300 focus:border-green-500"
-    : "border-gray-300 focus:border-blue-500";
+    : "border-gray-300 focus:border-primary";
 
   const inputClasses = `
     ${baseClasses}

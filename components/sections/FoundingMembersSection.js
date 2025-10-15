@@ -1,13 +1,12 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import {
   ChevronLeft,
   ChevronRight,
   Linkedin,
   Mail,
   Award,
-  Users,
   Star,
 } from "lucide-react";
 import { foundingMembers } from "@/data/foundingMembers";
@@ -37,9 +36,9 @@ const FoundingMembersSection = () => {
 
   const totalSlides = Math.ceil(foundingMembers.length / cardsPerView);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
-  };
+  }, [totalSlides]);
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
@@ -53,7 +52,7 @@ const FoundingMembersSection = () => {
   useEffect(() => {
     const interval = setInterval(nextSlide, 6000); // Change slide every 6 seconds
     return () => clearInterval(interval);
-  }, []);
+  }, [nextSlide]);
 
   return (
     <section className="py-20 bg-white">
@@ -96,12 +95,12 @@ const FoundingMembersSection = () => {
                       )
                       .map((member) => (
                         <div key={member.id} className="group">
-                          <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 overflow-hidden group-hover:scale-105">
+                          <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary-light overflow-hidden group-hover:scale-105">
                             {/* Photo Section */}
-                            <div className="relative h-64 bg-gradient-to-br from-blue-50 to-gray-100 overflow-hidden">
+                            <div className="relative h-64 bg-gradient-to-br from-primary-light/10 to-gray-light overflow-hidden">
                               {/* Placeholder pour photo - à remplacer par de vraies images */}
-                              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-100 to-gray-200">
-                                <div className="w-32 h-32 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center text-white text-4xl font-bold">
+                              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-light/20 to-gray-light">
+                                <div className="w-32 h-32 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center text-white text-4xl font-bold">
                                   {member.name.charAt(0)}
                                 </div>
                               </div>
@@ -116,10 +115,10 @@ const FoundingMembersSection = () => {
                             <div className="p-6">
                               {/* Name and Position */}
                               <div className="mb-4">
-                                <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
+                                <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors">
                                   {member.name}
                                 </h3>
-                                <p className="text-blue-600 font-semibold text-sm mb-1">
+                                <p className="text-primary font-semibold text-sm mb-1">
                                   {member.position}
                                 </p>
                                 <p className="text-gray-600 text-sm font-medium">
@@ -142,7 +141,7 @@ const FoundingMembersSection = () => {
                                     (specialty, index) => (
                                       <span
                                         key={index}
-                                        className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs font-medium"
+                                        className="bg-primary-light/10 text-primary px-2 py-1 rounded-full text-xs font-medium"
                                       >
                                         {specialty}
                                       </span>
@@ -157,7 +156,7 @@ const FoundingMembersSection = () => {
                                   href={member.linkedin}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-colors group/btn"
+                                  className="flex items-center justify-center w-10 h-10 bg-primary hover:bg-primary text-white rounded-full transition-colors group/btn"
                                 >
                                   <Linkedin className="w-4 h-4 group-hover/btn:scale-110 transition-transform" />
                                 </a>
@@ -190,14 +189,14 @@ const FoundingMembersSection = () => {
                 onClick={prevSlide}
                 className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white shadow-xl rounded-full p-4 hover:bg-gray-50 transition-all duration-300 border group z-10"
               >
-                <ChevronLeft className="w-6 h-6 text-gray-600 group-hover:text-blue-600 transition-colors" />
+                <ChevronLeft className="w-6 h-6 text-gray-600 group-hover:text-primary transition-colors" />
               </button>
 
               <button
                 onClick={nextSlide}
                 className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white shadow-xl rounded-full p-4 hover:bg-gray-50 transition-all duration-300 border group z-10"
               >
-                <ChevronRight className="w-6 h-6 text-gray-600 group-hover:text-blue-600 transition-colors" />
+                <ChevronRight className="w-6 h-6 text-gray-600 group-hover:text-primary transition-colors" />
               </button>
             </>
           )}
@@ -211,7 +210,7 @@ const FoundingMembersSection = () => {
                   onClick={() => goToSlide(index)}
                   className={`transition-all duration-300 ${
                     currentSlide === index
-                      ? "w-8 h-3 bg-blue-600 rounded-full"
+                      ? "w-8 h-3 bg-primary rounded-full"
                       : "w-3 h-3 bg-gray-300 hover:bg-gray-400 rounded-full"
                   }`}
                 />
@@ -221,7 +220,7 @@ const FoundingMembersSection = () => {
         </div>
 
         {/* Statistics Section */}
-        <div className="mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+        <div className="mt-16 bg-gradient-to-r from-primary-light/10 to-accent/10 rounded-2xl p-8 border border-primary-light/30">
   <div className="text-center mb-8">
     <h3 className="text-2xl font-bold text-gray-900 mb-2">
       L'Héritage des Fondateurs
@@ -233,37 +232,37 @@ const FoundingMembersSection = () => {
 
   <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
     <div className="text-center group">
-      <div className="text-3xl font-bold text-blue-600 mb-2 transition-transform group-hover:scale-110 duration-300">
+      <div className="text-3xl font-bold text-primary mb-2 transition-transform group-hover:scale-110 duration-300">
         <AnimatedCounter end={2008} duration={2000} />
       </div>
       <div className="text-gray-600 text-sm">Année de fondation</div>
-      <div className="w-12 h-1 bg-blue-200 mx-auto mt-2 rounded-full group-hover:bg-blue-400 transition-colors duration-300"></div>
+      <div className="w-12 h-1 bg-primary-light/30 mx-auto mt-2 rounded-full group-hover:bg-primary-light transition-colors duration-300"></div>
     </div>
     
     <div className="text-center group">
-      <div className="text-3xl font-bold text-blue-600 mb-2 transition-transform group-hover:scale-110 duration-300">
+      <div className="text-3xl font-bold text-primary mb-2 transition-transform group-hover:scale-110 duration-300">
         <AnimatedCounter end={6} duration={1500} />
       </div>
       <div className="text-gray-600 text-sm">Membres fondateurs</div>
-      <div className="w-12 h-1 bg-blue-200 mx-auto mt-2 rounded-full group-hover:bg-blue-400 transition-colors duration-300"></div>
+      <div className="w-12 h-1 bg-primary-light/30 mx-auto mt-2 rounded-full group-hover:bg-primary-light transition-colors duration-300"></div>
     </div>
     
     <div className="text-center group">
-      <div className="text-3xl font-bold text-blue-600 mb-2 transition-transform group-hover:scale-110 duration-300">
+      <div className="text-3xl font-bold text-primary mb-2 transition-transform group-hover:scale-110 duration-300">
         <AnimatedCounter end={150} suffix="+" duration={2500} />
       </div>
       <div className="text-gray-600 text-sm">
         Ans d'expérience cumulée
       </div>
-      <div className="w-12 h-1 bg-blue-200 mx-auto mt-2 rounded-full group-hover:bg-blue-400 transition-colors duration-300"></div>
+      <div className="w-12 h-1 bg-primary-light/30 mx-auto mt-2 rounded-full group-hover:bg-primary-light transition-colors duration-300"></div>
     </div>
     
     <div className="text-center group">
-      <div className="text-3xl font-bold text-blue-600 mb-2 transition-transform group-hover:scale-110 duration-300">
+      <div className="text-3xl font-bold text-primary mb-2 transition-transform group-hover:scale-110 duration-300">
         <AnimatedCounter end={100} suffix="%" duration={2000} />
       </div>
       <div className="text-gray-600 text-sm">Toujours actifs</div>
-      <div className="w-12 h-1 bg-blue-200 mx-auto mt-2 rounded-full group-hover:bg-blue-400 transition-colors duration-300"></div>
+      <div className="w-12 h-1 bg-primary-light/30 mx-auto mt-2 rounded-full group-hover:bg-primary-light transition-colors duration-300"></div>
     </div>
   </div>
 </div>
@@ -271,7 +270,7 @@ const FoundingMembersSection = () => {
         {/* Call to Action */}
         {/* <div className="mt-12 text-center">
           <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
-            <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+            <Users className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-xl font-bold text-gray-900 mb-2">
               Rejoignez cette communauté d'excellence
             </h3>
@@ -279,7 +278,7 @@ const FoundingMembersSection = () => {
               Suivez les traces de nos membres fondateurs et participez à
               l'évolution du numérique en Algérie
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center">
+            <button className="bg-primary hover:bg-primary text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center">
               <span>Devenir membre</span>
               <ChevronRight className="w-4 h-4 ml-2" />
             </button>

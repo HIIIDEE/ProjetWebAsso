@@ -35,24 +35,24 @@ const EventsSection = () => {
             {upcomingEvents.map((event, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden border hover:shadow-xl hover:border-blue-300 transition-all duration-300 group"
+                className="bg-white rounded-xl shadow-lg overflow-hidden border hover:shadow-xl hover:border-primary-light transition-all duration-300 group"
               >
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-primary-light/20 text-primary-dark px-3 py-1 rounded-full text-sm font-semibold">
                       {event.type}
                     </span>
-                    <span className="text-blue-600 font-bold text-lg">
+                    <span className="text-primary font-bold text-lg">
                       {event.date}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
                     {event.title}
                   </h3>
 
                   <div className="flex items-center text-gray-600 mb-6">
-                    <MapPin className="w-4 h-4 mr-2 text-blue-600" />
+                    <MapPin className="w-4 h-4 mr-2 text-primary" />
                     <span className="text-sm">{event.location}</span>
                   </div>
 
@@ -84,7 +84,7 @@ const EventsSection = () => {
 
                   <button
                     onClick={() => openRegistrationModal(event)}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg font-medium flex items-center justify-center group"
+                    className="w-full bg-primary hover:bg-primary text-white py-3 px-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg font-medium flex items-center justify-center group"
                   >
                     <span>S'inscrire maintenant</span>
                     <span className="ml-2 group-hover:translate-x-1 transition-transform">
@@ -97,12 +97,12 @@ const EventsSection = () => {
           </div>
 
           {/* Information supplémentaire */}
-          <div className="mt-12 bg-blue-50 rounded-xl p-8 border border-blue-200">
+          <div className="mt-12 bg-primary-light/10 rounded-xl p-8 border border-primary-light">
             <div className="text-center">
-              <h3 className="text-xl font-bold text-blue-900 mb-4">
+              <h3 className="text-xl font-bold text-gray-dark mb-4">
                 📅 Pourquoi participer aux événements ANAPNA ?
               </h3>
-              <div className="grid md:grid-cols-3 gap-6 text-sm text-blue-800">
+              <div className="grid md:grid-cols-3 gap-6 text-sm text-primary-dark">
                 <div className="flex flex-col items-center">
                   <div className="text-2xl mb-2">🎯</div>
                   <h4 className="font-semibold mb-1">Expertise de pointe</h4>
