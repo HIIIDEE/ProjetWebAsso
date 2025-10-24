@@ -48,6 +48,8 @@ const Header = ({ scrollY, activeSection, scrollToSection }) => {
                   width={80}
                   height={80}
                   className="w-full h-full object-contain"
+                  priority
+                  quality={95}
                 />
               </div>
 

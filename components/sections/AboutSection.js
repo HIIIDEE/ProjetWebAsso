@@ -3,11 +3,11 @@ import { Target, Users, Award, Shield } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="apropos" className="py-12 sm:py-16 md:py-20 bg-white">
+    <section id="apropos" className="py-12 sm:py-16 md:py-20 bg-white" aria-labelledby="about-heading">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">
+            <h2 id="about-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">
               À Propos de l'ANAPNA
             </h2>
             <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">

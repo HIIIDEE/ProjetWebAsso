@@ -12,7 +12,7 @@ import StatCard from '@/components/ui/StatCard';
 const FoundingMembersSection = () => {
 
   return (
-    <section className="py-20 bg-white">
+    <section id="membres" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">

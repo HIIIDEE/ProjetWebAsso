@@ -1,18 +1,27 @@
 // hooks/useScrollReveal.js
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useMemo } from 'react';
 
 export const useScrollReveal = (options = {}) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
+  // Mémoiser les options de l'observer pour éviter les re-créations
+  const observerOptions = useMemo(() => ({
+    threshold: options.threshold || 0.1,
+    rootMargin: options.rootMargin || '0px 0px -50px 0px'
+  }), [options.threshold, options.rootMargin]);
+
   useEffect(() => {
+    const currentRef = ref.current;
+    if (!currentRef) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Une fois visible, on peut arrêter d'observer
+          // Une fois visible, on peut arrêter d'observer pour économiser les ressources
           if (options.once !== false) {
             observer.unobserve(entry.target);
           }
@@ -20,76 +29,74 @@ export const useScrollReveal = (options = {}) => {
           setIsVisible(false);
         }
       },
-      {
-        threshold: options.threshold || 0.1,
-        rootMargin: options.rootMargin || '0px 0px -50px 0px'
-      }
+      observerOptions
     );
 
-    const currentRef = ref.current;
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
+    observer.observe(currentRef);
 
     return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
+      observer.unobserve(currentRef);
+      observer.disconnect();
     };
-  }, [options.threshold, options.rootMargin, options.once]);
+  }, [observerOptions, options.once]);
 
   return [ref, isVisible];
 };
 
-// Composant wrapper pour les animations
-export const RevealOnScroll = ({ 
-  children, 
-  animation = 'fadeInUp', 
+// Animations constantes (en dehors du composant pour éviter les re-créations)
+const ANIMATIONS = {
+  fadeInUp: {
+    initial: { opacity: 0, transform: 'translateY(30px)' },
+    animate: { opacity: 1, transform: 'translateY(0px)' }
+  },
+  fadeInDown: {
+    initial: { opacity: 0, transform: 'translateY(-30px)' },
+    animate: { opacity: 1, transform: 'translateY(0px)' }
+  },
+  fadeInLeft: {
+    initial: { opacity: 0, transform: 'translateX(-30px)' },
+    animate: { opacity: 1, transform: 'translateX(0px)' }
+  },
+  fadeInRight: {
+    initial: { opacity: 0, transform: 'translateX(30px)' },
+    animate: { opacity: 1, transform: 'translateX(0px)' }
+  },
+  scaleIn: {
+    initial: { opacity: 0, transform: 'scale(0.8)' },
+    animate: { opacity: 1, transform: 'scale(1)' }
+  },
+  slideInUp: {
+    initial: { opacity: 0, transform: 'translateY(50px)' },
+    animate: { opacity: 1, transform: 'translateY(0px)' }
+  }
+};
+
+// Composant wrapper pour les animations - Optimisé avec React.memo
+export const RevealOnScroll = ({
+  children,
+  animation = 'fadeInUp',
   delay = 0,
   duration = 0.6,
   className = '',
-  ...options 
+  ...options
 }) => {
   const [ref, isVisible] = useScrollReveal(options);
 
-  const animations = {
-    fadeInUp: {
-      initial: { opacity: 0, transform: 'translateY(30px)' },
-      animate: { opacity: 1, transform: 'translateY(0px)' }
-    },
-    fadeInDown: {
-      initial: { opacity: 0, transform: 'translateY(-30px)' },
-      animate: { opacity: 1, transform: 'translateY(0px)' }
-    },
-    fadeInLeft: {
-      initial: { opacity: 0, transform: 'translateX(-30px)' },
-      animate: { opacity: 1, transform: 'translateX(0px)' }
-    },
-    fadeInRight: {
-      initial: { opacity: 0, transform: 'translateX(30px)' },
-      animate: { opacity: 1, transform: 'translateX(0px)' }
-    },
-    scaleIn: {
-      initial: { opacity: 0, transform: 'scale(0.8)' },
-      animate: { opacity: 1, transform: 'scale(1)' }
-    },
-    slideInUp: {
-      initial: { opacity: 0, transform: 'translateY(50px)' },
-      animate: { opacity: 1, transform: 'translateY(0px)' }
-    }
-  };
+  const currentAnimation = ANIMATIONS[animation] || ANIMATIONS.fadeInUp;
 
-  const currentAnimation = animations[animation] || animations.fadeInUp;
+  // Mémoiser le style pour éviter les re-calculs
+  const animationStyle = useMemo(() => ({
+    ...currentAnimation.initial,
+    transition: `all ${duration}s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay}s`,
+    willChange: 'transform, opacity', // Optimisation GPU
+    ...(isVisible ? currentAnimation.animate : {})
+  }), [currentAnimation, duration, delay, isVisible]);
 
   return (
     <div
       ref={ref}
       className={className}
-      style={{
-        ...currentAnimation.initial,
-        transition: `all ${duration}s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay}s`,
-        ...(isVisible ? currentAnimation.animate : {})
-      }}
+      style={animationStyle}
     >
       {children}
     </div>

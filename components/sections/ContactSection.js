@@ -4,10 +4,10 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const ContactSection = () => {
 
   return (
-    <section id="contact" className="py-20 relative">
+    <section id="contact" className="py-20 relative" aria-labelledby="contact-heading">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 id="contact-heading" className="text-4xl font-bold text-gray-900 mb-4">
             Nous Contacter
           </h2>
           <p className="text-xl text-gray-600">
