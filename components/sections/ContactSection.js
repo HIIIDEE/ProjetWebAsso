@@ -77,6 +77,10 @@ const ContactSection = () => {
                 <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                 <p className="text-gray-700">Cotisation annuelle</p>
               </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
+                <p className="text-gray-700">Ne pas exercer d'activité commerciale IT</p>
+              </div>
             </div>
           </div>
         </div>

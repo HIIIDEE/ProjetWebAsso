@@ -1,28 +1,40 @@
-import { Network, Shield, Building, Award } from "lucide-react";
+import { TrendingUp, Users, Lightbulb, Shield, Network, Target } from "lucide-react";
 
 export const services = [
   {
-    icon: Network,
-    title: "Gouvernance IT",
+    icon: TrendingUp,
+    title: "Contribuer au succès de la digitalisation",
     description:
-      "Accompagnement dans la mise en place de frameworks de gouvernance et bonnes pratiques IT",
+      "Contribuer au succès du processus de digitalisation en Algérie",
+  },
+  {
+    icon: Users,
+    title: "Promouvoir la culture de la digitalisation",
+    description:
+      "Promouvoir une culture de digitalisation au sein de la société",
+  },
+  {
+    icon: Lightbulb,
+    title: "Proposer des solutions digitales efficaces",
+    description:
+      "Proposer des solutions digitales efficaces et adaptées aux besoins",
   },
   {
     icon: Shield,
-    title: "Cybersécurité",
+    title: "Développer et sécuriser les SI",
     description:
-      "Expertise et recommandations en matière de sécurité informatique et protection des données",
+      "Développer et sécuriser les systèmes d'information",
   },
   {
-    icon: Building,
-    title: "Transformation Digitale",
+    icon: Network,
+    title: "Échanger l'expertise",
     description:
-      "Stratégies et méthodologies pour la digitalisation des organisations publiques et privées",
+      "Échanger l'expertise entre les professionnels du secteur",
   },
   {
-    icon: Award,
-    title: "Certification & Formation",
+    icon: Target,
+    title: "Soutenir la stratégie nationale",
     description:
-      "Programmes de certification et formation continue pour les professionnels IT",
+      "Soutenir la stratégie nationale de transformation digitale",
   },
 ];
