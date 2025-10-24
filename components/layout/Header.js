@@ -39,16 +39,26 @@ const Header = ({ scrollY, activeSection, scrollToSection }) => {
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            {/* Logo avec animation au hover */}
-            <div className="flex items-center group cursor-pointer">
-              <div className="w-32 h-16 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+            {/* Logo simple */}
+            <div className="relative group cursor-pointer">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
                 <Image
-                  src="/logo_napddz.svg"
+                  src="/napdz_logo.png"
                   alt="Logo ANAPNA"
-                  width={128}
-                  height={64}
-                  className="w-full h-full object-contain transition-transform duration-300"
+                  width={80}
+                  height={80}
+                  className="w-full h-full object-contain"
                 />
+              </div>
+
+              {/* Texte en arabe centré à droite */}
+              <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 -right-3 translate-x-full px-4 items-center">
+                <span
+                  className="text-sm lg:text-base font-bold whitespace-nowrap leading-tight tracking-wide"
+                  style={{ color: '#006233' }}
+                >
+                  الجمعية الوطنية لترقية الرقمنة في الجزائر
+                </span>
               </div>
             </div>
 

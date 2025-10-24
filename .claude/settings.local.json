@@ -4,8 +4,15 @@
       "Bash(npm run lint)",
       "Bash(rm:*)",
       "Bash(npm install)",
-      "Bash(npm run export:*)"
+      "Bash(npm run export:*)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs",
+      "Bash(npm install:*)"
     ],
     "deny": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "context7"
+  ]
 }
