@@ -4,7 +4,7 @@
     "env": {},
     "webpack": null,
     "eslint": {
-      "ignoreDuringBuilds": true
+      "ignoreDuringBuilds": false
     },
     "typescript": {
       "ignoreBuildErrors": false,
@@ -24,7 +24,7 @@
       "jsx",
       "js"
     ],
-    "poweredByHeader": true,
+    "poweredByHeader": false,
     "compress": true,
     "images": {
       "deviceSizes": [
@@ -54,7 +54,8 @@
       "disableStaticImages": false,
       "minimumCacheTTL": 60,
       "formats": [
-        "image/webp"
+        "image/webp",
+        "image/avif"
       ],
       "dangerouslyAllowSVG": false,
       "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;",
@@ -87,7 +88,9 @@
       "keepAlive": true
     },
     "logging": {},
-    "compiler": {},
+    "compiler": {
+      "removeConsole": true
+    },
     "expireTime": 31536000,
     "staticPageGenerationTimeout": 60,
     "output": "export",
@@ -99,7 +102,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\IT\\Desktop\\Association\\ProjetWebAsso",
+    "outputFileTracingRoot": "C:\\Users\\TogsO\\OneDrive\\Desktop\\projet\\ProjetWebAsso",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -158,7 +161,7 @@
       "middlewarePrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 7,
+      "cpus": 15,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -207,6 +210,7 @@
       "middlewareClientMaxBodySize": 10485760,
       "optimizePackageImports": [
         "lucide-react",
+        "swiper",
         "date-fns",
         "lodash-es",
         "ramda",
@@ -289,10 +293,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "C:\\Users\\IT\\Desktop\\Association\\ProjetWebAsso"
+      "root": "C:\\Users\\TogsO\\OneDrive\\Desktop\\projet\\ProjetWebAsso"
     }
   },
-  "appDir": "C:\\Users\\IT\\Desktop\\Association\\ProjetWebAsso",
+  "appDir": "C:\\Users\\TogsO\\OneDrive\\Desktop\\projet\\ProjetWebAsso",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

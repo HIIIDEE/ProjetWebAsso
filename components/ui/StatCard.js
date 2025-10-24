@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const StatCard = ({ value, label, suffix = "", prefix = "", duration = 2000 }) => {
+const StatCard = ({ value, label, suffix = "", prefix = "" }) => {
   return (
     <div className="text-center group">
       <div className="text-3xl font-bold text-primary mb-2 transition-transform group-hover:scale-110 duration-300">
