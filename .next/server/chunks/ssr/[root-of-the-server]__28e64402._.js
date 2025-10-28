@@ -22,7 +22,7 @@ const NAVIGATION_ITEMS = [
         id: "accueil"
     },
     {
-        name: "Services",
+        name: "Nos Objectifs",
         id: "services"
     },
     // { name: "Événements", id: "evenements" },
@@ -540,7 +540,7 @@ const Footer = ()=>{
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-xs sm:text-sm text-gray-400",
                         children: [
-                            "© 2024 Association Nationale de la Promotion du Numérique en Algérie (ANAPNA).",
+                            "© 2025 Association Nationale de la Promotion du Numérique en Algérie (ANAPNA).",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "block sm:inline sm:ml-1",
                                 children: "Tous droits réservés."
@@ -3806,94 +3806,399 @@ __turbopack_context__.s([
 ]);
 const foundingMembers = [
     {
-        id: 1,
-        name: "Ahmed BENALI",
-        position: "Directeur des Systèmes d'Information",
-        company: "Sonatrach",
-        photo: "/images/members/ahmed-benali.jpg",
-        bio: "20 ans d'expérience dans la transformation digitale des grandes entreprises algériennes",
-        specialties: [
-            "Transformation Digitale",
-            "Gouvernance IT",
+        "id": 1,
+        "name": "RIAL Amel",
+        "position": "Assistante PDG chargée de la sécurité de l'information de l'entreprise ",
+        "company": "Entreprise publique ",
+        "photo": null,
+        "specialties": [
+            "Digitalisation",
+            "Cybersécurité",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+        "email": "Amel.RIAL@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 2,
+        "name": "Boumezrag hakim",
+        "position": "Chef de centre infra et telecoms",
+        "company": "Housing bank algeria",
+        "photo": null,
+        "specialties": [
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+        "email": "hakim.Boumezrag@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 3,
+        "name": "Ahmed charif ",
+        "position": "Chef de département informatique ",
+        "company": "Biskria ciment ",
+        "photo": null,
+        "specialties": [
             "Cybersécurité"
         ],
-        linkedin: "https://linkedin.com/in/ahmed-benali",
-        email: "a.benali@sonatrach.dz"
+        "linkedin": "https://www.linkedin.com/in/a-ch-445aa1229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "email": "charif.Ahmed@anpna.dz",
+        "status": "Membre fondateur"
     },
     {
-        id: 2,
-        name: "Fatima KHEDRI",
-        position: "DSI",
-        company: "Ministère de l'Intérieur",
-        photo: "/images/members/fatima-khedri.jpg",
-        bio: "Experte en sécurité informatique et modernisation des services publics",
-        specialties: [
-            "Cybersécurité",
-            "Administration Publique",
-            "E-gouvernement"
-        ],
-        linkedin: "https://linkedin.com/in/fatima-khedri",
-        email: "f.khedri@interieur.gov.dz"
-    },
-    {
-        id: 3,
-        name: "Mohamed SAIDI",
-        position: "Directeur Technique",
-        company: "Algérie Télécom",
-        photo: "/images/members/mohamed-saidi.jpg",
-        bio: "Pionnier des télécommunications et de l'infrastructure réseau en Algérie",
-        specialties: [
-            "Télécommunications",
-            "Infrastructure",
-            "Cloud Computing"
-        ],
-        linkedin: "https://linkedin.com/in/mohamed-saidi",
-        email: "m.saidi@at.dz"
-    },
-    {
-        id: 4,
-        name: "Sarah BOUDJEMAA",
-        position: "Chief Information Officer",
-        company: "Banque Nationale d'Algérie",
-        photo: "/images/members/sarah-boudjemaa.jpg",
-        bio: "Spécialiste en transformation digitale bancaire et fintech",
-        specialties: [
-            "Fintech",
-            "Banking IT",
-            "Innovation"
-        ],
-        linkedin: "https://linkedin.com/in/sarah-boudjemaa",
-        email: "s.boudjemaa@bna.dz"
-    },
-    {
-        id: 5,
-        name: "Karim MEZIANI",
-        position: "Directeur IT",
-        company: "Groupe Cevital",
-        photo: "/images/members/karim-meziani.jpg",
-        bio: "Expert en systèmes industriels et ERP pour les grandes entreprises",
-        specialties: [
+        "id": 4,
+        "name": "Yahiaoui Adil",
+        "position": "Chef de département S.I",
+        "company": "SPA Biskria Ciment",
+        "photo": null,
+        "specialties": [
             "ERP",
-            "Systèmes Industriels",
-            "Business Intelligence"
+            "Business Intelligence",
+            "Digitalisation",
+            "Management"
         ],
-        linkedin: "https://linkedin.com/in/karim-meziani",
-        email: "k.meziani@cevital.com"
+        "linkedin": "https://www.linkedin.com/in/adil-yahiaoui-07028a62/",
+        "email": "Adil.Yahiaoui@anpna.dz",
+        "status": "Membre fondateur"
     },
     {
-        id: 6,
-        name: "Aicha TALEB",
-        position: "DSI",
-        company: "Université USTHB",
-        photo: "/images/members/aicha-taleb.jpg",
-        bio: "Pionnière de la digitalisation de l'enseignement supérieur en Algérie",
-        specialties: [
-            "EdTech",
-            "E-learning",
-            "Recherche & Développement"
+        "id": 5,
+        "name": "Naceur boukaaza ",
+        "position": "Chef service  IT ",
+        "company": "Sonatrach ",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Systèmes industriels",
+            "Digitalisation",
+            "Cybersécurité",
+            "Management"
         ],
-        linkedin: "https://linkedin.com/in/aicha-taleb",
-        email: "a.taleb@usthb.dz"
+        "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+        "email": "Naceur.boukaaza@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 6,
+        "name": "Slimani Oussama",
+        "position": "DGA IT @ Banque Digitale",
+        "company": "Banque Nationale de l'Habitat",
+        "photo": null,
+        "specialties": [
+            "Digitalisation",
+            "Cybersécurité",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/slimani-oussama-517a1327?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        "email": "Oussama.Slimani@anpna.dz",
+        "status": "Vice-président 1er"
+    },
+    {
+        "id": 7,
+        "name": "BERKOUN MASSINISSA",
+        "position": "DIRECTEUR DES SYSTEMES D'INFORMATION",
+        "company": "MAGPHARM LABORATOIRE",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Business Intelligence",
+            "Digitalisation",
+            "Cybersécurité",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/massinissa-berkoun",
+        "email": "MASSINISSA.BERKOUN@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 8,
+        "name": "MOKRANE Abdelkarim",
+        "position": "Directeur des Systèmes d'Information",
+        "company": "PalmaryFood",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Systèmes industriels",
+            "Business Intelligence",
+            "Digitalisation",
+            "Cybersécurité",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+        "email": "Abdelkarim.MOKRANE@anpna.dz",
+        "status": "Vice-président 2ᵉ"
+    },
+    {
+        "id": 9,
+        "name": "TLILANI FAYCAL",
+        "position": "Directeur des sytèmes d'information",
+        "company": "Université Emir Abdelkader de Constantine",
+        "photo": null,
+        "specialties": [
+            "Digitalisation",
+            "Cybersécurité",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/faycal-tlilani-a633736/",
+        "email": "FAYCAL.TLILANI@anpna.dz",
+        "status": "Président"
+    },
+    {
+        "id": 10,
+        "name": "BENISSAD Rachid",
+        "position": "Directeur Technologies de la Communication et de l'Information",
+        "company": "ENAFOR",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Digitalisation",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+        "email": "Rachid.BENISSAD@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 11,
+        "name": "ZEKRI Amar",
+        "position": "Dsi",
+        "company": "ctc",
+        "photo": null,
+        "specialties": [
+            "Digitalisation",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/amar-zekri-531538177/",
+        "email": "Amar.ZEKRI@anpna.dz",
+        "status": "Secrétaire général adjoint"
+    },
+    {
+        "id": 12,
+        "name": "MERABET Djebar",
+        "position": "DSI",
+        "company": "SPA Tchin-Lait",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Digitalisation",
+            "Cybersécurité",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/djebar-merabet-508521175",
+        "email": "Djebar.MERABET@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 13,
+        "name": "Bengherabi Abdelkhabir",
+        "position": "DSI",
+        "company": "FALAIT SPA",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/abdelkhabir-bengherabi-2b560b49?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "email": "Abdelkhabir.Bengherabi@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 14,
+        "name": "SETIFI  ABDELHAKIM",
+        "position": "DSI",
+        "company": "Algérienne des Eaux(ADE)",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Business Intelligence",
+            "Digitalisation",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+        "email": "ABDELHAKIM.SETIFI@anpna.dz",
+        "status": "Trésorier"
+    },
+    {
+        "id": 15,
+        "name": "BENOTMANE MOHCENE",
+        "position": "DSI",
+        "company": "UNIVERSITE CONSTANTINE 1 FRERES MENTOURI",
+        "photo": null,
+        "specialties": [
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/mohc%C3%A8ne-benotmane-0895b6108?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "email": "MOHCENE.BENOTMANE@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 16,
+        "name": "Karim LAGGOUN ",
+        "position": "DSI - DIRECTEUR de projet SAP ",
+        "company": "Les laboratoires Frater Razes",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Systèmes industriels",
+            "Business Intelligence",
+            "Digitalisation",
+            "Cybersécurité",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/karim-laggoun-5819a765/",
+        "email": "Karim.LAGGOUN@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 17,
+        "name": "Belharchaoui Nour el houda ",
+        "position": "Ingénieur en informatique ",
+        "company": "ANRH",
+        "photo": null,
+        "specialties": [
+            "Digitalisation",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+        "email": "Nour .Belharchaoui@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 18,
+        "name": "Gilas adel",
+        "position": "IT",
+        "company": "AZ hotels",
+        "photo": null,
+        "specialties": [
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+        "email": "adel.Gilas@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 19,
+        "name": "Kelaiaia Oualid",
+        "position": "IT Manager",
+        "company": "IRIS",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Systèmes industriels",
+            "Digitalisation",
+            "Cybersécurité",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/oualidkelaiaia/",
+        "email": "Oualid.Kelaiaia@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 20,
+        "name": "ATHAMENA Sif Eddine",
+        "position": "IT Manager",
+        "company": "SPA Biogenal Pharma",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Systèmes industriels",
+            "Digitalisation",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/sif-eddine-athamena",
+        "email": "SifEddine .ATHAMENA@anpna.dz",
+        "status": "Trésorier adjoint"
+    },
+    {
+        "id": 21,
+        "name": "NOURI Mohamed",
+        "position": "IT Manager",
+        "company": "METAL STRUCTURE SPA",
+        "photo": null,
+        "specialties": [
+            "Systèmes industriels",
+            "Digitalisation",
+            "Cybersécurité"
+        ],
+        "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+        "email": "Mohamed.NOURI@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 22,
+        "name": "ZENATI SAMI",
+        "position": "IT Manager",
+        "company": "HB-Tech",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Digitalisation",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/zenati-sami-8289358",
+        "email": "SAMI.ZENATI@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 23,
+        "name": "Atef BEN CHARIF ",
+        "position": "IT Manager ",
+        "company": "Miniros ",
+        "photo": null,
+        "specialties": [
+            "Digitalisation",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/atefbencharif",
+        "email": "Atef.BENCHARIF@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 24,
+        "name": "DJAFFER SALIM",
+        "position": "REPONSABLE SYSTELE D'INFORMATION",
+        "company": "GHAZAL GPL",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Digitalisation",
+            "IA"
+        ],
+        "linkedin": "https://www.linkedin.com/in/salim-mohamed-amine-djaffer/",
+        "email": "SALIM.DJAFFER@anpna.dz",
+        "status": "Membre fondateur"
+    },
+    {
+        "id": 25,
+        "name": "Khaled ZIANI",
+        "position": "RSSI",
+        "company": "CTC",
+        "photo": null,
+        "specialties": [
+            "Digitalisation",
+            "Cybersécurité",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+        "email": "Khaled.ZIANI@anpna.dz",
+        "status": "Secrétaire général"
+    },
+    {
+        "id": 26,
+        "name": "Dahmen hamza",
+        "position": "Sous directeur système d’information et communication ",
+        "company": "Société des ciments de la Mitidja (SCMI)",
+        "photo": null,
+        "specialties": [
+            "ERP",
+            "Business Intelligence",
+            "Digitalisation",
+            "Management"
+        ],
+        "linkedin": "https://www.linkedin.com/in/hamza-dahmen-37a87128/",
+        "email": "hamza.Dahmen@anpna.dz",
+        "status": "Membre fondateur"
     }
 ];
 }),
@@ -3978,93 +4283,118 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/linkedin.js [app-ssr] (ecmascript) <export default as Linkedin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-ssr] (ecmascript) <export default as Mail>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-ssr] (ecmascript) <export default as Star>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$crown$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Crown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/crown.js [app-ssr] (ecmascript) <export default as Crown>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trophy.js [app-ssr] (ecmascript) <export default as Trophy>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/briefcase.js [app-ssr] (ecmascript) <export default as Briefcase>");
 "use client";
 ;
 ;
 ;
 const MemberCard = ({ member })=>{
+    // Fonction pour obtenir le style selon le statut
+    const getStatusConfig = (status)=>{
+        const statusLower = status.toLowerCase();
+        if (statusLower.includes('président')) {
+            return {
+                bgColor: 'bg-red-500',
+                iconType: 'crown',
+                label: status
+            };
+        } else if (statusLower.includes('trésorier') || statusLower.includes('secrétaire')) {
+            return {
+                bgColor: 'bg-red-500',
+                iconType: 'trophy',
+                label: status
+            };
+        } else if (statusLower.includes('fondateur')) {
+            return {
+                bgColor: 'bg-yellow-500',
+                iconType: 'star',
+                label: 'Fondateur'
+            };
+        } else {
+            return {
+                bgColor: 'bg-red-500',
+                iconType: 'briefcase',
+                label: status
+            };
+        }
+    };
+    const statusConfig = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>getStatusConfig(member.status), [
+        member.status
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "group h-full",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary-light overflow-hidden group-hover:scale-[1.02] h-full flex flex-col",
+            className: "bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary-light overflow-hidden h-full flex flex-col",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "relative h-48 sm:h-56 md:h-64 lg:h-72 bg-gradient-to-br from-primary-light/10 to-gray-light overflow-hidden",
                     children: [
-                        member.photo ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: member.photo,
-                                    alt: member.name,
-                                    className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-110",
-                                    onError: (e)=>{
-                                        e.target.style.display = "none";
-                                        e.target.nextElementSibling.classList.remove('hidden');
-                                    }
-                                }, void 0, false, {
-                                    fileName: "[project]/components/ui/MemberCard.js",
-                                    lineNumber: 14,
-                                    columnNumber: 15
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "fallback-avatar hidden w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-light/20 to-gray-light absolute inset-0",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-xl",
-                                        children: member.name.charAt(0)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ui/MemberCard.js",
-                                        lineNumber: 24,
-                                        columnNumber: 17
-                                    }, ("TURBOPACK compile-time value", void 0))
-                                }, void 0, false, {
-                                    fileName: "[project]/components/ui/MemberCard.js",
-                                    lineNumber: 23,
-                                    columnNumber: 15
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "fallback-avatar w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-light/20 to-gray-light",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-light/20 to-gray-light",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-xl",
-                                children: member.name.charAt(0)
+                                children: member.name?.charAt(0) || 'M'
                             }, void 0, false, {
                                 fileName: "[project]/components/ui/MemberCard.js",
-                                lineNumber: 31,
-                                columnNumber: 15
+                                lineNumber: 46,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/components/ui/MemberCard.js",
-                            lineNumber: 30,
-                            columnNumber: 13
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        }, void 0, false, {
-                            fileName: "[project]/components/ui/MemberCard.js",
-                            lineNumber: 38,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute top-3 right-3 sm:top-4 sm:right-4 bg-yellow-500 text-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-bold flex items-center z-10 shadow-lg",
+                            className: "absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+                        }, void 0, false, {
+                            fileName: "[project]/components/ui/MemberCard.js",
+                            lineNumber: 52,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: `absolute top-3 right-3 sm:top-4 sm:right-4 ${statusConfig.bgColor} text-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-bold flex items-center z-10 shadow-lg`,
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
+                                statusConfig.iconType === 'crown' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$crown$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Crown$3e$__["Crown"], {
                                     className: "w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/MemberCard.js",
-                                    lineNumber: 42,
-                                    columnNumber: 13
+                                    lineNumber: 56,
+                                    columnNumber: 51
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                "Fondateur"
+                                statusConfig.iconType === 'trophy' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"], {
+                                    className: "w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/ui/MemberCard.js",
+                                    lineNumber: 57,
+                                    columnNumber: 52
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                statusConfig.iconType === 'star' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
+                                    className: "w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/ui/MemberCard.js",
+                                    lineNumber: 58,
+                                    columnNumber: 50
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                statusConfig.iconType === 'briefcase' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"], {
+                                    className: "w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/ui/MemberCard.js",
+                                    lineNumber: 59,
+                                    columnNumber: 55
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                statusConfig.label
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ui/MemberCard.js",
-                            lineNumber: 41,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ui/MemberCard.js",
-                    lineNumber: 11,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4078,7 +4408,7 @@ const MemberCard = ({ member })=>{
                                     children: member.name
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/MemberCard.js",
-                                    lineNumber: 51,
+                                    lineNumber: 68,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4086,7 +4416,7 @@ const MemberCard = ({ member })=>{
                                     children: member.position
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/MemberCard.js",
-                                    lineNumber: 54,
+                                    lineNumber: 71,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4094,75 +4424,65 @@ const MemberCard = ({ member })=>{
                                     children: member.company
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/MemberCard.js",
-                                    lineNumber: 57,
+                                    lineNumber: 74,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ui/MemberCard.js",
-                            lineNumber: 50,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex-1",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-gray-600 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4 line-clamp-3",
-                                    children: member.bio
-                                }, void 0, false, {
-                                    fileName: "[project]/components/ui/MemberCard.js",
-                                    lineNumber: 64,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mb-3 sm:mb-4",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-[10px] sm:text-xs font-medium text-gray-500 mb-1.5 sm:mb-2",
-                                            children: "EXPERTISES :"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ui/MemberCard.js",
-                                            lineNumber: 70,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex flex-wrap gap-1 sm:gap-1.5",
-                                            children: [
-                                                member.specialties.slice(0, 3).map((specialty, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "bg-primary-light/10 text-primary px-2 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap",
-                                                        children: specialty
-                                                    }, index, false, {
-                                                        fileName: "[project]/components/ui/MemberCard.js",
-                                                        lineNumber: 75,
-                                                        columnNumber: 19
-                                                    }, ("TURBOPACK compile-time value", void 0))),
-                                                member.specialties.length > 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "bg-gray-100 text-gray-600 px-2 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium",
-                                                    children: [
-                                                        "+",
-                                                        member.specialties.length - 3
-                                                    ]
-                                                }, void 0, true, {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "mb-3 sm:mb-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-[10px] sm:text-xs font-medium text-gray-500 mb-1.5 sm:mb-2",
+                                        children: "EXPERTISES :"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ui/MemberCard.js",
+                                        lineNumber: 82,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-wrap gap-1 sm:gap-1.5",
+                                        children: [
+                                            member.specialties.slice(0, 3).map((specialty, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "bg-primary-light/10 text-primary px-2 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap",
+                                                    children: specialty
+                                                }, index, false, {
                                                     fileName: "[project]/components/ui/MemberCard.js",
-                                                    lineNumber: 83,
+                                                    lineNumber: 87,
                                                     columnNumber: 19
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/ui/MemberCard.js",
-                                            lineNumber: 73,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/ui/MemberCard.js",
-                                    lineNumber: 69,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
+                                                }, ("TURBOPACK compile-time value", void 0))),
+                                            member.specialties.length > 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "bg-gray-100 text-gray-600 px-2 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium",
+                                                children: [
+                                                    "+",
+                                                    member.specialties.length - 3
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/ui/MemberCard.js",
+                                                lineNumber: 95,
+                                                columnNumber: 19
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/ui/MemberCard.js",
+                                        lineNumber: 85,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/ui/MemberCard.js",
+                                lineNumber: 81,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
                             fileName: "[project]/components/ui/MemberCard.js",
-                            lineNumber: 63,
+                            lineNumber: 80,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4178,12 +4498,12 @@ const MemberCard = ({ member })=>{
                                         className: "w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover/btn:scale-110 transition-transform"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ui/MemberCard.js",
-                                        lineNumber: 100,
+                                        lineNumber: 112,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/MemberCard.js",
-                                    lineNumber: 93,
+                                    lineNumber: 105,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -4194,12 +4514,12 @@ const MemberCard = ({ member })=>{
                                         className: "w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover/btn:scale-110 transition-transform"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ui/MemberCard.js",
-                                        lineNumber: 107,
+                                        lineNumber: 119,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/MemberCard.js",
-                                    lineNumber: 102,
+                                    lineNumber: 114,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4212,35 +4532,35 @@ const MemberCard = ({ member })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/ui/MemberCard.js",
-                                        lineNumber: 110,
+                                        lineNumber: 122,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/ui/MemberCard.js",
-                                    lineNumber: 109,
+                                    lineNumber: 121,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ui/MemberCard.js",
-                            lineNumber: 92,
+                            lineNumber: 104,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ui/MemberCard.js",
-                    lineNumber: 48,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/ui/MemberCard.js",
-            lineNumber: 9,
+            lineNumber: 42,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/ui/MemberCard.js",
-        lineNumber: 8,
+        lineNumber: 41,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -4490,7 +4810,7 @@ const FoundingMembersSection = ()=>{
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$StatCard$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     value: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$AnimatedCounter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedCounter"], {
-                                        end: 6,
+                                        end: 26,
                                         duration: 1500
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/FoundingMembersSection.js",
@@ -4505,7 +4825,7 @@ const FoundingMembersSection = ()=>{
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$StatCard$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     value: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$AnimatedCounter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatedCounter"], {
-                                        end: 150,
+                                        end: 400,
                                         duration: 2500
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/FoundingMembersSection.js",

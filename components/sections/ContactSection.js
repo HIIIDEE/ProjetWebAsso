@@ -27,9 +27,9 @@ const ContactSection = () => {
                 <a href="mailto:contact@anapna.dz" className="block text-primary hover:text-primary transition-colors">
                   contact@anapna.dz
                 </a>
-                <a href="mailto:secretariat@anapna.dz" className="block text-primary hover:text-primary transition-colors">
+                {/* <a href="mailto:secretariat@anapna.dz" className="block text-primary hover:text-primary transition-colors">
                   secretariat@anapna.dz
-                </a>
+                </a> */}
               </div>
             </div>
 
@@ -50,7 +50,7 @@ const ContactSection = () => {
               </div>
               <h4 className="font-semibold text-gray-900 text-center mb-4 text-lg">Adresse</h4>
               <div className="text-center space-y-2">
-                <p className="text-gray-600">Centre d'Affaires</p>
+                <p className="text-gray-600">Kouba</p>
                 <p className="text-gray-600">Alger Centre, Algérie</p>
               </div>
             </div>
@@ -68,10 +68,6 @@ const ContactSection = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                 <p className="text-gray-700">Justificatif d'activité professionnelle</p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                <p className="text-gray-700">Recommandation de deux membres</p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>

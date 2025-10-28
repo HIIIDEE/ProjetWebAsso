@@ -36,10 +36,10 @@ export default function Home() {
 
       <main>
         <HeroSection scrollToSection={scrollToSection} />
-        <StatsSection />
+        {/* <StatsSection /> */}
         <ServicesSection />
         {/* <EventsSection /> */}
-        <PastEventsCarousel />
+        {/* <PastEventsCarousel /> */}
         <FoundingMembersSection />
         <AboutSection />
         <ContactSection />

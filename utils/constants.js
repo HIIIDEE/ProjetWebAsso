@@ -1,6 +1,6 @@
 export const NAVIGATION_ITEMS = [
   { name: "Accueil", id: "accueil" },
-  { name: "Services", id: "services" },
+  { name: "Nos Objectifs", id: "services" },
   // { name: "Événements", id: "evenements" },
   { name: "À propos", id: "apropos" },
   { name: "Contact", id: "contact" },

@@ -75,7 +75,7 @@ const HeroSection = ({ scrollToSection }) => {
                   onClick={() => scrollToSection('services')}
                   className="group bg-primary hover:bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center hover:scale-105 hover:shadow-lg text-sm sm:text-base"
                 >
-                  <span>Découvrir nos services</span>
+                  <span>Découvrir nos objectifs</span>
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </button>
                 <button
@@ -91,7 +91,7 @@ const HeroSection = ({ scrollToSection }) => {
             <RevealOnScroll animation="fadeInUp" delay={0.6} duration={0.8}>
               <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 p-3 sm:p-5 md:p-6 bg-white/80 backdrop-blur-sm rounded-lg sm:rounded-xl md:rounded-2xl border border-white/50 shadow-lg">
                 <div className="text-center">
-                  <div className="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-0.5 sm:mb-1">2008</div>
+                  <div className="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-0.5 sm:mb-1">2025</div>
                   <div className="text-[10px] sm:text-xs md:text-sm text-gray-600">Fondée en</div>
                 </div>
                 <div className="text-center border-l border-gray-200">

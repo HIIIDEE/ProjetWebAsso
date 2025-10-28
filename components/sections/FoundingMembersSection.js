@@ -30,7 +30,7 @@ const FoundingMembersSection = () => {
           <div className="mt-4 flex items-center justify-center text-sm text-gray-500">
             <Award className="w-4 h-4 mr-2" />
             <span>
-              Fondée en 2008 • {foundingMembers.length} membres fondateurs
+              Fondée en 2025 • {foundingMembers.length} membres fondateurs
             </span>
           </div>
         </div>
@@ -63,17 +63,17 @@ const FoundingMembersSection = () => {
 
   <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
     <StatCard
-      value={<AnimatedCounter end={2008} duration={2000} />}
+      value={<AnimatedCounter end={2025} duration={2000} />}
       label="Année de fondation"
     />
     
     <StatCard
-      value={<AnimatedCounter end={6} duration={1500} />}
+      value={<AnimatedCounter end={26} duration={1500} />}
       label="Membres fondateurs"
     />
-    
+
     <StatCard
-      value={<AnimatedCounter end={150} duration={2500} />}
+      value={<AnimatedCounter end={400} duration={2500} />}
       label="Ans d'expérience cumulée"
       suffix="+"
     />

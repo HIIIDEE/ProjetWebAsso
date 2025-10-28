@@ -1,46 +1,63 @@
 "use client";
 
-import React from "react";
-import { Linkedin, Mail, Star } from "lucide-react";
+import React, { useMemo } from "react";
+import { Linkedin, Mail, Star, Crown, Trophy, Briefcase } from "lucide-react";
 
 const MemberCard = ({ member }) => {
+  // Fonction pour obtenir le style selon le statut
+  const getStatusConfig = (status) => {
+    const statusLower = status.toLowerCase();
+
+    if (statusLower.includes('président')) {
+      return {
+        bgColor: 'bg-red-500',
+        iconType: 'crown',
+        label: status
+      };
+    } else if (statusLower.includes('trésorier') || statusLower.includes('secrétaire')) {
+      return {
+        bgColor: 'bg-red-500',
+        iconType: 'trophy',
+        label: status
+      };
+    } else if (statusLower.includes('fondateur')) {
+      return {
+        bgColor: 'bg-yellow-500',
+        iconType: 'star',
+        label: 'Fondateur'
+      };
+    } else {
+      return {
+        bgColor: 'bg-red-500',
+        iconType: 'briefcase',
+        label: status
+      };
+    }
+  };
+
+  const statusConfig = useMemo(() => getStatusConfig(member.status), [member.status]);
+
   return (
     <div className="group h-full">
-      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary-light overflow-hidden group-hover:scale-[1.02] h-full flex flex-col">
+      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary-light overflow-hidden h-full flex flex-col">
         {/* Photo Section */}
         <div className="relative h-48 sm:h-56 md:h-64 lg:h-72 bg-gradient-to-br from-primary-light/10 to-gray-light overflow-hidden">
-          {member.photo ? (
-            <>
-              <img
-                src={member.photo}
-                alt={member.name}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                onError={(e) => {
-                  e.target.style.display = "none";
-                  e.target.nextElementSibling.classList.remove('hidden');
-                }}
-              />
-              <div className="fallback-avatar hidden w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-light/20 to-gray-light absolute inset-0">
-                <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-xl">
-                  {member.name.charAt(0)}
-                </div>
-              </div>
-            </>
-          ) : (
-            <div className="fallback-avatar w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-light/20 to-gray-light">
-              <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-xl">
-                {member.name.charAt(0)}
-              </div>
+          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-light/20 to-gray-light">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-xl">
+              {member.name?.charAt(0) || 'M'}
             </div>
-          )}
+          </div>
 
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
 
-          {/* Badge fondateur */}
-          <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-yellow-500 text-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-bold flex items-center z-10 shadow-lg">
-            <Star className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1" />
-            Fondateur
+          {/* Badge de statut */}
+          <div className={`absolute top-3 right-3 sm:top-4 sm:right-4 ${statusConfig.bgColor} text-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-bold flex items-center z-10 shadow-lg`}>
+            {statusConfig.iconType === 'crown' && <Crown className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1" />}
+            {statusConfig.iconType === 'trophy' && <Trophy className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1" />}
+            {statusConfig.iconType === 'star' && <Star className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1" />}
+            {statusConfig.iconType === 'briefcase' && <Briefcase className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1" />}
+            {statusConfig.label}
           </div>
         </div>
 
@@ -59,13 +76,8 @@ const MemberCard = ({ member }) => {
             </p>
           </div>
 
-          {/* Bio */}
+          {/* Specialties */}
           <div className="flex-1">
-            <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4 line-clamp-3">
-              {member.bio}
-            </p>
-
-            {/* Specialties */}
             <div className="mb-3 sm:mb-4">
               <p className="text-[10px] sm:text-xs font-medium text-gray-500 mb-1.5 sm:mb-2">
                 EXPERTISES :

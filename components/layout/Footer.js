@@ -91,6 +91,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-10 sm:mt-12 pt-8 text-center">
+          
           <p className="text-xs sm:text-sm text-gray-400">
             © 2024 Association Nationale de la Promotion du Numérique en Algérie (ANAPNA).
             <span className="block sm:inline sm:ml-1">Tous droits réservés.</span>

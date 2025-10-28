@@ -1,15 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run lint)",
-      "Bash(rm:*)",
-      "Bash(npm install)",
-      "Bash(npm run export:*)",
-      "mcp__context7__resolve-library-id",
-      "mcp__context7__get-library-docs",
-      "Bash(npm install:*)"
+      "Bash(node -e \"const XLSX = require(''xlsx''); const wb = XLSX.readFile(''MEMBRES_SITEWEB.xlsx''); const ws = wb.Sheets[wb.SheetNames[0]]; const data = XLSX.utils.sheet_to_json(ws, {defval: ''''}); Object.keys(data[0]).forEach((k, i) => console.log(i + '': ['' + k + ''] length='' + k.length));\")",
+      "Bash(node -e \"const XLSX = require(''xlsx''); const wb = XLSX.readFile(''MEMBRES_SITEWEB.xlsx''); const ws = wb.Sheets[wb.SheetNames[0]]; const data = XLSX.utils.sheet_to_json(ws, {defval: ''''}); const m = data[0]; console.log(''Keys:'', Object.keys(m)); console.log(''Expertise value:'', m[''Domaines d\\''expertise '']);\")",
+      "Bash(node -e \"const XLSX = require(''xlsx''); const wb = XLSX.readFile(''MEMBRES_SITEWEB.xlsx''); const ws = wb.Sheets[wb.SheetNames[0]]; const data = XLSX.utils.sheet_to_json(ws, {defval: ''''}); const m = data[0]; const keys = Object.keys(m); const expertiseKey = keys.find(k => k.includes(''expertise'')); console.log(''Expertise key:'', expertiseKey); console.log(''Value:'', m[expertiseKey]);\")",
+      "Bash(node -e \"const data = require(''./data/foundingMembers.js''); const statuts = [...new Set(data.foundingMembers.map(m => m.status))]; console.log(''Statuts uniques:''); statuts.forEach(s => console.log(''  -'', s));\")"
     ],
-    "deny": []
+    "deny": [],
+    "ask": []
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [

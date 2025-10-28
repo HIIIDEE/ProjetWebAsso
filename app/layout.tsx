@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: "ANAPNA - Association Nationale de la Promotion du Numérique en Algérie",
     template: "%s | ANAPNA"
   },
-  description: "Association Nationale de la Promotion du Numérique en Algérie (ANAPNA). Fédérer, représenter et accompagner les DSI algériens dans leurs missions stratégiques de transformation digitale et de gouvernance IT depuis 2008.",
+  description: "Association Nationale de la Promotion du Numérique en Algérie (ANAPNA). Fédérer, représenter et accompagner les DSI algériens dans leurs missions stratégiques de transformation digitale et de gouvernance IT depuis 2025.",
   keywords: [
     "ANAPNA",
     "Association Numérique Algérie",
@@ -100,7 +100,7 @@ export default function RootLayout({
     url: 'https://nap-dz.org',
     logo: 'https://nap-dz.org/napdz_logo.png',
     description: 'Association Nationale de la Promotion du Numérique en Algérie. Fédérer, représenter et accompagner les DSI algériens dans leurs missions stratégiques de transformation digitale et de gouvernance IT.',
-    foundingDate: '2008',
+    foundingDate: '2025',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'DZ',

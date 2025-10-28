@@ -12,7 +12,7 @@ const AboutSection = () => {
             </h2>
             <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed">
               L'Association Nationale de la Promotion du Numérique en Algérie
-              (ANAPNA) a été créée en 2008 pour répondre aux besoins croissants
+              (ANAPNA) a été créée en 2025 pour répondre aux besoins croissants
               de professionnalisation et de structuration de la fonction DSI en
               Algérie.
             </p>

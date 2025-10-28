@@ -102,7 +102,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\TogsO\\OneDrive\\Desktop\\projet\\ProjetWebAsso",
+    "outputFileTracingRoot": "C:\\Users\\IT\\Desktop\\Association\\ProjetWebAsso",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -161,7 +161,7 @@
       "middlewarePrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 15,
+      "cpus": 7,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -293,10 +293,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "C:\\Users\\TogsO\\OneDrive\\Desktop\\projet\\ProjetWebAsso"
+      "root": "C:\\Users\\IT\\Desktop\\Association\\ProjetWebAsso"
     }
   },
-  "appDir": "C:\\Users\\TogsO\\OneDrive\\Desktop\\projet\\ProjetWebAsso",
+  "appDir": "C:\\Users\\IT\\Desktop\\Association\\ProjetWebAsso",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",
