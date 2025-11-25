@@ -52,39 +52,39 @@ const FoundingMembersSection = () => {
 
         {/* Statistics Section */}
         <div className="mt-16 bg-gradient-to-r from-primary-light/10 to-accent/10 rounded-2xl p-8 border border-primary-light/30">
-  <div className="text-center mb-8">
-    <h3 className="text-2xl font-bold text-gray-900 mb-2">
-      L'Héritage des Fondateurs
-    </h3>
-    <p className="text-gray-600">
-      Leur vision continue d'inspirer notre communauté
-    </p>
-  </div>
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              L'Héritage des Fondateurs
+            </h3>
+            <p className="text-gray-600">
+              Leur vision continue d'inspirer notre communauté
+            </p>
+          </div>
 
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-    <StatCard
-      value={<AnimatedCounter end={2025} duration={2000} />}
-      label="Année de fondation"
-    />
-    
-    <StatCard
-      value={<AnimatedCounter end={26} duration={1500} />}
-      label="Membres fondateurs"
-    />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <StatCard
+              value={<AnimatedCounter end={2025} duration={2000} />}
+              label="Année de fondation"
+            />
 
-    <StatCard
-      value={<AnimatedCounter end={400} duration={2500} />}
-      label="Ans d'expérience cumulée"
-      suffix="+"
-    />
-    
-    <StatCard
-      value={<AnimatedCounter end={100} duration={2000} />}
-      label="Toujours actifs"
-      suffix="%"
-    />
-  </div>
-</div>
+            <StatCard
+              value={<AnimatedCounter end={27} duration={1500} />}
+              label="Membres fondateurs"
+            />
+
+            <StatCard
+              value={<AnimatedCounter end={400} duration={2500} />}
+              label="Ans d'expérience cumulée"
+              suffix="+"
+            />
+
+            <StatCard
+              value={<AnimatedCounter end={100} duration={2000} />}
+              label="Toujours actifs"
+              suffix="%"
+            />
+          </div>
+        </div>
 
         {/* Call to Action */}
         {/* <div className="mt-12 text-center">

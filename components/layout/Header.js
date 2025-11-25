@@ -4,13 +4,18 @@ import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { NAVIGATION_ITEMS } from "@/utils/constants";
 import Image from "next/image";
+import Button from "../ui/Button";
+import { usePathname, useRouter } from "next/navigation";
 
 const Header = ({ scrollY, activeSection, scrollToSection }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [headerTransform, setHeaderTransform] = useState(0);
+  const pathname = usePathname();
+  const router = useRouter();
 
   // Effet de parallax subtil pour le header
   useEffect(() => {
+    console.log("Header mounted - v2"); // Force rebuild
     const handleScroll = () => {
       const scrolled = window.scrollY;
       const parallaxSpeed = 0.5;
@@ -25,14 +30,22 @@ const Header = ({ scrollY, activeSection, scrollToSection }) => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleNavClick = (id) => {
+    if (pathname === "/") {
+      scrollToSection(id);
+    } else {
+      router.push(`/#${id}`);
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-          scrollY > 50
+        className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrollY > 50
             ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-light"
             : "bg-white/90 backdrop-blur-sm"
-        }`}
+          }`}
         style={{
           transform: `translateY(${Math.min(headerTransform * -0.3, 0)}px)`
         }}
@@ -40,7 +53,7 @@ const Header = ({ scrollY, activeSection, scrollToSection }) => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo simple */}
-            <div className="relative group cursor-pointer">
+            <div className="relative group cursor-pointer" onClick={() => router.push('/')}>
               <div className="relative w-16 h-16 sm:w-20 sm:h-20 transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
                 <Image
                   src="/napdz_logo.png"
@@ -65,14 +78,13 @@ const Header = ({ scrollY, activeSection, scrollToSection }) => {
             </div>
 
             {/* Navigation Desktop */}
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex items-center space-x-8">
               {NAVIGATION_ITEMS.map((item, index) => (
                 <button
                   key={item.id}
-                  className={`relative text-gray-dark hover:text-primary transition-all duration-300 font-medium px-2 py-1 rounded-lg hover:bg-primary-light/10 ${
-                    activeSection === item.id ? "text-primary" : ""
-                  }`}
-                  onClick={() => scrollToSection(item.id)}
+                  className={`relative text-gray-dark hover:text-primary transition-all duration-300 font-medium px-2 py-1 rounded-lg hover:bg-primary-light/10 ${activeSection === item.id && pathname === "/" ? "text-primary" : ""
+                    }`}
+                  onClick={() => handleNavClick(item.id)}
                   style={{
                     animationDelay: `${index * 100}ms`
                   }}
@@ -80,15 +92,21 @@ const Header = ({ scrollY, activeSection, scrollToSection }) => {
                   {item.name}
                   {/* Indicateur actif animé */}
                   <span
-                    className={`absolute -bottom-2 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 ${
-                      activeSection === item.id ? "w-full" : "w-0 hover:w-full"
-                    }`}
+                    className={`absolute -bottom-2 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 ${activeSection === item.id && pathname === "/" ? "w-full" : "w-0 hover:w-full"
+                      }`}
                   ></span>
 
                   {/* Effet de brillance au hover */}
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 hover:opacity-20 transition-opacity duration-300 transform -skew-x-12"></span>
                 </button>
               ))}
+              <Button
+                variant="primary"
+                size="sm"
+                onClick={() => router.push('/adhesion')}
+              >
+                Devenir membre
+              </Button>
             </div>
 
             {/* Bouton menu mobile */}
@@ -99,14 +117,12 @@ const Header = ({ scrollY, activeSection, scrollToSection }) => {
             >
               <div className="relative w-6 h-6">
                 <Menu
-                  className={`absolute inset-0 w-6 h-6 text-gray-dark transition-all duration-300 ${
-                    isMobileMenuOpen ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0'
-                  }`}
+                  className={`absolute inset-0 w-6 h-6 text-gray-dark transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0'
+                    }`}
                 />
                 <X
-                  className={`absolute inset-0 w-6 h-6 text-gray-dark transition-all duration-300 ${
-                    isMobileMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-90'
-                  }`}
+                  className={`absolute inset-0 w-6 h-6 text-gray-dark transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-90'
+                    }`}
                 />
               </div>
             </button>
@@ -115,22 +131,17 @@ const Header = ({ scrollY, activeSection, scrollToSection }) => {
 
         {/* Menu mobile avec animation de slide */}
         <div
-          className={`md:hidden bg-white border-t border-gray-light shadow-lg transition-all duration-300 overflow-hidden ${
-            isMobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`md:hidden bg-white border-t border-gray-light shadow-lg transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            }`}
         >
           <div className="container mx-auto px-6 py-4">
             <div className="space-y-4">
               {NAVIGATION_ITEMS.map((item, index) => (
                 <button
                   key={item.id}
-                  className={`block w-full text-left px-4 py-3 rounded-lg text-gray-dark hover:text-primary hover:bg-primary-light/10 transition-all duration-300 font-medium ${
-                    activeSection === item.id ? "text-primary bg-primary-light/10" : ""
-                  }`}
-                  onClick={() => {
-                    scrollToSection(item.id);
-                    setIsMobileMenuOpen(false);
-                  }}
+                  className={`block w-full text-left px-4 py-3 rounded-lg text-gray-dark hover:text-primary hover:bg-primary-light/10 transition-all duration-300 font-medium ${activeSection === item.id && pathname === "/" ? "text-primary bg-primary-light/10" : ""
+                    }`}
+                  onClick={() => handleNavClick(item.id)}
                   style={{
                     animationDelay: `${index * 50}ms`,
                     transform: isMobileMenuOpen ? 'translateX(0)' : 'translateX(-20px)',
@@ -139,12 +150,25 @@ const Header = ({ scrollY, activeSection, scrollToSection }) => {
                 >
                   <div className="flex items-center justify-between">
                     <span>{item.name}</span>
-                    {activeSection === item.id && (
+                    {activeSection === item.id && pathname === "/" && (
                       <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                     )}
                   </div>
                 </button>
               ))}
+              <div className="pt-2">
+                <Button
+                  variant="primary"
+                  size="sm"
+                  className="w-full justify-center"
+                  onClick={() => {
+                    router.push('/adhesion');
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  Devenir membre
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -152,7 +176,7 @@ const Header = ({ scrollY, activeSection, scrollToSection }) => {
 
       {/* Overlay pour fermer le menu mobile */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/20 z-40 md:hidden backdrop-blur-sm"
           onClick={() => setIsMobileMenuOpen(false)}
         />

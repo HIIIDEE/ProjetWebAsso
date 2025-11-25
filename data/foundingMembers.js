@@ -260,7 +260,7 @@ export const foundingMembers = [
   },
   {
     "id": 18,
-    "name": "Gilas adel",
+    "name": "Ghilas adel",
     "position": "IT",
     "company": "AZ hotels",
     "photo": null,
@@ -332,7 +332,7 @@ export const foundingMembers = [
     ],
     "linkedin": "https://www.linkedin.com/in/zenati-sami-8289358",
     "email": "SAMI.ZENATI@anpna.dz",
-    "status": "Membre fondateur" 
+    "status": "Membre fondateur"
   },
   {
     "id": 23,
