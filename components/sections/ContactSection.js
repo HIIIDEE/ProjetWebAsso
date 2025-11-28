@@ -39,8 +39,7 @@ const ContactSection = () => {
               </div>
               <h4 className="font-semibold text-gray-900 text-center mb-4 text-lg">Téléphone</h4>
               <div className="text-center space-y-2">
-                <p className="text-gray-600">+213 21 XX XX XX</p>
-                <p className="text-gray-600">+213 XXX XX XX XX</p>
+                <p className="text-gray-600">+213772394988</p>
               </div>
             </div>
 
@@ -65,10 +64,7 @@ const ContactSection = () => {
                 <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                 <p className="text-gray-700">Fonction de DSI ou équivalent</p>
               </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                <p className="text-gray-700">Justificatif d'activité professionnelle</p>
-              </div>
+
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                 <p className="text-gray-700">Cotisation annuelle</p>

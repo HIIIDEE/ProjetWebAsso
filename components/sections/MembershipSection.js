@@ -15,6 +15,10 @@ const MembershipSection = () => {
         company: "",
         jobTitle: "",
         message: "",
+        birthCertificate: null,
+        residenceCertificate: null,
+        workCertificate: null,
+        criminalRecord: null,
     });
 
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -22,36 +26,80 @@ const MembershipSection = () => {
     const [error, setError] = useState(null);
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
+        const { name, value, files } = e.target;
         setFormData((prev) => ({
             ...prev,
-            [name]: value,
+            [name]: files ? files[0] : value,
         }));
+    };
+
+    const validateForm = () => {
+        const errors = [];
+
+        // Required fields check
+        if (!formData.firstName.trim()) errors.push("Le prénom est requis.");
+        if (!formData.lastName.trim()) errors.push("Le nom est requis.");
+        if (!formData.email.trim()) errors.push("L'email est requis.");
+        if (!formData.phone.trim()) errors.push("Le téléphone est requis.");
+        if (!formData.company.trim()) errors.push("L'entreprise est requise.");
+        if (!formData.jobTitle.trim()) errors.push("La fonction est requise.");
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (formData.email && !emailRegex.test(formData.email)) {
+            errors.push("L'format de l'email est invalide.");
+        }
+
+        // File validation
+        const maxFileSize = 5 * 1024 * 1024; // 5MB
+        const requiredFiles = [
+            { name: 'birthCertificate', label: 'Extrait de naissance' },
+            { name: 'residenceCertificate', label: 'Certificat de résidence' },
+            { name: 'workCertificate', label: 'Attestation de travail' },
+            { name: 'criminalRecord', label: 'Casier judiciaire' }
+        ];
+
+        requiredFiles.forEach(file => {
+            if (!formData[file.name]) {
+                errors.push(`Le document "${file.label}" est requis.`);
+            } else if (formData[file.name].size > maxFileSize) {
+                errors.push(`Le document "${file.label}" dépasse la taille limite de 5MB.`);
+            }
+        });
+
+        return errors;
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        const validationErrors = validateForm();
+        if (validationErrors.length > 0) {
+            setError(validationErrors.join(" "));
+            return;
+        }
+
         setIsSubmitting(true);
         setError(null);
 
-        // Mapper les noms de champs vers ceux attendus par le PHP
-        const dataToSend = {
-            prenom: formData.firstName,
-            nom: formData.lastName,
-            email: formData.email,
-            telephone: formData.phone,
-            entreprise: formData.company,
-            fonction: formData.jobTitle,
-            message: formData.message
-        };
+        const dataToSend = new FormData();
+        dataToSend.append('prenom', formData.firstName);
+        dataToSend.append('nom', formData.lastName);
+        dataToSend.append('email', formData.email);
+        dataToSend.append('telephone', formData.phone);
+        dataToSend.append('entreprise', formData.company);
+        dataToSend.append('fonction', formData.jobTitle);
+        dataToSend.append('message', formData.message);
+
+        if (formData.birthCertificate) dataToSend.append('birthCertificate', formData.birthCertificate);
+        if (formData.residenceCertificate) dataToSend.append('residenceCertificate', formData.residenceCertificate);
+        if (formData.workCertificate) dataToSend.append('workCertificate', formData.workCertificate);
+        if (formData.criminalRecord) dataToSend.append('criminalRecord', formData.criminalRecord);
 
         try {
             const response = await fetch('/traitement.php', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(dataToSend)
+                body: dataToSend
             });
 
             const data = await response.json();
@@ -68,6 +116,10 @@ const MembershipSection = () => {
                     company: "",
                     jobTitle: "",
                     message: "",
+                    birthCertificate: null,
+                    residenceCertificate: null,
+                    workCertificate: null,
+                    criminalRecord: null,
                 });
             } else {
                 setError(data.message || "Une erreur est survenue lors de l'envoi.");
@@ -222,6 +274,64 @@ const MembershipSection = () => {
                                             placeholder="Votre poste actuel"
                                             required
                                         />
+                                    </div>
+                                </div>
+
+                                <div className="border-t border-gray-200 pt-6 mt-6">
+                                    <h4 className="text-lg font-medium text-gray-900 mb-4">Documents requis</h4>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+                                                Extrait de naissance
+                                            </label>
+                                            <input
+                                                type="file"
+                                                name="birthCertificate"
+                                                onChange={handleChange}
+                                                className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-light/10 file:text-primary hover:file:bg-primary-light/20"
+                                                accept=".pdf,.jpg,.jpeg,.png"
+                                                required
+                                            />
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+                                                Certificat de résidence
+                                            </label>
+                                            <input
+                                                type="file"
+                                                name="residenceCertificate"
+                                                onChange={handleChange}
+                                                className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-light/10 file:text-primary hover:file:bg-primary-light/20"
+                                                accept=".pdf,.jpg,.jpeg,.png"
+                                                required
+                                            />
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+                                                Attestation de travail
+                                            </label>
+                                            <input
+                                                type="file"
+                                                name="workCertificate"
+                                                onChange={handleChange}
+                                                className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-light/10 file:text-primary hover:file:bg-primary-light/20"
+                                                accept=".pdf,.jpg,.jpeg,.png"
+                                                required
+                                            />
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+                                                Casier judiciaire
+                                            </label>
+                                            <input
+                                                type="file"
+                                                name="criminalRecord"
+                                                onChange={handleChange}
+                                                className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-light/10 file:text-primary hover:file:bg-primary-light/20"
+                                                accept=".pdf,.jpg,.jpeg,.png"
+                                                required
+                                            />
+                                        </div>
                                     </div>
                                 </div>
 

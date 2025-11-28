@@ -68,7 +68,7 @@ const FoundingMembersSection = () => {
             />
 
             <StatCard
-              value={<AnimatedCounter end={27} duration={1500} />}
+              value={<AnimatedCounter end={foundingMembers.length} duration={1500} />}
               label="Membres fondateurs"
             />
 

@@ -393,5 +393,30 @@ export const foundingMembers = [
     "linkedin": "https://www.linkedin.com/in/hamza-dahmen-37a87128/",
     "email": "hamza.Dahmen@anpna.dz",
     "status": "Membre fondateur"
+  },
+  {
+    "id": 27,
+    "name": "Slimane imine",
+    "position": "Sous directeur central ",
+    "company": "Badr banque",
+    "photo": null,
+    "specialties": [
+    ],
+    "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+    "email": "hamza.Dahmen@anpna.dz",
+    "status": "Membre fondateur"
+  },
+  {
+    "id": 28,
+    "name": "Akila Oussadit",
+    "position": "Directeur centrale de la sécurité informatique ",
+    "company": "Badr banque",
+    "photo": null,
+    "specialties": [
+    ],
+    "linkedin": "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
+    "email": "Akila.Oussadit@anpna.dz",
+    "status": "Membre fondateur"
   }
+
 ];
