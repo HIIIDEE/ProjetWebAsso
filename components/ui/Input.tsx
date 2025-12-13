@@ -12,10 +12,10 @@ const Input: React.FC<InputProps> = ({
     ...props
 }) => {
     const baseClasses =
-        "border rounded-lg px-4 py-3 focus:outline-none transition-colors w-full";
+        "border rounded-lg px-4 py-3 focus:outline-none transition-colors w-full bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500";
     const patrioticClasses = patriotic
-        ? "border-green-300 focus:border-green-500"
-        : "border-gray-300 focus:border-primary";
+        ? "border-green-300 dark:border-green-700 focus:border-green-500 dark:focus:border-green-400"
+        : "border-gray-300 dark:border-gray-600 focus:border-primary dark:focus:border-primary-light";
 
     const inputClasses = `
     ${baseClasses}
