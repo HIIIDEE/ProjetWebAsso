@@ -10,6 +10,8 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ContactSection from "@/components/sections/ContactSection";
 import FoundingMembersSection from "@/components/sections/FoundingMembersSection";
+import PastEventsCarousel from "@/components/sections/PastEventsCarousel";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
 // Hook personnalisé pour la navigation
 import useScrollSpy from "@/hooks/useScrollSpy";
@@ -36,13 +38,13 @@ export default function Home() {
         <HeroSection scrollToSection={scrollToSection} />
         {/* <StatsSection /> */}
         <ServicesSection />
-        {/* <EventsSection /> */}
-        {/* <PastEventsCarousel /> */}
+        <PastEventsCarousel />
         <FoundingMembersSection />
         <AboutSection />
         <ContactSection />
       </main>
 
+      <ScrollToTop />
       <Footer />
     </div>
   );

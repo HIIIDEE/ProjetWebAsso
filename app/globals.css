@@ -16,10 +16,16 @@
   --white: #FFFFFF;
 }
 
+.dark {
+  --background: #0f172a; /* Slate 900 for a rich dark background */
+  --foreground: #f8fafc; /* Slate 50 */
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #FFFFFF;
-    --foreground: #2C2C2C;
+    /* Default to dark if system prefers, but class strategy overrides this via JS */
+    /* We keep this empty or default to light variables initially to avoid flash, 
+       JS will handle the class based on preference */
   }
 }
 
