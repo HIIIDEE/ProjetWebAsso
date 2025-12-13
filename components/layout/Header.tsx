@@ -114,7 +114,7 @@ const Header: React.FC<HeaderProps> = ({ scrollY, activeSection, scrollToSection
                                         }`}
                                 />
                                 <X
-                                    className={`absolute inset-0 w-6 h-6 text-gray-dark transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-90'
+                                    className={`absolute inset-0 w-6 h-6 text-gray-dark dark:text-white transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-90'
                                         }`}
                                 />
                             </div>
@@ -124,7 +124,7 @@ const Header: React.FC<HeaderProps> = ({ scrollY, activeSection, scrollToSection
 
                 {/* Menu mobile avec animation de slide */}
                 <div
-                    className={`md:hidden bg-white dark:bg-gray-900 border-t border-gray-light dark:border-gray-800 shadow-lg transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    className={`md:hidden bg-white dark:bg-gray-900 border-t border-gray-light dark:border-gray-800 shadow-lg transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
                         }`}
                 >
                     <div className="container mx-auto px-6 py-4">
