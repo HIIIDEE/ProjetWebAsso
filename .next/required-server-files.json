@@ -61,6 +61,11 @@
       "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;",
       "contentDispositionType": "attachment",
       "remotePatterns": [],
+      "qualities": [
+        75,
+        90,
+        95
+      ],
       "unoptimized": true
     },
     "devIndicators": {
@@ -82,7 +87,7 @@
     "serverRuntimeConfig": {},
     "publicRuntimeConfig": {},
     "reactProductionProfiling": false,
-    "reactStrictMode": null,
+    "reactStrictMode": true,
     "reactMaxHeadersLength": 6000,
     "httpAgentOptions": {
       "keepAlive": true
@@ -102,7 +107,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\TogsO\\Projet\\Associatio\\ProjetWebAsso",
+    "outputFileTracingRoot": "C:\\Users\\TogsO\\OneDrive\\Desktop\\Projet_Salim\\ProjetWebAsso",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -293,10 +298,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "C:\\Users\\TogsO\\Projet\\Associatio\\ProjetWebAsso"
+      "root": "C:\\Users\\TogsO\\OneDrive\\Desktop\\Projet_Salim\\ProjetWebAsso"
     }
   },
-  "appDir": "C:\\Users\\TogsO\\Projet\\Associatio\\ProjetWebAsso",
+  "appDir": "C:\\Users\\TogsO\\OneDrive\\Desktop\\Projet_Salim\\ProjetWebAsso",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

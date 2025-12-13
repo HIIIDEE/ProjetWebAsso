@@ -2,6 +2,7 @@
 
 import React, { useMemo } from "react";
 import { Linkedin, Mail, Star, Crown, Trophy, Briefcase } from "lucide-react";
+import Image from "next/image";
 import { FoundingMember } from "@/data/foundingMembers";
 
 interface MemberCardProps {
@@ -64,9 +65,11 @@ const MemberCard: React.FC<MemberCardProps> = ({ member }) => {
                     <div className="w-24 h-24 rounded-full p-1 bg-white dark:bg-gray-800 shadow-lg ring-4 ring-white dark:ring-gray-800">
                         <div className="w-full h-full rounded-full bg-gray-50 dark:bg-gray-700 flex items-center justify-center overflow-hidden border border-gray-100 dark:border-gray-600 group-hover:scale-105 transition-transform duration-500">
                             {member.photo ? (
-                                <img
+                                <Image
                                     src={member.photo}
                                     alt={member.name}
+                                    width={100}
+                                    height={100}
                                     className="w-full h-full object-cover"
                                 />
                             ) : (

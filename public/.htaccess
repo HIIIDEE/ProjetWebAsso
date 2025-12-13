@@ -115,6 +115,13 @@ ErrorDocument 500 /500.html
 Options -Indexes
 
 # ===============================================
+# Ensure _next folder is accessible
+# ===============================================
+<IfModule mod_rewrite.c>
+    RewriteRule ^_next - [L]
+</IfModule>
+
+# ===============================================
 # Protect sensitive files
 # ===============================================
 <FilesMatch "^\.">

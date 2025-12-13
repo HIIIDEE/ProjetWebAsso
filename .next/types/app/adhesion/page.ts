@@ -1,4 +1,4 @@
-// File: C:\Users\TogsO\Projet\Associatio\ProjetWebAsso\app\adhesion\page.tsx
+// File: C:\Users\TogsO\OneDrive\Desktop\Projet_Salim\ProjetWebAsso\app\adhesion\page.tsx
 import * as entry from '../../../../app/adhesion/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

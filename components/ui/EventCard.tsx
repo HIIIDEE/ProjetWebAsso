@@ -2,6 +2,7 @@
 
 import React from "react";
 import { MapPin, Users } from "lucide-react";
+import Image from "next/image";
 import { PastEvent } from "@/data/events";
 
 interface EventCardProps {
@@ -16,9 +17,11 @@ const EventCard: React.FC<EventCardProps> = ({ event, onViewDetails }) => {
                 {/* Image Section */}
                 <div className="relative h-32 sm:h-36 md:h-40 bg-white dark:bg-gray-700 flex items-center justify-center overflow-hidden">
                     {event.image.startsWith('/') ? (
-                        <img
+                        <Image
                             src={event.image}
                             alt={event.title}
+                            width={300}
+                            height={200}
                             className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
                         />
                     ) : (

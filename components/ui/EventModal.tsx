@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { X, MapPin, Users, Calendar, Clock, User } from "lucide-react";
+import Image from "next/image";
+import { X, MapPin, Users, Calendar, Clock } from "lucide-react";
 import { PastEvent } from "@/data/events";
 
 interface EventModalProps {
@@ -27,9 +28,11 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
 
                     <div className="flex items-start space-x-4">
                         {event.image.startsWith('/') ? (
-                            <img
+                            <Image
                                 src={event.image}
                                 alt={event.title}
+                                width={80}
+                                height={80}
                                 className="w-20 h-20 object-contain bg-white rounded-lg p-2 border border-gray-100"
                             />
                         ) : (
