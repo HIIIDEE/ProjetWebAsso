@@ -162,14 +162,10 @@ AddCharset UTF-8 .html .css .js .xml .json .rss .atom
     RewriteEngine On
     RewriteBase /
     
-    # Redirect trailing slashes (Next.js uses them)
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} !(.*)/$
-    RewriteRule ^(.*)$ $1/ [L,R=301]
-    
-    # Serve index.html for directories
+    # Don't add trailing slash to files with extensions
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !\.[^/]+$
     RewriteCond %{REQUEST_URI} !(.*)/$
     RewriteRule ^(.*)$ $1/ [L,R=301]
 </IfModule>
