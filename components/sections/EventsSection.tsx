@@ -24,7 +24,7 @@ const EventsSection: React.FC = () => {
             <section id="evenements" className="py-20">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                             Événements à Venir
                         </h2>
                         <p className="text-xl text-gray-600">
@@ -47,7 +47,7 @@ const EventsSection: React.FC = () => {
                                         </span>
                                     </div>
 
-                                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary dark:group-hover:text-primary-light transition-colors">
                                         {event.title}
                                     </h3>
 

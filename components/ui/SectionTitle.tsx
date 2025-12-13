@@ -19,13 +19,13 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 }) => {
     return (
         <div className={`text-center mb-16 ${className}`}>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 flex items-center justify-center">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 flex items-center justify-center">
                 {emoji && <span className="mr-3">{emoji}</span>}
                 {title}
                 {patriotic && <span className="ml-3">🇩🇿</span>}
             </h2>
             {subtitle && (
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">{subtitle}</p>
+                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">{subtitle}</p>
             )}
         </div>
     );

@@ -58,7 +58,7 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
                     <div className="grid md:grid-cols-3 gap-6 mb-8">
                         {/* Informations pratiques */}
                         <div className="space-y-4">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">
+                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                                 Informations Pratiques
                             </h3>
 
@@ -105,7 +105,7 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
                             {event.title.includes("Forum") && (
                                 <div className="space-y-4">
                                     <div>
-                                        <h4 className="font-semibold text-gray-900 mb-2">
+                                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
                                             🎯 Objectifs de l'événement
                                         </h4>
                                         <p className="text-gray-600 mb-4">
@@ -117,7 +117,7 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
                                     </div>
 
                                     <div>
-                                        <h4 className="font-semibold text-gray-900 mb-2">
+                                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
                                             📋 Programme de la journée
                                         </h4>
                                         <ul className="space-y-2 text-gray-600">
@@ -141,7 +141,7 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
                                     </div>
 
                                     <div>
-                                        <h4 className="font-semibold text-gray-900 mb-2">
+                                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
                                             🔑 Points clés abordés
                                         </h4>
                                         <ul className="space-y-1 text-gray-600">
@@ -158,7 +158,7 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
                             {event.title.includes("Cybersécurité") && (
                                 <div className="space-y-4">
                                     <div>
-                                        <h4 className="font-semibold text-gray-900 mb-2">
+                                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
                                             🛡️ Focus Cybersécurité
                                         </h4>
                                         <p className="text-gray-600 mb-4">
@@ -170,7 +170,7 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
                                     </div>
 
                                     <div>
-                                        <h4 className="font-semibold text-gray-900 mb-2">
+                                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
                                             📚 Modules de formation
                                         </h4>
                                         <ul className="space-y-2 text-gray-600">
@@ -197,7 +197,7 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
                             {event.title.includes("Cloud") && (
                                 <div className="space-y-4">
                                     <div>
-                                        <h4 className="font-semibold text-gray-900 mb-2">
+                                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
                                             ☁️ Stratégies Cloud
                                         </h4>
                                         <p className="text-gray-600 mb-4">
@@ -208,7 +208,7 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
                                     </div>
 
                                     <div>
-                                        <h4 className="font-semibold text-gray-900 mb-2">
+                                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
                                             🎯 Recommandations
                                         </h4>
                                         <ul className="space-y-1 text-gray-600">
