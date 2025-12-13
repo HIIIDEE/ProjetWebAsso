@@ -1,30 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🇩🇿 ANAPNA - Site Web Officiel
 
-## Getting Started
+Site web de l'**Association Nationale de la Promotion du Numérique en Algérie** (ANAPNA).
 
-First, run the development server:
+## 🚀 Technologies
+
+- **Framework**: Next.js 15.5.9
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Carousel**: Swiper
+- **Language**: TypeScript
+
+## 📦 Installation
 
 ```bash
-pnpm dev
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
+npm run dev
+
+# Construire pour la production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Déploiement (Hébergement Mutualisé)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Le site utilise l'export statique de Next.js pour être compatible avec les hébergements mutualisés.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Générer le dossier de production
+npm run build
 
-## Learn More
+# Le dossier 'out' contient tous les fichiers à déployer
+# Téléversez le contenu de 'out' sur votre serveur (httpdocs)
+```
 
-To learn more about Next.js, take a look at the following resources:
+### ⚠️ Important pour le déploiement
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Assurez-vous que le dossier `_next` est bien uploadé
+- Le fichier `.htaccess` est inclus pour la configuration Apache
+- Vérifiez les permissions (755 pour les dossiers, 644 pour les fichiers)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Fonctionnalités
 
-## Deploy on Vercel
+- ✅ Design responsive (mobile, tablette, desktop)
+- ✅ Mode sombre/clair
+- ✅ Animations fluides
+- ✅ Section membres fondateurs avec filtres
+- ✅ Galerie d'événements passés
+- ✅ Formulaire d'adhésion avec validation
+- ✅ Optimisation SEO
+- ✅ PWA ready (manifest.json)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Structure du Projet
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+├── app/                    # Pages Next.js (App Router)
+├── components/            
+│   ├── layout/            # Header, Footer
+│   ├── sections/          # Sections de la page d'accueil
+│   └── ui/                # Composants réutilisables
+├── data/                  # Données (membres, événements)
+├── hooks/                 # Custom React hooks
+├── context/               # Context API (Theme)
+├── public/                # Assets statiques
+└── utils/                 # Fonctions utilitaires
+
+```
+
+## 🎨 Personnalisation
+
+Les couleurs principales sont définies dans `tailwind.config.ts` :
+- **Vert** (#006233) : Couleur principale
+- **Rouge** (#CC242B) : Couleur accent
+
+## 📝 License
+
+© 2025 ANAPNA - Tous droits réservés

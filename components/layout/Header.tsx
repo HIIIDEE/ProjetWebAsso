@@ -22,7 +22,6 @@ const Header: React.FC<HeaderProps> = ({ scrollY, activeSection, scrollToSection
 
     // Effet de parallax subtil pour le header
     useEffect(() => {
-        console.log("Header mounted - v2"); // Force rebuild
         const handleScroll = () => {
             const scrolled = window.scrollY;
             const parallaxSpeed = 0.5;
