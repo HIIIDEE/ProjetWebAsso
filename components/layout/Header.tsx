@@ -75,11 +75,11 @@ const Header: React.FC<HeaderProps> = ({ scrollY, activeSection, scrollToSection
                         </div>
 
                         {/* Navigation Desktop */}
-                        <div className="hidden md:flex items-center space-x-4 lg:space-x-6 xl:space-x-8">
+                        <div className="hidden md:flex items-center space-x-2 lg:space-x-4 xl:space-x-6">
                             {NAVIGATION_ITEMS.map((item, index) => (
                                 <button
                                     key={item.id}
-                                    className={`relative text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light transition-all duration-300 font-semibold text-sm lg:text-base px-3 py-2 rounded-lg hover:bg-primary/5 dark:hover:bg-gray-800 tracking-wide ${activeSection === item.id && pathname === "/" ? "text-primary dark:text-primary-light bg-primary/5 dark:bg-gray-800" : ""
+                                    className={`relative text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-light transition-all duration-300 font-semibold text-sm px-2 py-1.5 rounded-lg hover:bg-primary/5 dark:hover:bg-gray-800 tracking-wide whitespace-nowrap ${activeSection === item.id && pathname === "/" ? "text-primary dark:text-primary-light bg-primary/5 dark:bg-gray-800" : ""
                                         }`}
                                     onClick={() => handleNavClick(item.id)}
                                     style={{

@@ -6,7 +6,7 @@ import SectionTitle from "../ui/SectionTitle";
 import Input from "../ui/Input";
 import Button from "../ui/Button";
 
-interface MembershipFormData {
+    interface MembershipFormData {
     firstName: string;
     lastName: string;
     email: string;
@@ -17,7 +17,6 @@ interface MembershipFormData {
     birthCertificate: File | null;
     residenceCertificate: File | null;
     workCertificate: File | null;
-    criminalRecord: File | null;
 }
 
 const MembershipSection: React.FC = () => {
@@ -32,7 +31,6 @@ const MembershipSection: React.FC = () => {
         birthCertificate: null,
         residenceCertificate: null,
         workCertificate: null,
-        criminalRecord: null,
     });
 
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -72,8 +70,7 @@ const MembershipSection: React.FC = () => {
         const requiredFiles = [
             { name: 'birthCertificate', label: 'Extrait de naissance' },
             { name: 'residenceCertificate', label: 'Certificat de résidence' },
-            { name: 'workCertificate', label: 'Attestation de travail' },
-            { name: 'criminalRecord', label: 'Casier judiciaire' }
+            { name: 'workCertificate', label: 'Attestation de travail' }
         ] as const;
 
         requiredFiles.forEach(file => {
@@ -111,7 +108,6 @@ const MembershipSection: React.FC = () => {
         if (formData.birthCertificate) dataToSend.append('birthCertificate', formData.birthCertificate);
         if (formData.residenceCertificate) dataToSend.append('residenceCertificate', formData.residenceCertificate);
         if (formData.workCertificate) dataToSend.append('workCertificate', formData.workCertificate);
-        if (formData.criminalRecord) dataToSend.append('criminalRecord', formData.criminalRecord);
 
         try {
             const response = await fetch('/traitement.php', {
@@ -136,7 +132,6 @@ const MembershipSection: React.FC = () => {
                     birthCertificate: null,
                     residenceCertificate: null,
                     workCertificate: null,
-                    criminalRecord: null,
                 });
             } else {
                 setError(data.message || "Une erreur est survenue lors de l'envoi.");
@@ -330,19 +325,6 @@ const MembershipSection: React.FC = () => {
                                             <input
                                                 type="file"
                                                 name="workCertificate"
-                                                onChange={handleChange}
-                                                className="block w-full text-sm text-gray-500 dark:text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-light/10 file:text-primary hover:file:bg-primary-light/20 dark:file:bg-primary/20 dark:file:text-primary-light"
-                                                accept=".pdf,.jpg,.jpeg,.png"
-                                                required
-                                            />
-                                        </div>
-                                        <div>
-                                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                                Casier judiciaire
-                                            </label>
-                                            <input
-                                                type="file"
-                                                name="criminalRecord"
                                                 onChange={handleChange}
                                                 className="block w-full text-sm text-gray-500 dark:text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-light/10 file:text-primary hover:file:bg-primary-light/20 dark:file:bg-primary/20 dark:file:text-primary-light"
                                                 accept=".pdf,.jpg,.jpeg,.png"

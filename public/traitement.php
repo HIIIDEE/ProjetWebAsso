@@ -106,12 +106,11 @@ try {
     $allowedTypes = ['application/pdf', 'image/jpeg', 'image/png', 'image/jpg'];
     $maxFileSize = 5 * 1024 * 1024; // 5MB
 
-    $requiredDocuments = ['birthCertificate', 'residenceCertificate', 'workCertificate', 'criminalRecord'];
+    $requiredDocuments = ['birthCertificate', 'residenceCertificate', 'workCertificate'];
     $docLabels = [
         'birthCertificate' => 'Extrait de naissance',
         'residenceCertificate' => 'Certificat de résidence',
-        'workCertificate' => 'Attestation de travail',
-        'criminalRecord' => 'Casier judiciaire'
+        'workCertificate' => 'Attestation de travail'
     ];
 
     foreach ($requiredDocuments as $docName) {
