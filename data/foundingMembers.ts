@@ -15,8 +15,8 @@ export const foundingMembers: FoundingMember[] = [
     id: 1,
     name: "RIAL AMEL",
     position:
-      "Assistante PDG chargée de la sécurité de l'information de l'entreprise ",
-    company: "Entreprise publique ",
+      "ASSISTANTE PDG CHARGÉE DE LA SÉCURITÉ DE L'INFORMATION DE L'ENTREPRISE",
+    company: "ENTREPRISE PUBLIQUE ",
     photo: null,
     specialties: ["Digitalisation", "Cybersécurité", "Management"],
     linkedin: "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
@@ -26,8 +26,8 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 2,
     name: "BOUMEZARG HAKIM",
-    position: "Chef de centre infra et telecoms",
-    company: "Housing bank algeria",
+    position: "CHEF DE CENTRE INFRA ET TÉLÉCOMS",
+    company: "HOUSING BANK ALGERIA",
     photo: null,
     specialties: ["Management"],
     linkedin: "https://www.linkedin.com/company/nap-dz/posts/?feedView=all",
@@ -37,8 +37,8 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 3,
     name: "AHMED CHARIF",
-    position: "Chef de département informatique ",
-    company: "Biskria ciment ",
+    position: "CHEF DE DEPARTEMENT INFORMATIQUE",
+    company: "BISKRIA CIMENT",
     photo: null,
     specialties: ["Cybersécurité"],
     linkedin:
@@ -49,8 +49,8 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 4,
     name: "YAHIAOUI ADIL",
-    position: "Chef de département S.I",
-    company: "SPA Biskria Ciment",
+    position: "CHEF DE DEPARTEMENT S.I",
+    company: "SPA BISKRIA CIMENT",
     photo: null,
     specialties: [
       "ERP",
@@ -65,8 +65,8 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 5,
     name: "NACEUR BOUKAAZA",
-    position: "Chef service  IT ",
-    company: "Sonatrach ",
+    position: "CHEF SERVICE IT",
+    company: "SONATRACH",
     photo: null,
     specialties: [
       "ERP",
@@ -82,7 +82,7 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 6,
     name: "SLIMANI OUSSAMA",
-    position: "DGA IT @ Banque Digitale",
+    position: "DGA IT BANQUE DIGITALE",
     company: "Banque Nationale de l'Habitat",
     photo: null,
     specialties: ["Digitalisation", "Cybersécurité", "Management"],
@@ -110,9 +110,9 @@ export const foundingMembers: FoundingMember[] = [
   },
   {
     id: 8,
-    name: "MOKRANE Abdelkarim",
-    position: "Directeur des Systèmes d'Information",
-    company: "PalmaryFood",
+    name: "MOKRANE ABDELKARIM",
+    position: "DIRECTEUR DES SYSTÈMES D'INFORMATION",
+    company: "PALMARYFOOD",
     photo: null,
     specialties: [
       "ERP",
@@ -129,8 +129,8 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 9,
     name: "TLILANI FAYCAL",
-    position: "Directeur des sytèmes d'information",
-    company: "Université Emir Abdelkader de Constantine",
+    position: "DIRECTEUR DES SYSTÈMES D'INFORMATION",
+    company: "UNIVERSITE EMIR ABDELKADER DE CONSTANTINE",
     photo: null,
     specialties: ["Digitalisation", "Cybersécurité", "Management"],
     linkedin: "https://www.linkedin.com/in/faycal-tlilani-a633736/",
@@ -139,8 +139,8 @@ export const foundingMembers: FoundingMember[] = [
   },
   {
     id: 10,
-    name: "BENISSAD Rachid",
-    position: "Directeur Technologies de la Communication et de l'Information",
+    name: "BENISSAD RACHID",
+    position: "DIRECTEUR TECHNOLOGIES DE LA COMMUNICATION ET DE L'INFORMATION",
     company: "ENAFOR",
     photo: null,
     specialties: ["ERP", "Digitalisation", "Management"],
@@ -151,8 +151,8 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 11,
     name: "ZEKRI AMAR",
-    position: "Dsi",
-    company: "ctc",
+    position: "DSI",
+    company: "CTC",
     photo: null,
     specialties: ["Digitalisation", "Management"],
     linkedin: "https://www.linkedin.com/in/amar-zekri-531538177/",
@@ -186,7 +186,7 @@ export const foundingMembers: FoundingMember[] = [
     id: 14,
     name: "SETIFI  ABDELHAKIM",
     position: "DSI",
-    company: "Algérienne des Eaux(ADE)",
+    company: "ALGERIENNE DES EAUX(ADE)",
     photo: null,
     specialties: [
       "ERP",
@@ -212,8 +212,8 @@ export const foundingMembers: FoundingMember[] = [
   },
   {
     id: 16,
-    name: "KARIM LAGGOUN ",
-    position: "DSI - DIRECTEUR de projet SAP ",
+    name: "KARIM LAGGOUN",
+    position: "DSI - DIRECTEUR DE PROJET SAP",
     company: "Les laboratoires Frater Razes",
     photo: null,
     specialties: [
@@ -230,8 +230,8 @@ export const foundingMembers: FoundingMember[] = [
   },
   {
     id: 17,
-    name: "BELHARCHAOUI NOUR EL HODA ",
-    position: "Ingénieur en informatique ",
+    name: "BELHARCHAOUI NOUR EL HODA",
+    position: "INGENIEUR EN INFORMATIQUE",
     company: "ANRH",
     photo: null,
     specialties: ["Digitalisation", "Management"],
@@ -242,7 +242,7 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 18,
     name: "GHILAS ADEL",
-    position: "IT Manager",
+    position: "IT MANAGER",
     company: "AZ hotels",
     photo: null,
     specialties: ["Management"],
@@ -253,7 +253,7 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 19,
     name: "KELAIAIA OUALID",
-    position: "IT Manager",
+    position: "IT MANAGER",
     company: "IRIS",
     photo: null,
     specialties: [
@@ -270,7 +270,7 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 20,
     name: "ATHAMENA Sif Eddine",
-    position: "IT Manager",
+    position: "IT MANAGER",
     company: "SPA Biogenal Pharma",
     photo: null,
     specialties: [
@@ -286,7 +286,7 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 21,
     name: "NOURI MOHAMED",
-    position: "IT Manager",
+    position: "IT MANAGER",
     company: "METAL STRUCTURE SPA",
     photo: null,
     specialties: ["Systèmes industriels", "Digitalisation", "Cybersécurité"],
@@ -297,7 +297,7 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 22,
     name: "ZENATI SAMI",
-    position: "IT Manager",
+    position: "IT MANAGER",
     company: "HB-Tech",
     photo: null,
     specialties: ["ERP", "Digitalisation", "Management"],
@@ -307,8 +307,8 @@ export const foundingMembers: FoundingMember[] = [
   },
   {
     id: 23,
-    name: "Atef BEN CHARIF ",
-    position: "IT Manager ",
+    name: "Atef BEN CHARIF",
+    position: "IT MANAGER",
     company: "Miniros ",
     photo: null,
     specialties: ["Digitalisation", "Management"],
@@ -319,7 +319,7 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 24,
     name: "DJAFFER SALIM",
-    position: "REPONSABLE SYSTELE D'INFORMATION",
+    position: "RESPONSABLE EN SYSTÈME D'INFORMATION",
     company: "GHAZAL GPL",
     photo: null,
     specialties: ["ERP", "Digitalisation", "IA"],
@@ -341,8 +341,8 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 26,
     name: "DAHMEM HAMZA",
-    position: "Sous directeur système d’information et communication ",
-    company: "Société des ciments de la Mitidja (SCMI)",
+    position: "SOUS DIRECTEUR SYSTÈMES D'INFORMATION ET COMMUNICATION",
+    company: "SOCIÉTÉ DES CIMENTS DE LA MITIDJA (SCMI)",
     photo: null,
     specialties: [
       "ERP",
@@ -357,7 +357,7 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 27,
     name: "SLIMANE IMINE",
-    position: "Sous directeur central ",
+    position: "SOUS DIRECTEUR CENTRAL",
     company: "Badr banque",
     photo: null,
     specialties: [],
@@ -368,7 +368,7 @@ export const foundingMembers: FoundingMember[] = [
   {
     id: 28,
     name: "AKILA OUSSADIT",
-    position: "Directeur centrale de la sécurité informatique ",
+    position: "DIRECTEUR CENTRAL DE LA SÉCURITÉ INFORMATIQUE",
     company: "Badr banque",
     photo: null,
     specialties: [],

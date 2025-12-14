@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { ArrowRight, Shield, Network, Building, Award, LucideIcon } from "lucide-react";
 import { RevealOnScroll } from "@/hooks/useScrollReveal";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
@@ -101,13 +102,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
 
                         <RevealOnScroll animation="fadeInUp" delay={0.4} duration={0.8}>
                             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
-                                <button
-                                    onClick={() => scrollToSection('services')}
+                                <Link
+                                    href="/adhesion"
                                     className="group bg-primary hover:bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center hover:scale-105 hover:shadow-lg text-sm sm:text-base"
                                 >
-                                    <span>Découvrir nos objectifs</span>
+                                    <span>Nous rejoindre</span>
                                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                                </button>
+                                </Link>
                                 <button
                                     onClick={() => scrollToSection('contact')}
                                     className="group bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 hover:border-primary-light dark:hover:border-primary text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg text-sm sm:text-base"
